@@ -3,6 +3,7 @@ import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import HeroAvatar from './HeroAvatar';
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 const Hero = () => {
   return (
@@ -16,8 +17,8 @@ const Hero = () => {
         <div className="relative z-[20]">
           <div className="flex flex-col items-center text-center">
             <RevealAnimation delay={0.1}>
-              <h1 className="font-semibold mb-4 xl:max-w-[1000px] lg:max-w-[850px] md:max-w-[650px] sm:max-w-[580px] max-w-[450px]">
-                Automate Your Website Growth with AI-Powered SEO
+               <h1 className="font-semibold mb-4 xl:max-w-[1000px] lg:max-w-[850px] md:max-w-[650px] sm:max-w-[580px] max-w-[450px]">
+                Automate Your <RoughNotation type="underline" strokeWidth={6} color='#303fa1' show={true}>Website</RoughNotation> Growth with AI-Powered SEO
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>

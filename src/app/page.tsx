@@ -15,7 +15,7 @@ import { Fragment } from 'react';
 import Homepage24 from './homepage-24/page';
 
 export const metadata: Metadata = {
-  title: 'Crypto - NextSaaS',
+  title: 'Boostifai - AI Powered SEO Automation',
 };
 
 const Homepage01 = () => {

@@ -27,7 +27,8 @@
     "react-leaflet": "^5.0.0",
     "react-markdown": "^10.1.0",
     "rehype-slug": "^6.0.0",
-    "swiper": "^11.2.10"
+    "swiper": "^11.2.10",
+    "react-rough-notation": "^1.0.8"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
