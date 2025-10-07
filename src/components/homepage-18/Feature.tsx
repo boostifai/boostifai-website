@@ -45,6 +45,8 @@ const Feature = () => {
                 <Image
                   src={feature1}
                   alt="feature image"
+                  width={785}
+                  height={221}
                   className="w-full object-cover rounded-2xl hidden dark:block"
                 />
                 <Image
@@ -65,6 +67,8 @@ const Feature = () => {
                 <Image
                   src={internallinks}
                   alt="feature image"
+                  width={345}
+                  height={226}
                   className="w-full object-cover rounded-2xl block dark:hidden"
                 />
                 <Image
@@ -85,6 +89,8 @@ const Feature = () => {
                 <Image
                   src={seotools}
                   alt="feature image"
+                  width={345}
+                  height={230}
                   className="w-full object-cover rounded-2xl block dark:hidden"
                 />
                 <Image
@@ -107,13 +113,15 @@ const Feature = () => {
                 <Image
                   src={blog}
                   alt="feature image"
+                  width={785}
+                  height={238}
                   className="w-full h-full object-cover rounded-2xl block dark:hidden"
                 />
-                {/* <Image
+                <Image
                   src={feature4Dark}
                   alt="feature image"
                   className="w-full h-full object-cover rounded-2xl hidden dark:block"
-                /> */}
+                />
               </figure>
             </div>
           </RevealAnimation>
