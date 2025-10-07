@@ -2,6 +2,7 @@ import Image from 'next/image';
 import auditImage from '../../../public/images/home-page-33/audit-image.png';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import audit from '@public/images/home-page-24/audit.webp';
 
 const Audit = () => {
   return (
@@ -33,7 +34,7 @@ const Audit = () => {
             </div>
             <RevealAnimation delay={0.4}>
               <figure className="bg-[#D9D9D9] rounded-2xl overflow-hidden">
-                <Image src={auditImage} alt="audit image" className="size-full object-cover" />
+                <Image src={audit} alt="audit image" className="size-full object-cover" />
               </figure>
             </RevealAnimation>
           </div>

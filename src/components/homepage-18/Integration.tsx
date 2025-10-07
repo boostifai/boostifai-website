@@ -15,6 +15,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import StackCardItem from '../ui/stack-card/StackCardItem';
 import StackCardWrapper from '../ui/stack-card/StackCardWrapper';
+import datadriven from '@public/images/home-page-24/data-driven.svg';
 
 const Integration = () => {
   return (
@@ -24,14 +25,14 @@ const Integration = () => {
           <div className="flex flex-col lg:flex-row items-start gap-y-24 gap-x-[140px]">
             <div className="w-full lg:flex-1 lg:sticky lg:top-28 lg:max-w-full max-w-[520px] lg:mx-0 mx-auto text-center lg:text-left">
               <RevealAnimation delay={0.2}>
-                <span className="badge badge-green mb-5">Process</span>
+                <span className="badge badge-primary-light mb-5">Trust</span>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
-                <h2 className="mb-3 max-w-[529px]">Why hundreds trust us for their websites</h2>
+                <h2 className="mb-3 max-w-[529px]">Why businesses trust Boostifai with their SEO</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.4}>
                 <p className="mb-7 lg:max-w-[620px]">
-                  We streamline automation for a strategic and sustainable AI transition.
+                  AI-driven optimization that improves rankings, saves time, and scales effortlessly — all from one platform.
                 </p>
               </RevealAnimation>
               <RevealAnimation delay={0.5}>
@@ -60,9 +61,9 @@ const Integration = () => {
                     </figure>
                     <figure className="p-8 bg-white dark:bg-background-5 rounded-xl space-y-6">
                       <figcaption className="space-y-2">
-                        <h5>Design tailored AI strategies.</h5>
+                        <h5>Save time and resources</h5>
                         <p className="max-w-[250px]">
-                          Tailored AI strategies align solutions to drive smarter decisions.
+                          Boostifai handles routine SEO tasks automatically, freeing your team to focus on strategy and growth.
                         </p>
                       </figcaption>
                       <figure className="max-w-[385px] w-full">
@@ -87,12 +88,12 @@ const Integration = () => {
                     </figure>
                     <figure className="p-8 bg-white dark:bg-background-5 rounded-xl space-y-6">
                       <figcaption className="space-y-2">
-                        <h5>Monitor and optimize results.</h5>
-                        <p className="max-w-[250px]">Track performance and fine-tune your strategy.</p>
+                        <h5>Data-driven growth</h5>
+                        <p className="max-w-[250px]">Make smarter decisions with clear performance metrics and actionable insights that guide your SEO strategy.</p>
                       </figcaption>
                       <div className="rounded-2xl overflow-hidden max-w-[400px] w-full">
                         <Image
-                          src={integrationImage2}
+                          src={datadriven}
                           alt="case icon"
                           className="w-full dark:hidden md:max-h-[300px] md:min-h-[300px]"
                         />
@@ -117,8 +118,8 @@ const Integration = () => {
                     </figure>
                     <figure className="p-8 bg-white dark:bg-background-5 rounded-xl space-y-6">
                       <figcaption className="space-y-2">
-                        <h5>Know your goals</h5>
-                        <p className="max-w-[250px]">When you know your goals, you own your path.</p>
+                        <h5>Measure real impact</h5>
+                        <p className="max-w-[250px]">Track your rankings, traffic, and conversions to see exactly how your optimization efforts pay off.</p>
                       </figcaption>
                       <div className="rounded-2xl overflow-hidden max-w-[400px] w-full">
                         <Image
@@ -147,9 +148,9 @@ const Integration = () => {
                     </figure>
                     <figure className="p-8 bg-white dark:bg-background-5 rounded-xl space-y-6">
                       <figcaption className="space-y-2">
-                        <h5>Use smart automation.</h5>
+                        <h5>Scale with confidence</h5>
                         <p className="max-w-[250px]">
-                          Let automation handle the routine, so you can focus on strategy.
+                         Whether you manage one site or hundreds, Boostifai ensures consistent results and sustainable growth.
                         </p>
                       </figcaption>
                       <div className="rounded-2xl overflow-hidden max-w-[400px] w-full">

@@ -2,6 +2,9 @@ import getMarkDownData from '@/utils/getMarkDownData';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import case1 from '@public/images/home-page-24/case-1.webp';
+import case2 from '@public/images/home-page-24/case-2.webp';
+import case3 from '@public/images/home-page-24/case-3.webp';
 
 const Features = () => {
   const featuredProjects = getMarkDownData('src/data/case-study')
@@ -29,7 +32,7 @@ const Features = () => {
                     <div className="relative w-full h-[576px] rounded-[20px] overflow-hidden group">
                       <div className="absolute inset-0 bg-black/70 z-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                       <Image
-                        src={featuredProjects[1].thumbnail}
+                        src={case1}
                         className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ease-in-out"
                         alt="portfolio"
                         width={1290}
@@ -55,7 +58,7 @@ const Features = () => {
                     <div className="relative w-full h-[576px] rounded-[20px] overflow-hidden group">
                       <div className="absolute inset-0 bg-black/40 z-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                       <Image
-                        src={featuredProjects[2].thumbnail}
+                        src={case2}
                         className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ease-in-out"
                         alt="portfolio"
                         fill
@@ -80,7 +83,7 @@ const Features = () => {
                     <div className="relative w-full h-[576px] rounded-[20px] overflow-hidden group">
                       <div className="absolute inset-0 bg-black/40 z-10 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                       <Image
-                        src={featuredProjects[0].thumbnail}
+                        src={case3}
                         alt="portfolio"
                         fill
                         priority

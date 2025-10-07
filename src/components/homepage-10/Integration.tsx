@@ -34,7 +34,7 @@ const Integration = () => {
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <p className="sm:max-w-[510px] max-w-[300px] mx-auto w-full">
-                  We assist startups in standing out with exceptional messaging that effectively engages their audience.
+                  Fresh, SEO-ready blogs appear in your CMS — no manual work needed. 
                 </p>
               </RevealAnimation>
             </div>

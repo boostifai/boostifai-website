@@ -1,22 +1,32 @@
 [
   {
     "id": 1,
-    "question": "What is the primary role of a business agency?",
-    "answer": "A business agency helps companies grow by offering strategic services like branding, digital marketing, business consulting, and customer experience optimization. Their goal is to improve performance and scalability."
+    "question": "Do I need technical skills to use Boostifai?",
+    "answer": "No technical expertise is required. Installation is simple with a one-line code snippet, and AI-driven recommendations can be approved with a single click. Boostifai handles all the SEO automation for you."
   },
   {
     "id": 2,
-    "question": "What kinds of services should I anticipate from a business agency?",
-    "answer": "Typical services include market research, brand strategy, SEO and content marketing, web development, paid advertising, and ongoing performance analytics to track growth and ROI."
+    "question": "How does Boostifai improve my website’s SEO?",
+    "answer": "Boostifai continuously analyzes your site and applies AI-driven recommendations—like optimized meta tags, headings, internal links, and blog content—directly to your pages. This automation helps boost your Google rankings and attract more organic traffic without manual effort."
   },
   {
     "id": 3,
-    "question": "How often should I consider updating my website?",
-    "answer": "A website should be reviewed every 6–12 months for performance, design trends, SEO updates, and new technology. Major updates are recommended at least every 2–3 years to stay competitive."
+    "question": "How long before I see results?",
+    "answer": "While immediate results can vary, most users see measurable improvements in rankings and traffic within 1–3 months, depending on competition and backlink profiles. Boostifai provides reports each month to track your progress."
   },
   {
     "id": 4,
-    "question": "Why is digital marketing essential for modern businesses?",
-    "answer": "Digital marketing allows businesses to reach targeted audiences, build brand awareness, and drive conversions through channels like social media, email marketing, SEO, and PPC."
+    "question": "Can I use Boostifai with my CMS?",
+    "answer": "Yes, it works for all CMS systems. Even if you have a CMS where it is normally difficult to make code changes, Boostifai can optimize your site for SEO. As long as you can add our one-line code snippet to your site, Boostifai will add the improvements."
+  },
+    {
+    "id": 5,
+    "question": "Does Boostifai support multiple languages?",
+    "answer": "Yes! Boostifai supports SEO optimization in various languages for your website content. However, domains with non-Roman characters (like .рф or .中国) are currently not supported."
+  },
+  {
+    "id": 6,
+    "question": "Is there a money-back guarantee?",
+    "answer": "Yes! Boostifai offers a 7-day money-back guarantee. You can try the platform risk-free and see if it meets your SEO needs. If not satisfied, you can request a full refund within the 7-day period."
   }
 ]

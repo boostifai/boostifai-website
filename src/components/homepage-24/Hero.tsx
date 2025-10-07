@@ -23,8 +23,7 @@ const Hero = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="xl:max-w-[850px] lg:max-w-[650px] md:max-w-[500px] sm:max-w-[500px] max-w-[450px] mb-7 md:mb-14">
-                At NextSaaS, we help individuals and families secure financial protection with smart, personalized
-                insurance coverage—fast, simple, and built around your life.
+                At Boostifai, we help businesses of all sizes grow their online presence with smart, automated SEO solutions—boosting rankings, creating optimized content, and saving time, all without any technical hassle.
               </p>
             </RevealAnimation>
             <ul className="flex flex-col sm:flex-row sm:gap-4 mb-7 md:mb-14 w-full items-center justify-center gap-y-4">

@@ -55,13 +55,18 @@ const Homepage24 = () => {
 
                 <Integration2 />
         {/* <WhyUs /> */}
+
+
          <WhyUs2 />
         <Integration />
+
+        
         {/* <Features /> */}
         {/* <Pricing /> */}
-         <FeatureV2 />
 
-        <WhyChooseUs2 />
+
+         {/* <FeatureV2 />
+        <WhyChooseUs2 /> */}
       
         {/* <FeatureV3 /> */}
 <Features3 />

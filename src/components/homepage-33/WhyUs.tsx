@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import us from '@public/images/home-page-24/uss.png'
 
 interface FeatureItem {
   id: number;
@@ -14,15 +15,15 @@ const featureItems: FeatureItem[] = [
   {
     id: 1,
     icon: 'ns-shape-15',
-    title: 'SaaS & tech',
-    description: 'Reduce customer acquisition costs, increase signups, and scale predictable growth.',
+    title: 'Agencies & SaaS',
+    description: 'Deliver measurable SEO results at scale. Automate on-page fixes, content updates, and reporting for every client.',
     side: 'left',
   },
   {
     id: 2,
     icon: 'ns-shape-24',
     title: 'Real estate',
-    description: 'Generate qualified leads, optimize local SEO, and dominate niche searches.',
+    description: 'Dominate local searches, generate qualified leads, and improve visibility across property listings.',
     side: 'left',
   },
   {
@@ -36,21 +37,21 @@ const featureItems: FeatureItem[] = [
     id: 4,
     icon: 'ns-shape-7',
     title: 'Healthcare',
-    description: 'Healthcare Build trust, enhance search visibility, and attract more patients.',
+    description: 'Build trust online, enhance search rankings, and attract patients with accurate, optimized local content.',
     side: 'right',
   },
   {
     id: 5,
     icon: 'ns-shape-34',
     title: 'Local business',
-    description: 'Local business Rank locally, earn reviews, and excel at hyperlocal marketing.',
+    description: 'Rank higher on Google Maps, get more reviews, and grow foot traffic through automated SEO improvements.',
     side: 'right',
   },
   {
     id: 6,
     icon: 'ns-shape-36',
     title: 'Education',
-    description: 'Education Increase enrollments, boost online visibility, and engage students.',
+    description: 'Increase enrollments, improve keyword visibility, and reach more students through optimized content creation.',
     side: 'right',
   },
 ];
@@ -73,11 +74,11 @@ const WhyUs = () => {
               <div className="md:w-full space-y-7 text-center md:text-left">
                 <div className="md:w-full space-y-3">
                   <RevealAnimation delay={0.2}>
-                    <h2 className="max-w-[571px] text-accent">Why Boostifai?</h2>
+                    <h2 className="max-w-[571px] text-accent">Smarter SEO for Every Industry</h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
                     <p className="max-w-[448px] md:w-full text-accent/60">
-                      Manage your entire mobile infrastructure from one platform.
+                      AI-powered recommendations, automated blogs, and real-time optimizations tailored to your business.
                     </p>
                   </RevealAnimation>
                 </div>
@@ -110,7 +111,7 @@ const WhyUs = () => {
                 <RevealAnimation delay={0.4} offset={100}>
                   <figure className="md:max-w-[350px] lg:max-w-[400px] xl:max-w-[480px] rounded-2xl md:w-full order-last md:order-none">
                     <Image
-                      src="/images/home-page-33/feature-img.png"
+                      src={us}
                       alt="Investment platform interface showing key features"
                       className="rounded-2xl"
                       width={480}
