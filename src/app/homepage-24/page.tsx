@@ -25,6 +25,8 @@ import Integration2 from '@/components/homepage-18/Integration';
 import FeatureV3 from '@/components/homepage-20/FeatureV2';
 import Pricing2 from '@/components/homepage-28/Pricing';
 import Audit from '@/components/homepage-33/Audit';
+import Testimonial2 from '@/components/homepage-03/Testimonial';
+import Blogs from '@/components/homepage-04/Blogs';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 
@@ -73,8 +75,10 @@ const Homepage24 = () => {
         <Pricing2 />
 
         <Audit />
+        <Testimonial2 badgeText="Reviews" />
         {/* <Testimonial /> */}
         <FAQ />
+          <Blogs />
         {/* <Contact /> */}
                 <CTA2 />
         {/* <CTA badgeClassName="text-ns-green" /> */}

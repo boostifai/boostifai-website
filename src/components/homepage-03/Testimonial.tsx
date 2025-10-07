@@ -22,9 +22,9 @@ const Testimonial = ({ badgeText, title, classname, badgeColor }: TestimonialPro
       <div className="mx-auto max-w-[1440px] px-4 md:px-[67px]">
         {/* Header Section */}
         <div className="mb-14 text-center lg:mb-[70px]">
-          <RevealAnimation delay={0.1}>
+          {/* <RevealAnimation delay={0.1}>
             <span className={cn('badge badge-green-v2 mb-5', badgeColor)}> {badgeText} </span>
-          </RevealAnimation>
+          </RevealAnimation> */}
 
           <RevealAnimation delay={0.2}>
             {title ? (
