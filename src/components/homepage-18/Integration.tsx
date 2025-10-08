@@ -139,38 +139,7 @@ const Integration = () => {
               </StackCardItem>
 
               {/*Case Item 4*/}
-              <StackCardItem>
-                <div className="lg:max-w-[483px] max-w-full max-sm:min-h-[433px]">
-                  <div className="p-2.5 rounded-[20px] relative z-[10] overflow-hidden">
-                    {/* gradient border img  */}
-                    <figure className="absolute z-[-1] w-[600px] md:w-[900px] xl:w-[1050px] top-[-66%] md:top-[-97%] max-[376px]:left-[-40%] left-[-30%] md:left-[-60%] lg:left-[-48%] rotate-[245deg] select-none pointer-events-none">
-                      <Image src={gradient9} alt="gradient-border" className="w-full h-full object-cover" />
-                    </figure>
-                    <figure className="p-8 bg-white dark:bg-background-5 rounded-xl space-y-6">
-                      <figcaption className="space-y-2">
-                        <h5>Scale with confidence</h5>
-                        <p className="max-w-[250px]">
-                         Whether you manage one site or hundreds, Boostifai ensures consistent results and sustainable growth.
-                        </p>
-                      </figcaption>
-                      <div className="rounded-2xl overflow-hidden max-w-[400px] w-full">
-                        <Link href="/process-01">
-                          <Image
-                            src={integrationImage4}
-                            alt="case icon"
-                            className="w-full dark:hidden rounded-xl md:max-h-[300px] md:min-h-[300px]"
-                          />
-                          <Image
-                            src={integrationImage4Dark}
-                            alt="case icon"
-                            className="w-full hidden dark:block rounded-xl md:max-h-[300px] md:min-h-[300px]"
-                          />
-                        </Link>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </StackCardItem>
+              
             </StackCardWrapper>
           </div>
         </div>

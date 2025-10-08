@@ -2,7 +2,7 @@ import Image from 'next/image';
 import auditImage from '../../../public/images/home-page-33/audit-image.png';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
-import audit from '@public/images/home-page-24/audit.webp';
+import audit from '@public/images/home-page-24/audit-report.png';
 
 const Audit = () => {
   return (

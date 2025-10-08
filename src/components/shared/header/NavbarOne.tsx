@@ -61,7 +61,7 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
                 // mega menu render
                 return (
                   <li key={item?.id} className={cn('py-2.5', item?.hasDropdown && 'group/nav relative cursor-pointer')}>
-                    <NavItemLink item={item} />
+                    <NavItemLink item={item} variant='light' />
                     {item.hasDropdown && renderMegaMenu()}
                   </li>
                 );

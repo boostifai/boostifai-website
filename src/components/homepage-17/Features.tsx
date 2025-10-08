@@ -18,7 +18,7 @@ const Features = () => {
           <div className="main-container">
             <div className="space-y-5 text-center">
               <RevealAnimation delay={0.2}>
-                <span className="badge inline-block badge-primary-light">Featured projects</span>
+                <span className="badge inline-block badge-primary-light">Featured Success Stories</span>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <h2>Success stories from our clients</h2>
@@ -26,7 +26,7 @@ const Features = () => {
             </div>
 
             <div className="grid grid-cols-12 sm:gap-x-8 gap-y-14 mt-[70px]">
-              <RevealAnimation delay={0.4}>
+              {/* <RevealAnimation delay={0.4}>
                 <div className="col-span-12">
                   <figure className="space-y-6">
                     <div className="relative w-full h-[576px] rounded-[20px] overflow-hidden group">
@@ -51,7 +51,7 @@ const Features = () => {
                     </div>
                   </figure>
                 </div>
-              </RevealAnimation>
+              </RevealAnimation> */}
               <RevealAnimation delay={0.5}>
                 <div className="col-span-12 lg:col-span-6">
                   <figure className="space-y-6">
@@ -107,7 +107,7 @@ const Features = () => {
                   <LinkButton
                     href="/case-study"
                     className="btn btn-secondary hover:btn-white dark:btn-transparent dark:hover:btn-accent btn-lg xl:btn-xl w-[90%] md:w-auto block md:inline-block mx-auto">
-                    View portfolio
+                    View all Success Stories
                   </LinkButton>
                 </div>
               </RevealAnimation>

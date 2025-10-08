@@ -37,14 +37,14 @@ export const metadata: Metadata = {
 const Homepage24 = () => {
   return (
     <Fragment>
-      <NavbarOne
+      {/* <NavbarOne
         className="border border-stroke-2 bg-accent/60 backdrop-blur-[25px] dark:border-stroke-6 dark:bg-background-9"
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
-      />
-           {/* <NavbarOne
+      /> */}
+           <NavbarOne
         className="bg-background-8 border border-stroke-2 backdrop-blur-[25px] dark:border-stroke-6 dark:bg-background-9"
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
-      /> */}
+      />
       <main className="bg-background-3 dark:bg-background-7">
         <Hero />
         {/* <Clients />
@@ -74,8 +74,9 @@ const Homepage24 = () => {
 <Features3 />
         <Pricing2 />
 
-        <Audit />
+     
         <Testimonial2 badgeText="Reviews" />
+           <Audit />
         {/* <Testimonial /> */}
         <FAQ />
           <Blogs />

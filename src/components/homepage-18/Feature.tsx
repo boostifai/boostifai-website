@@ -11,6 +11,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 import blog from '@public/images/home-page-24/blog.png';
 import internallinks from '@public/images/home-page-24/internal-links.png';
 import seotools from '@public/images/home-page-24/seo-tools.png';
+import recommendations from '@public/images/home-page-24/recommendations.png';
 
 const Feature = () => {
   return (
@@ -43,14 +44,14 @@ const Feature = () => {
               </div>
               <figure className="w-full">
                 <Image
-                  src={feature1}
+                  src={recommendations}
                   alt="feature image"
                   width={785}
                   height={221}
                   className="w-full object-cover rounded-2xl hidden dark:block"
                 />
                 <Image
-                  src={feature1Dark}
+                  src={recommendations}
                   alt="feature image"
                   className="w-full object-cover rounded-2xl block dark:hidden"
                 />
