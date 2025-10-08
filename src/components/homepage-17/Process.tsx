@@ -18,10 +18,6 @@ const Process = () => {
     <section className="pb-14 pt-14 md:pb-16 md:pt-16 lg:pb-[88px] lg:pt-[88px] xl:pb-[100px] xl:pt-[100px]">
       <div className="main-container space-y-14">
         <div className="space-y-5 text-center mx-auto lg:text-left lg:mx-0">
-          <RevealAnimation delay={0.2}>
-            {/* <span className="badge inline-block bg-primary-500 text-white">Our Process</span> */}
-            {/* <span className="badge badge-green mb-5"> Our Process </span> */}
-          </RevealAnimation>
           <RevealAnimation delay={0.3}>
             <h2 className="lg:max-w-[500px]">From install to traffic boost simplified</h2>
           </RevealAnimation>
