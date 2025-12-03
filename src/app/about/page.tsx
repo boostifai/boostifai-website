@@ -5,37 +5,29 @@ import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterOne from '@/components/shared/footer/FooterOne';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import PageHero from '@/components/shared/PageHero';
+import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import FooterThree from '@/components/shared/footer/FooterThree';
 
 export const metadata: Metadata = {
-  title: 'Analytics - NextSaaS',
+  title: 'About Us | Boostifai',
 };
 
 const Analytics = () => {
   return (
     <Fragment>
-      <NavbarOne
-        className="border border-stroke-2 bg-accent/60 dark:border-stroke-6 dark:bg-background-9 backdrop-blur-[25px]"
-        btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
-        megaMenuColor="!bg-accent dark:!bg-background-9"
-      />
+       <NavbarOne className="border border-white backdrop-blur-[25px]"
+                   btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
+                 />
       <main className="bg-background-3 dark:bg-background-7">
-        <PageHero title="Analytics" heading="Analytics " link="/analytics" />
+        {/* <PageHero title="About Us" heading="About Us" link="/about" /> */}
         <AnalyticsHero />
         <AnalyticsDetails />
         <AnalyticsTestimonial />
-        <CTAV1
-          className="dark:bg-background-5 bg-white"
-          badgeText="Get started"
-          badgeClass="!badge-cyan-v2"
-          ctaHeading="Build a complete website using the assistance"
-          description="Start your free trial today and see your ideas come to life easily and creatively."
-          ctaBtnText="Get started"
-          btnClass="hover:btn-secondary dark:hover:btn-accent"
-        />
+        <CTA2 />
       </main>
-      <FooterOne />
+       <FooterThree className="relative border-t border-stroke-1 dark:border-0" />
     </Fragment>
   );
 };

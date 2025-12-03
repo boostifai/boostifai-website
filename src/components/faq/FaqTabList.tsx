@@ -7,30 +7,18 @@ const FaqTabList = () => {
     <Fragment>
       <TabList variant="desktop">
         <Tab index={0} variant="desktop">
-          General
+          Business
         </Tab>
         <Tab index={1} variant="desktop">
-          Changelog
-        </Tab>
-        <Tab index={2} variant="desktop">
-          Privacy
-        </Tab>
-        <Tab index={3} variant="desktop">
-          Terms & Conditions
+          Agencies
         </Tab>
       </TabList>
       <TabList variant="mobile">
         <Tab index={0} variant="mobile">
-          General
+          Business
         </Tab>
         <Tab index={1} variant="mobile">
-          Changelog
-        </Tab>
-        <Tab index={2} variant="mobile">
-          Privacy
-        </Tab>
-        <Tab index={3} variant="mobile" className="text-nowrap">
-          Terms & Conditions
+          Agencies
         </Tab>
       </TabList>
     </Fragment>

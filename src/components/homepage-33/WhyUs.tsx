@@ -2,6 +2,8 @@ import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import us from '@public/images/home-page-24/uss.png'
+import CostSavingCalculator from '@/components/homepage-24/CostSavingCalculator';
+
 
 interface FeatureItem {
   id: number;
@@ -67,74 +69,32 @@ const WhyUs = () => {
           <div className="py-[42px] bg-secondary rounded-4xl px-6 sm:px-14 relative z-10 overflow-hidden">
             <RevealAnimation delay={0.1} direction="right" offset={100}>
               <figure className="-z-10 absolute -right-[120%] -top-[44%] sm:-right-[100%] sm:-top-[35%] md:-right-[104%] md:-top-[78%] lg:-right-[74%] lg:-top-[78%] xl:-right-[54%] xl:-top-[58%] -rotate-[290deg] sm:-rotate-[260deg] size-[1060px] pointer-events-none select-none">
-                <Image src="/images/gradient/gradient-6.png" alt="gradient" width={1060} height={1060} />
+                <Image src="/images/gradient/gradient-30.png" alt="gradient" width={1060} height={1060} />
               </figure>
             </RevealAnimation>
             <div className="space-y-[70px] relative z-10">
               <div className="md:w-full space-y-7 text-center md:text-left">
                 <div className="md:w-full space-y-3">
                   <RevealAnimation delay={0.2}>
-                    <h2 className="max-w-[571px] text-accent">Smarter SEO for Every Industry</h2>
+                    <h2 className="max-w-[571px] text-accent">Cost Saving Calculator</h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
                     <p className="max-w-[448px] md:w-full text-accent/60">
-                      AI-powered recommendations, automated blogs, and real-time optimizations tailored to your business.
+                     Discover how much you can save by automating SEO recommendations across all your sites.
                     </p>
                   </RevealAnimation>
                 </div>
-                <RevealAnimation delay={0.4}>
+                {/* <RevealAnimation delay={0.4}>
                   <div>
                     <LinkButton href="/features-01" className="btn btn-dark btn-md hover:btn-white">
                       Explore all features
                     </LinkButton>
                   </div>
-                </RevealAnimation>
+                </RevealAnimation> */}
               </div>
 
-              <div className="max-w-[1178px] mx-auto flex items-center flex-col gap-y-8 sm:gap-y-0 sm:gap-x-8 md:flex-row justify-between">
-                <div className="max-w-[300px] md:w-full space-y-8">
-                  {leftFeatures.map((feature, index) => (
-                    <RevealAnimation key={feature.id} delay={0.5 + index * 0.1} direction="left">
-                      <div className="space-y-4">
-                        <div className="overflow-hidden inline-block">
-                          <span className={`${feature.icon} text-[36px] text-accent`}> </span>
-                        </div>
-                        <div>
-                          <h3 className="text-tagline-1 font-medium text-accent">{feature.title}</h3>
-                          <p className="text-tagline-2 text-accent/60">{feature.description}</p>
-                        </div>
-                      </div>
-                    </RevealAnimation>
-                  ))}
-                </div>
-
-                <RevealAnimation delay={0.4} offset={100}>
-                  <figure className="md:max-w-[350px] lg:max-w-[400px] xl:max-w-[480px] rounded-2xl md:w-full order-last md:order-none">
-                    <Image
-                      src={us}
-                      alt="Investment platform interface showing key features"
-                      className="rounded-2xl"
-                      width={480}
-                      height={400}
-                    />
-                  </figure>
-                </RevealAnimation>
-
-                <div className="max-w-[300px] md:w-full space-y-8">
-                  {rightFeatures.map((feature, index) => (
-                    <RevealAnimation key={feature.id} delay={0.5 + index * 0.1} direction="right">
-                      <div className="space-y-3">
-                        <div className="overflow-hidden inline-block">
-                          <span className={`${feature.icon} text-[36px] text-accent`}> </span>
-                        </div>
-                        <div>
-                          <h3 className="text-tagline-1 font-medium text-accent">{feature.title}</h3>
-                          <p className="text-tagline-2 text-accent/60">{feature.description}</p>
-                        </div>
-                      </div>
-                    </RevealAnimation>
-                  ))}
-                </div>
+              <div className="max-w-[1178px] mx-auto flex items-center">
+               <CostSavingCalculator />
               </div>
             </div>
           </div>

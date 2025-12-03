@@ -21,51 +21,65 @@ export const navigationItems: NavigationItem[] = [
   {
     id: 'home',
     label: 'Home',
+    href: '/',
+    hasDropdown: false,
+    megaMenuComponent: 'HomeMegaMenu',
+  },
+  {
+    id: 'about',
+    label: 'About',
+    href: '/about',
+    hasDropdown: false,
+    megaMenuComponent: 'PageMegaMenu',
+  },
+  {
+    id: 'features',
+    label: 'Features',
     href: '#',
     hasDropdown: true,
     megaMenuComponent: 'HomeMegaMenu',
   },
   {
-    id: 'pages',
-    label: 'Pages',
-    href: '#',
-    hasDropdown: true,
-    megaMenuComponent: 'PageMegaMenu',
-  },
-  {
-    id: 'about',
-    label: 'About',
-    href: '#',
-    hasDropdown: true,
-    megaMenuComponent: 'AboutMenu',
-  },
-  {
-    id: 'services',
-    label: 'Services',
-    href: '#',
-    hasDropdown: true,
-    megaMenuComponent: 'ServicesMenu',
+    id: 'case-studies',
+    label: 'Case Studies',
+    href: '/case-study',
+    hasDropdown: false,
   },
   {
     id: 'blog',
     label: 'Blog',
-    href: '#',
-    hasDropdown: true,
-    megaMenuComponent: 'BlogMenu',
+    href: '/blog',
+    hasDropdown: false,
   },
   {
-    id: 'contact',
-    label: 'Contact Us',
-    href: '/contact-us',
+    id: 'pricing',
+    label: 'Pricing',
+    href: '#',
+    hasDropdown: true,
+    megaMenuComponent: 'PricingMenu',
+  },
+  {
+    id: 'faq',
+    label: 'FAQ',
+    href: '/faq',
+    hasDropdown: false,
+  },
+  {
+    id: 'support',
+    label: 'Support',
+    href: '/support',
     hasDropdown: false,
   },
 ];
 
 // About Menu Data
 export const aboutMenuItems: MegaMenuItem[] = [
-  { id: 'about-1', label: 'About 01', href: '/about-01' },
-  { id: 'about-2', label: 'About 02', href: '/about-02' },
-  { id: 'about-3', label: 'About 03', href: '/about-03' },
+  { id: 'about-1', label: 'AI Articles', href: '/about-01' },
+  { id: 'about-2', label: 'Internal Linking', href: '/about-02' },
+  { id: 'about-3', label: 'AI Recommendations', href: '/about-03' },
+  { id: 'about-1', label: 'Rank Analyzer', href: '/about-01' },
+  { id: 'about-2', label: 'AI Insight', href: '/about-02' },
+  { id: 'about-3', label: 'Backlink Marketplace', href: '/about-03' },
 ];
 
 // Blog Menu Data
@@ -74,6 +88,11 @@ export const blogMenuItems: MegaMenuItem[] = [
   { id: 'blog-2', label: 'Blog 02', href: '/blog-02' },
   { id: 'blog-3', label: 'Blog 03', href: '/blog-03' },
   { id: 'blog-details', label: 'Blog Details', href: '/blog/5-strategies-for-effective-brand-storytelling' },
+];
+
+export const pricingMenuItems: MegaMenuItem[] = [
+  { id: 'business', label: 'Business', href: '/business-pricing' },
+  { id: 'agency', label: 'Agency', href: '/agency-pricing' },
 ];
 
 // Services Menu Data
@@ -89,51 +108,25 @@ export const homeMegaMenuColumns: MegaMenuColumn[] = [
   {
     id: 'column-1',
     items: [
-      { id: 'home-1', label: '01. Crypto Marketing', href: '/' },
-      { id: 'home-2', label: '02. AI Software', href: '/homepage-02' },
-      { id: 'home-3', label: '03. AI Chatbot', href: '/homepage-03' },
-      { id: 'home-4', label: '04. Web Hosting', href: '/homepage-04' },
-      { id: 'home-5', label: '05. Analytics & Reporting', href: '/homepage-05' },
-      { id: 'home-6', label: '06. Financial Application', href: '/homepage-06' },
-      { id: 'home-7', label: '07. Payment Solutions', href: '/homepage-07' },
-      { id: 'home-8', label: '08. Online Banking', href: '/homepage-08' },
-      { id: 'home-9', label: '09. Cloud Based Software', href: '/homepage-09' },
-      { id: 'home-10', label: '10. Cyber Security', href: './homepage-10' },
-      { id: 'home-11', label: '11. Email Marketing', href: '/homepage-11' },
-      { id: 'home-12', label: '12. Lead Capture', href: '/homepage-12' },
+       { id: 'about-1', label: 'AI Articles', href: '/about-01' },
+  { id: 'about-2', label: 'Internal Linking', href: '/about-02' },
+    { id: 'about-2', label: 'Email Reports', href: '/about-02' },
     ],
   },
   {
     id: 'column-2',
     items: [
-      { id: 'home-13', label: '13. Messaging Platform', href: '/homepage-13' },
-      { id: 'home-14', label: '14. Mortgage Services', href: '/homepage-14' },
-      { id: 'home-15', label: '15. Creative Portfolio', href: '/homepage-15' },
-      { id: 'home-16', label: '16. App Builder', href: '/homepage-16' },
-      { id: 'home-17', label: '17. App Development', href: '/homepage-17' },
-      { id: 'home-18', label: '18. AI Agency', href: '/homepage-18' },
-      { id: 'home-19', label: '19. Smart Solutions', href: '/homepage-19' },
-      { id: 'home-20', label: '20. Risk Management Software', href: '/homepage-20' },
-      { id: 'home-21', label: '21. Personal Finance', href: '/homepage-21' },
-      { id: 'home-22', label: '22. Mobile Management Software', href: '/homepage-22' },
-      { id: 'home-23', label: '23. Investment Management', href: '/homepage-23' },
+  { id: 'about-3', label: 'AI Recommendations', href: '/about-03' },
+  { id: 'about-2', label: 'AI Insight', href: '/about-02' },
+    { id: 'about-5', label: 'On Page SEO', href: '/about-02' },
     ],
   },
   {
     id: 'column-3',
     items: [
-      { id: 'home-24', label: '24. Insurance Software', href: '/homepage-24' },
-      { id: 'home-25', label: '25. Property Management', href: '/homepage-25' },
-      { id: 'home-26', label: '26. Pos System', href: '/homepage-26' },
-      { id: 'home-27', label: '27. Social Media Management', href: '/homepage-27' },
-      { id: 'home-28', label: '28. Nuvexa CRM', href: '/homepage-28' },
-      { id: 'home-29', label: '29. Wealth Management', href: '/homepage-29' },
-      { id: 'home-30', label: '30. Security Software', href: '/homepage-30' },
-      { id: 'home-31', label: '31. Time Tracking', href: '/homepage-31' },
-      { id: 'home-32', label: '32. Data Visualization', href: '/homepage-32' },
-      { id: 'home-33', label: '33. Digital Marketing Agency', href: '/homepage-33' },
-      { id: 'home-34', label: '34. Forex Trading', href: '/homepage-34' },
-      { id: 'home-35', label: '35. Decentralized Finance', href: '/homepage-35' },
+    { id: 'about-1', label: 'Rank Analyzer', href: '/about-01' },
+  { id: 'about-3', label: 'Backlink Marketplace', href: '/about-03' },
+    { id: 'about-3', label: 'Free SEO Tools', href: '/about-03' },
     ],
   },
 ];

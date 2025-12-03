@@ -1,29 +1,17 @@
 import TabContent from '../ui/tab/TabContent';
-import ChangelogTab from './ChangelogTab';
-import GeneralTab from './GeneralTab';
-import PrivacyTab from './PrivacyTab';
-import TermsConditionsTab from './TermsConditionsTab';
+import AgenciesTab from './AgenciesTab';
+import BusinessTab from './BusinessTab';
 
 const data = [
   {
     id: 1,
-    tabTitle: 'General',
-    tabContent: <GeneralTab />,
+    tabTitle: 'Business',
+    tabContent: <BusinessTab />,
   },
   {
     id: 2,
-    tabTitle: 'Changelog',
-    tabContent: <ChangelogTab />,
-  },
-  {
-    id: 3,
-    tabTitle: 'Privacy',
-    tabContent: <PrivacyTab />,
-  },
-  {
-    id: 4,
-    tabTitle: 'Terms & Conditions',
-    tabContent: <TermsConditionsTab />,
+    tabTitle: 'Agencies',
+    tabContent: <AgenciesTab />,
   },
 ];
 

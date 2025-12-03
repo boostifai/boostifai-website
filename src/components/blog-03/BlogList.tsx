@@ -129,7 +129,7 @@ const BlogList = ({ blogs: allBlogs }: BlogListProps) => {
   };
 
   return (
-    <section className="pt-7 pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]">
+    <section className="pt-7 pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] pt-30">
       <div className="main-container">
         <Heading />
 

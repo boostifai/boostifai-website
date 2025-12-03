@@ -19,15 +19,15 @@ const FAQ = () => {
                 <p>Have questions? just ask</p>
               </RevealAnimation>
             </div>
-            <RevealAnimation delay={0.3}>
-              <div className="lg:text-left text-center">
-                <LinkButton
-                  href="/faq-01"
-                  className="btn btn-secondary btn-md hover:btn-primary dark:btn-accent w-[85%] md:w-auto mx-auto md:mx-0">
-                  Read more
-                </LinkButton>
-              </div>
-            </RevealAnimation>
+            <div className="mt-10">
+          <RevealAnimation delay={0.6}>
+            <LinkButton
+              href="/our-services-02"
+              className="btn hover:btn-secondary dark:hover:btn-accent btn-primary btn-md">
+              <span>Read More</span>
+            </LinkButton>
+          </RevealAnimation>
+        </div>
           </div>
           <div className="col-span-12 lg:col-span-7">
             <RevealAnimation delay={0.4}>

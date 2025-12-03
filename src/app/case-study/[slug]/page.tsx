@@ -4,6 +4,7 @@ import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import PageHero from '@/components/shared/PageHero';
 import getMarkDownData from '@/utils/getMarkDownData';
+import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 
 export async function generateStaticParams() {
@@ -27,10 +28,10 @@ const CaseStudyDetailsPage = async ({ params }: CaseStudyDetailsPageProps) => {
 
   return (
     <>
-      <NavbarOne
-        className="border border-stroke-2 bg-accent/60 dark:border-stroke-6 dark:bg-background-9 backdrop-blur-[25px]"
-        btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
-      />
+                      <NavbarOne
+                   className="border border-white backdrop-blur-[25px]"
+                   btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
+                 />
       <main className="bg-background-3 dark:bg-background-7">
         <PageHero
           title="Case Study Details"
@@ -40,17 +41,10 @@ const CaseStudyDetailsPage = async ({ params }: CaseStudyDetailsPageProps) => {
         />
         <CaseStudyDetails slug={slug} />
 
-        <CTAV1
-          className="dark:bg-background-5 bg-white"
-          badgeClass="badge-yellow-v2"
-          badgeText="Get started"
-          ctaHeading="Build a complete website using the assistance"
-          description="Start your free trial today and see your ideas come to life easily and creatively."
-          ctaBtnText="Get started"
-          btnClass="hover:btn-secondary dark:hover:btn-accent"
+        <CTA2
         />
       </main>
-      <FooterThree />
+      <FooterThree className="relative border-t border-stroke-1 dark:border-0" />
     </>
   );
 };

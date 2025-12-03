@@ -9,6 +9,7 @@ import { FC } from 'react';
 import MobileMenu from '../MobileMenu';
 import AboutMenu from '../mega-menu/AboutMenu';
 import BlogMenu from '../mega-menu/BlogMenu';
+import PricingMenu from '../mega-menu/PricingMenu';
 import HomeMegaMenu from '../mega-menu/HomeMegaMenu';
 import PageMegaMenu from '../mega-menu/PageMegaMenu';
 import ServicesMenu from '../mega-menu/ServicesMenu';
@@ -31,8 +32,7 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
       <header>
         <div
           className={cn(
-            'lp:!max-w-[1290px] fixed top-5 left-1/2 z-50 mx-auto flex w-full max-w-[320px] -translate-x-1/2 items-center justify-between rounded-full px-2.5 py-2.5 transition-all duration-500 ease-in-out min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xl:py-0',
-            isScrolled && 'top-2 transition-all duration-500 ease-in-out',
+            'relative z-50 mx-auto my-3 flex w-full items-center justify-between px-2.5 py-2.5 transition-all duration-500 ease-in-out xl:py-0',
             className,
           )}>
           {/* logo */}
@@ -53,6 +53,8 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
                       return <ServicesMenu className={megaMenuColor} />;
                     case 'BlogMenu':
                       return <BlogMenu className={megaMenuColor} />;
+                    case 'PricingMenu':
+                      return <PricingMenu className={megaMenuColor} />;
                     default:
                       return null;
                   }
@@ -61,7 +63,7 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
                 // mega menu render
                 return (
                   <li key={item?.id} className={cn('py-2.5', item?.hasDropdown && 'group/nav relative cursor-pointer')}>
-                    <NavItemLink item={item} variant='light' />
+                    <NavItemLink item={item} variant='default' />
                     {item.hasDropdown && renderMegaMenu()}
                   </li>
                 );

@@ -18,16 +18,12 @@ const AnalyticsHero = () => {
         <div className="flex flex-col items-center justify-center mb-[72px]">
           <div className="w-[95%] max-w-[850px] space-y-4 mx-auto text-center">
             <RevealAnimation delay={0.3}>
-              <h2>
-                Your business. Your metrics. <br className="hidden md:block" />
-                All in one view.
-              </h2>
+              <h2>AI-powered SEO solution for businesses and agencies</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p>
-                With NextSaaS, you don’t need a dozen tools to understand what’s working. Our intuitive dashboard
-                centralizes your key metrics, helping you monitor performance, spot trends, and make smarter, faster
-                decisions.
+                Learn about our mission, story, and team. We are committed to revolutionizing SEO for business owners
+                and agencies through innovative AI technology.
               </p>
             </RevealAnimation>
           </div>

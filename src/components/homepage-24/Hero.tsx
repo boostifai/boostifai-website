@@ -7,7 +7,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[url('/images/home-page-24/hero-bg.png')] bg-no-repeat bg-top 2xl:pt-[230px] lg:pt-[200px] md:pt-[180px] pt-[150px] pb-[100px]">
+    <section className="relative bg-[url('/images/home-page-24/hero-bg.png')] bg-no-repeat bg-top 2xl:pt-[190px] lg:pt-[170px] md:pt-[160px] pt-[150px] pb-[100px]">
       {/* hero line  */}
       <div className="hidden md:block absolute w-full h-full top-0 left-0 before:content-[''] before:absolute before:left-[110px] before:z-10 before:w-px before:h-[100%] before:bg-[linear-gradient(180deg,#ECE8FF_0%,#FAF9FC_100%)] dark:before:bg-[linear-gradient(180deg,#303B49_0%,#748eaf00_100%)] before:top-0 after:content-[''] after:absolute after:right-[110px] after:z-10 after:w-px after:h-[100%] after:bg-[linear-gradient(180deg,#ECE8FF_0%,#FAF9FC_100%)] dark:after:bg-[linear-gradient(180deg,#303B49_0%,#748eaf00_100%)] after:top-0 z-[10] ">
         <div className="absolute w-[100%] h-px bg-stroke-1 dark:bg-stroke-8 top-[106px] before:absolute before:content-[''] before:w-2 before:h-2 before:bg-stroke-1 dark:before:bg-accent before:left-[106px] before:z-20 before:-top-1 before:ring-8 before:ring-white dark:before:ring-background-7 before:rotate-45 after:absolute after:content-[''] after:w-2 after:h-2 after:bg-stroke-1 dark:after:bg-accent after:ring-8 after:ring-white dark:after:ring-background-7 after:right-[106px] after:z-20 after:-top-1 after:rotate-[-45deg] " />
@@ -52,7 +52,7 @@ const Hero = () => {
         <HeroAvatar />
 
         {/*Hero Main Image*/}
-        <RevealAnimation delay={0.8}>
+        <RevealAnimation delay={0.2}>
           <figure className="lp:max-w-[1240px] mx-auto w-full xl:max-w-[1140px] lg:max-w-[980px] md:max-w-[700px] sm:max-w-[600px] min-[475px]:max-w-[450px] min-[425px]:max-w-[350px] max-w-[320px]">
             <Image src={heroImage} alt="hero-image" />
           </figure>

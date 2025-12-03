@@ -2,12 +2,12 @@ import CTA from '@/components/homepage-22/CTA';
 import Clients from '@/components/homepage-24/Clients';
 import Contact from '@/components/homepage-24/Contact';
 import FAQ from '@/components/homepage-24/FAQ';
-import Features from '@/components/homepage-24/Features';
+// import Features from '@/components/homepage-24/Features';
 import Hero from '@/components/homepage-24/Hero';
 import About from '@/components/homepage-01/About';
 import Invitation from '@/components/homepage-24/Invitation';
 import Process from '@/components/homepage-17/Process';
-import Services from '@/components/homepage-24/Services';
+// import Services from '@/components/homepage-24/Services';
 import Testimonial from '@/components/homepage-24/Testimonial';
 import WhyUs from '@/components/homepage-24/WhyUs';
 import FooterThree from '@/components/shared/footer/FooterThree';
@@ -29,6 +29,9 @@ import Testimonial2 from '@/components/homepage-03/Testimonial';
 import Blogs from '@/components/homepage-04/Blogs';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import HowItWork from '@/components/homepage-24/HowItWorks';
+import Services from '@/components/homepage-35/Services';
+import Features from '@/components/homepage-35/Features';
 
 export const metadata: Metadata = {
   title: 'Insurance - NextSaaS',
@@ -42,7 +45,7 @@ const Homepage24 = () => {
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
       /> */}
            <NavbarOne
-        className="bg-background-8 border border-stroke-2 backdrop-blur-[25px] dark:border-stroke-6 dark:bg-background-9"
+        className="border border-white backdrop-blur-[25px]"
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
       />
       <main className="bg-background-3 dark:bg-background-7">
@@ -53,13 +56,18 @@ const Homepage24 = () => {
         {/* <About /> */}
                 {/* <Services2 /> */}
                         <Feature4 />
-          <Process />
+          {/* <Process /> */}
 
-                <Integration2 />
+          <HowItWork />
+          {/* <Features /> */}
+                {/* <Integration2 /> */}
         {/* <WhyUs /> */}
+                <Services />
+     <WhyUs2 />
 
 
-         <WhyUs2 />
+
+    
         <Integration />
 
         
@@ -71,12 +79,12 @@ const Homepage24 = () => {
         <WhyChooseUs2 /> */}
       
         {/* <FeatureV3 /> */}
-<Features3 />
+{/* <Features3 /> */}
         <Pricing2 />
 
      
         <Testimonial2 badgeText="Reviews" />
-           <Audit />
+           {/* <Audit /> */}
         {/* <Testimonial /> */}
         <FAQ />
           <Blogs />

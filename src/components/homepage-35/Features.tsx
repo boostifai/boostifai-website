@@ -2,16 +2,16 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const Features = () => {
   return (
-    <section className="py-[100px] lg:py-[150px] bg-background-2 dark:bg-background-5">
+    <section className="pt-[100px] lg:pt-[150px] bg-background-2 dark:bg-background-5">
       <div className="main-container">
-        <div className="text-center space-y-3 mb-[70px]">
+        {/* <div className="text-center space-y-3 mb-[70px]">
           <RevealAnimation delay={0.1}>
-            <h2>Backed by a global network</h2>
+            <h2>Trusted by businesses worldwide</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
-            <p>Loved by more than 2 million folks across 80+ countries!</p>
+            <p>Proven results backed by years of expertise and thousands of satisfied clients</p>
           </RevealAnimation>
-        </div>
+        </div> */}
         <RevealAnimation delay={0.3}>
           <div className="flex md:flex-row flex-col py-6 md:px-0 px-6 bg-secondary dark:bg-background-6 rounded-[20px]">
             <RevealAnimation delay={0.4}>
@@ -35,7 +35,7 @@ const Features = () => {
                   </svg>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-white text-tagline-1 lg:text-heading-6 font-normal">$1.7B+ in on-chain volume</h3>
+                  <h3 className="text-white text-tagline-1 lg:text-heading-6 font-normal">55k+ SEO suggestions approved</h3>
                 </div>
               </div>
             </RevealAnimation>
@@ -43,6 +43,38 @@ const Features = () => {
             <RevealAnimation delay={0.5}>
               <div className="py-6 space-y-6 flex-1 md:border-b-0 border-b border-b-accent/20 md:border-r border-r-accent/20 dark:border-b-stroke-8 dark:border-r-stroke-8">
                 <div className="lg:w-20 lg:h-[52px] w-16 h-10 bg-ns-cyan rounded-full mx-auto flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 2L2 7L12 12L22 7L12 2Z"
+                      stroke="#1A1A1C"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M2 17L12 22L22 17"
+                      stroke="#1A1A1C"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M2 12L12 17L22 12"
+                      stroke="#1A1A1C"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div className="text-center">
+                  <h3 className="text-white text-tagline-1 lg:text-heading-6 font-normal">20+ years in online marketing</h3>
+                </div>
+              </div>
+            </RevealAnimation>
+            <RevealAnimation delay={0.6}>
+              <div className="py-6 space-y-6 flex-1">
+                <div className="lg:w-20 lg:h-[52px] w-16 h-10 bg-ns-red rounded-full mx-auto flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none">
                     <path
                       d="M23 21.0009V19.0009C22.9993 18.1146 22.7044 17.2536 22.1614 16.5532C21.6184 15.8527 20.8581 15.3524 20 15.1309"
@@ -75,25 +107,7 @@ const Features = () => {
                   </svg>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-white text-tagline-1 lg:text-heading-6 font-normal">99.999% uptime</h3>
-                </div>
-              </div>
-            </RevealAnimation>
-            <RevealAnimation delay={0.6}>
-              <div className="py-6 space-y-6 flex-1">
-                <div className="lg:w-20 lg:h-[52px] w-16 h-10 bg-ns-red rounded-full mx-auto flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M7 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V13C2 12.4696 2.21071 11.9609 2.58579 11.5858C2.96086 11.2107 3.46957 11 4 11H7M14 9V5C14 4.20435 13.6839 3.44129 13.1213 2.87868C12.5587 2.31607 11.7956 2 11 2L7 11V22H18.28C18.7623 22.0055 19.2304 21.8364 19.5979 21.524C19.9654 21.2116 20.2077 20.7769 20.28 20.3L21.66 11.3C21.7035 11.0134 21.6842 10.7207 21.6033 10.4423C21.5225 10.1638 21.3821 9.90629 21.1919 9.68751C21.0016 9.46873 20.7661 9.29393 20.5016 9.17522C20.2371 9.0565 19.9499 8.99672 19.66 9H14Z"
-                      stroke="#1A1A1C"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-white text-tagline-1 lg:text-heading-6 font-normal">24/7 support</h3>
+                  <h3 className="text-white text-tagline-1 lg:text-heading-6 font-normal">122+ Happy clients</h3>
                 </div>
               </div>
             </RevealAnimation>
