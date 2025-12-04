@@ -65,11 +65,11 @@ const CaseStudy = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <blockquote className="max-w-[900px] border-l-4 border-primary pl-6 italic text-lg text-secondary/80 dark:text-accent/80">
-                "Using Boostifai is like having an extra set of hands on deck, allowing us to scale and meet our
+                &ldquo;Using Boostifai is like having an extra set of hands on deck, allowing us to scale and meet our
                 targets more effectively than ever before. Beyond the numbers, the real game-changer has been the
                 newfound balance in my life. I now have the time to explore and savor the pleasures of Spain, something
                 that was a distant dream before. Boostifai has been pivotal not just in growing my business but in
-                enhancing my lifestyle as well."
+                enhancing my lifestyle as well.&rdquo;
               </blockquote>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>

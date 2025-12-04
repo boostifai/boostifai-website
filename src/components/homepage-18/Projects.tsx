@@ -7,6 +7,11 @@ import LinkButton from '../ui/button/LinkButton';
 const Projects = () => {
   const featuredProjects: ICaseStudy[] = getMarkDownData('src/data/case-study').slice(0, 4);
 
+  // Safety check - only render if we have case studies
+  if (!featuredProjects || featuredProjects.length === 0) {
+    return null;
+  }
+
   return (
     <section className="pt-16 md:pt-20 lg:pt-[90px] xl:pt-[160px] pb-16 md:pb-20 lg:pb-[90px] xl:pb-[160px] bg-white dark:bg-black">
       <div className="main-container">
@@ -28,12 +33,13 @@ const Projects = () => {
         </div>
         <div className="mb-14">
           <div className="grid grid-cols-12 gap-y-14 lg:gap-x-14">
-            <RevealAnimation delay={0.5}>
-              <div className="col-span-12">
-                <figure className="space-y-6">
-                  <div className="relative w-full h-[300px] lg:h-[576px] rounded-[20px] overflow-hidden group cursor-pointer">
-                    <Image
-                      src={featuredProjects[0].thumbnail}
+            {featuredProjects[0] && (
+              <RevealAnimation delay={0.5}>
+                <div className="col-span-12">
+                  <figure className="space-y-6">
+                    <div className="relative w-full h-[300px] lg:h-[576px] rounded-[20px] overflow-hidden group cursor-pointer">
+                      <Image
+                        src={featuredProjects[0].thumbnail}
                       className="w-full h-full object-cover rounded-[20px] transition-transform duration-500 group-hover:scale-110"
                       alt="portfolio"
                       fill
@@ -55,12 +61,14 @@ const Projects = () => {
                 </figure>
               </div>
             </RevealAnimation>
-            <RevealAnimation delay={0.6}>
-              <div className="col-span-12 lg:col-span-6">
-                <figure className="space-y-6">
-                  <div className="relative w-full h-[300px] lg:h-[576px] rounded-[20px] overflow-hidden group cursor-pointer">
-                    <Image
-                      src={featuredProjects[1].thumbnail}
+            )}
+            {featuredProjects[1] && (
+              <RevealAnimation delay={0.6}>
+                <div className="col-span-12 lg:col-span-6">
+                  <figure className="space-y-6">
+                    <div className="relative w-full h-[300px] lg:h-[576px] rounded-[20px] overflow-hidden group cursor-pointer">
+                      <Image
+                        src={featuredProjects[1].thumbnail}
                       fill
                       priority
                       className="w-full h-full object-cover rounded-[20px] transition-transform duration-500 group-hover:scale-110"
@@ -82,12 +90,14 @@ const Projects = () => {
                 </figure>
               </div>
             </RevealAnimation>
-            <RevealAnimation delay={0.7}>
-              <div className="col-span-12 lg:col-span-6">
-                <figure className="space-y-6">
-                  <div className="relative w-full h-[300px] lg:h-[576px] rounded-[20px] overflow-hidden group cursor-pointer">
-                    <Image
-                      src={featuredProjects[2].thumbnail}
+            )}
+            {featuredProjects[2] && (
+              <RevealAnimation delay={0.7}>
+                <div className="col-span-12 lg:col-span-6">
+                  <figure className="space-y-6">
+                    <div className="relative w-full h-[300px] lg:h-[576px] rounded-[20px] overflow-hidden group cursor-pointer">
+                      <Image
+                        src={featuredProjects[2].thumbnail}
                       fill
                       priority
                       alt="portfolio"
@@ -109,12 +119,14 @@ const Projects = () => {
                 </figure>
               </div>
             </RevealAnimation>
-            <RevealAnimation delay={0.8}>
-              <div className="col-span-12">
-                <figure className="space-y-6">
-                  <div className="relative w-full h-[300px] lg:h-[576px] rounded-[20px] overflow-hidden group cursor-pointer">
-                    <Image
-                      src={featuredProjects[3].thumbnail}
+            )}
+            {featuredProjects[3] && (
+              <RevealAnimation delay={0.8}>
+                <div className="col-span-12">
+                  <figure className="space-y-6">
+                    <div className="relative w-full h-[300px] lg:h-[576px] rounded-[20px] overflow-hidden group cursor-pointer">
+                      <Image
+                        src={featuredProjects[3].thumbnail}
                       fill
                       priority
                       className="w-full h-full object-cover rounded-[20px] transition-transform duration-500 group-hover:scale-110"
@@ -136,6 +148,7 @@ const Projects = () => {
                 </figure>
               </div>
             </RevealAnimation>
+            )}
           </div>
         </div>
         <RevealAnimation delay={0.9}>

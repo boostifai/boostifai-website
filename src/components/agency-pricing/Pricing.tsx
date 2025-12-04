@@ -109,7 +109,7 @@ const Pricing = () => {
                 <div>
                   <div className="h-[225px] w-[290px] hidden md:block" />
                   <div className="space-y-[10px]">
-                    <h3 className="text-heading-6">What's included</h3>
+                    <h3 className="text-heading-6">What&apos;s included</h3>
                     <ul>
                       {features.map((feature, index) => (
                         <li key={index} className="h-14 px-0 py-4 border-b border-b-stroke-4 dark:border-stroke-7">

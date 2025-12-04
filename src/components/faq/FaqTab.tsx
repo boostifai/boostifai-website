@@ -17,7 +17,7 @@ const FaqTab = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[600px] mx-auto">
-                Find answers to the most frequently asked questions about Boostifai's AI-powered SEO automation.
+                Find answers to the most frequently asked questions about Boostifai&apos;s AI-powered SEO automation.
               </p>
             </RevealAnimation>
           </div>
