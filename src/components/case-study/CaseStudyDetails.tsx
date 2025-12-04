@@ -31,12 +31,54 @@ const CaseStudyDetails = ({ slug }: CaseStudyDetailsProps) => {
               />
             </figure>
           </RevealAnimation>
-          <div className="space-y-[72px] max-w-[950px] mx-auto case-study-details">
-            <ReactMarkdown>{caseStudy.content || 'No content available'}</ReactMarkdown>
+          <div className="space-y-12 max-w-[950px] mx-auto case-study-details">
+            <div className="prose prose-lg dark:prose-invert max-w-none [&>h2]:mt-12 [&>h2]:mb-4 [&>h3]:mt-8 [&>h3]:mb-3 [&>h4]:mt-6 [&>h4]:mb-2 [&>p]:mb-4 [&>ul]:mb-4 [&>blockquote]:mb-4">
+              <ReactMarkdown>{caseStudy.content || 'No content available'}</ReactMarkdown>
+            </div>
+
+            {/* GSC Images - Before and After */}
+            {(caseStudy.data.beforeImage || caseStudy.data.afterImage) && (
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                {caseStudy.data.beforeImage && (
+                  <RevealAnimation delay={0.4}>
+                    <div className="space-y-4">
+                      <h4 className="text-heading-5">Before: June 2023</h4>
+                      <figure className="overflow-hidden rounded-2xl">
+                        <Image
+                          src={caseStudy.data.beforeImage}
+                          alt="Before - 100 monthly clicks"
+                          width={600}
+                          height={400}
+                          className="w-full h-full object-cover"
+                        />
+                      </figure>
+                      <p className="text-center font-medium">06/2023: 100 monthly clicks</p>
+                    </div>
+                  </RevealAnimation>
+                )}
+                {caseStudy.data.afterImage && (
+                  <RevealAnimation delay={0.5}>
+                    <div className="space-y-4">
+                      <h4 className="text-heading-5">After: January 2024</h4>
+                      <figure className="overflow-hidden rounded-2xl">
+                        <Image
+                          src={caseStudy.data.afterImage}
+                          alt="After - 3,500+ monthly clicks"
+                          width={600}
+                          height={400}
+                          className="w-full h-full object-cover"
+                        />
+                      </figure>
+                      <p className="text-center font-medium">01/2024: 3,500+ monthly clicks</p>
+                    </div>
+                  </RevealAnimation>
+                )}
+              </div>
+            )}
 
             {/* result  */}
             <div>
-              <RevealAnimation delay={0.4}>
+              <RevealAnimation delay={0.6}>
                 <h3 className="text-heading-4">The results</h3>
               </RevealAnimation>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-3">
@@ -44,10 +86,10 @@ const CaseStudyDetails = ({ slug }: CaseStudyDetailsProps) => {
                 <RevealAnimation delay={0.5}>
                   <div className="max-w-[306] [&>p]:border-b [&>p]:border-b-stroke-4 dark:[&>p]:border-b-stroke-7 [&>p]:last:border-b-0">
                     <p className="py-4 text-secondary dark:text-accent font-medium">Metric</p>
-                    <p className="py-4">Manual reporting time</p>
-                    <p className="py-4">Financial statement accuracy</p>
-                    <p className="py-4">Leadership meeting prep time</p>
-                    <p className="py-4">Decision-making speed</p>
+                    <p className="py-4">Monthly clicks</p>
+                    <p className="py-4">SEO workflow</p>
+                    <p className="py-4">Ranking keywords</p>
+                    <p className="py-4">Scalibility</p>
                   </div>
                 </RevealAnimation>
                 {/* 2nd column  */}

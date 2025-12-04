@@ -11,7 +11,7 @@ const Blogs = () => {
       <div className="main-container">
         <div className="mb-[70px] space-y-5 text-center">
           <RevealAnimation delay={0.1}>
-            <span className="badge badge-cyan">Blog</span>
+            <span className="badge badge-primary">Blog</span>
           </RevealAnimation>
 
           <div className="space-y-3">

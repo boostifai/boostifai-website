@@ -13,12 +13,12 @@ const Success = () => {
           {/* heading  */}
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.1}>
-              <h2 className="text-heading-3">More success stories</h2>
+              <h2 className="text-heading-3">All case studies</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="max-w-[738px] mx-auto">
-                Our recent news and insights highlight the latest developments, achievements, and thought leadership
-                shaping our journey forward. From product innovations and strategic partnerships to industry trends
+                Discover how businesses and agencies are achieving remarkable results with Boostifai. Real stories,
+                real growth, and measurable impact through AI-powered SEO automation.
               </p>
             </RevealAnimation>
           </div>

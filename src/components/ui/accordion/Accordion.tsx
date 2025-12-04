@@ -53,47 +53,21 @@ const Accordion: React.FC<AccordionProps> = ({
   const [activeItem, setActiveItem] = useState<string | null>(defaultValue || null);
   const accordionRef = useRef<HTMLDivElement>(null);
 
-  // Initialize scroll animations for accordion items
+  // Initialize scroll animations for accordion items - DISABLED
   useGSAP(() => {
-    if (!enableScrollAnimation || !accordionRef.current) return;
+    if (!accordionRef.current) return;
 
     const items = accordionRef.current.querySelectorAll('.accordion-item');
 
-    items.forEach((item, index) => {
-      // Set initial state
+    items.forEach((item) => {
+      // Just set items to visible state without animation
       gsap.set(item, {
-        opacity: 0,
-        y: 50,
-        filter: 'blur(20px)',
-        overflow: 'hidden',
+        opacity: 1,
+        y: 0,
+        filter: 'blur(0px)',
       });
-
-      // Create scroll trigger animation
-      gsap.fromTo(
-        item,
-        {
-          opacity: 0,
-          y: 50,
-          filter: 'blur(20px)',
-        },
-        {
-          opacity: 1,
-          y: 0,
-          filter: 'blur(0px)',
-          duration: 0.5,
-          delay: index * animationDelay,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: item,
-            start: 'top 90%',
-            end: 'top 50%',
-            scrub: false,
-            once: true,
-          },
-        },
-      );
     });
-  }, [enableScrollAnimation, animationDelay]);
+  }, []);
 
   const handleItemToggle = (itemValue: string | null) => {
     if (disabled) return;

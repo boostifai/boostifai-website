@@ -10,6 +10,8 @@ import hero3Dark from '@public/images/home-page-8/hero-3-dark.png';
 import hero3 from '@public/images/home-page-8/hero-3.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
+import heroImage from '@public/images/home-page-24/frame_safari_dark.png';
+import pixelImage from '@public/images/about-page/pixel.png';
 
 const AnalyticsHero = () => {
   return (
@@ -39,11 +41,11 @@ const AnalyticsHero = () => {
               </figure>
             </RevealAnimation>
             <figure className="rounded-[20px] relative z-10 overflow-hidden max-w-[860px] xl:mx-0 mx-auto xl:translate-x-[36%] lg:px-0 px-10">
-              <Image src={hero2} alt="hero" className="w-full h-full object-cover lg:rounded-none rounded-[20px]" />
+              <Image src={heroImage} alt="hero" className="w-full h-full object-cover lg:rounded-none rounded-[20px]" />
             </figure>
             <RevealAnimation delay={0.5} direction="right">
-              <figure className="lg:max-w-[320px] sm:max-w-[200px] max-w-[150px] rounded-[20px] overflow-hidden absolute z-20 xl:-right-0 xl:top-1/2 xl:-translate-y-1/2 lg:right-20 lg:bottom-5 xl:bottom-auto shadow-3 sm:right-14 sm:bottom-14 right-0 bottom-0">
-                <Image src={hero3} alt="hero" className="w-full h-full block dark:hidden" />
+              <figure className="lg:max-w-[320px] sm:max-w-[200px] max-w-[150px] rounded-[6px] overflow-hidden absolute z-20 xl:-right-0 xl:top-1/2 xl:-translate-y-1/2 lg:right-20 lg:bottom-5 xl:bottom-auto shadow-3 sm:right-14 sm:bottom-14 right-0 bottom-0">
+                <Image src={pixelImage} alt="hero" className="w-full h-full block dark:hidden" />
                 <Image src={hero3Dark} alt="hero" className="w-full h-full hidden dark:block" />
               </figure>
             </RevealAnimation>

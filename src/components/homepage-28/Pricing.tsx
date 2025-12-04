@@ -1,12 +1,198 @@
 'use client';
 
 import { cn } from '@/utils/cn';
+import Link from 'next/link';
 import { useState } from 'react';
 import RevealAnimation from '../animation/RevealAnimation';
-import PricingCard from './PricingCard';
+import { CheckIcon } from '@/icons';
 
 const Pricing = () => {
-  const [isAnnual, setIsAnnual] = useState(false);
+  const [billingCycle, setBillingCycle] = useState<'monthly' | 'quarterly' | 'yearly'>('monthly');
+  const [pricingType, setPricingType] = useState<'business' | 'agency'>('business');
+
+  const businessPricing = {
+    monthly: [
+      {
+        id: 1,
+        title: 'Starter',
+        description: 'Ideal for a small website or blog',
+        price: 147,
+        variant: 'basic' as const,
+        features: [
+          { label: '1 Website', enabled: true },
+          { label: 'SEO automation up to 100 pages', enabled: true },
+          { label: '1 AI Blog per month', enabled: true },
+          { label: 'Rank Analyzer', enabled: true },
+          { label: 'On-page SEO improvements', enabled: true },
+          { label: 'Link Building', enabled: false },
+          { label: 'Monthly performance reports', enabled: true },
+          { label: 'Monthly video call', enabled: false },
+        ],
+      },
+      {
+        id: 2,
+        title: 'Professional',
+        description: 'Perfect for a professional website',
+        price: 247,
+        variant: 'basic' as const,
+        features: [
+          { label: '1 to 4 Websites', enabled: true },
+          { label: 'SEO automation up to 500 pages', enabled: true },
+          { label: '5 AI Blogs per month per site', enabled: true },
+          { label: 'Rank Analyzer', enabled: true },
+          { label: 'On-page SEO improvements', enabled: true },
+          { label: 'Link Building', enabled: true },
+          { label: 'Monthly performance reports', enabled: true },
+          { label: 'Monthly video call', enabled: true },
+        ],
+      },
+      {
+        id: 3,
+        title: 'Corporate',
+        description: 'The best for high traffic websites',
+        price: 499,
+        variant: 'premium' as const,
+        highlight: 'Most Popular',
+        features: [
+          { label: '1 to 10 Websites', enabled: true },
+          { label: 'SEO automation up to 2000 pages', enabled: true },
+          { label: '6 AI Blogs per month per site', enabled: true },
+          { label: 'Rank Analyzer', enabled: true },
+          { label: 'On-page SEO improvements', enabled: true },
+          { label: 'Link Building', enabled: true },
+          { label: 'Monthly performance reports', enabled: true },
+          { label: 'Monthly video call', enabled: true },
+        ],
+      },
+      {
+        id: 4,
+        title: 'Enterprise',
+        description: 'Perfect for large companies',
+        price: null,
+        variant: 'enterprise' as const,
+        features: [
+          { label: 'Unlimited Websites', enabled: true },
+          { label: 'Unlimited Pages', enabled: true },
+          { label: 'Unlimited AI Blogs', enabled: true },
+          { label: 'Rank Analyzer', enabled: true },
+          { label: 'On-page SEO improvements', enabled: true },
+          { label: 'Link building', enabled: true },
+          { label: 'Monthly performance reports', enabled: true },
+          { label: 'On Demand Course: Future of SEO', enabled: true },
+        ],
+      },
+    ],
+    quarterly: [
+      { ...{ price: 132 } },
+      { ...{ price: 224 } },
+      { ...{ price: 453 } },
+      { ...{ price: null } },
+    ],
+    yearly: [
+      { ...{ price: 120 } },
+      { ...{ price: 205 } },
+      { ...{ price: 415 } },
+      { ...{ price: null } },
+    ],
+  };
+
+  const agencyPricing = {
+    monthly: [
+      {
+        id: 1,
+        title: 'Starter',
+        description: 'Manage up to 4 client websites',
+        price: 247,
+        variant: 'basic' as const,
+        features: [
+          { label: '1 to 4 client websites', enabled: true },
+          { label: 'SEO automation up to 500 pages', enabled: true },
+          { label: '5 AI Blogs monthly per site', enabled: true },
+          { label: '1 user login', enabled: true },
+          { label: 'Monthly performance reports', enabled: true },
+          { label: 'White-label reports', enabled: false },
+          { label: 'Priority email support', enabled: false },
+          { label: 'CRO scan & tips', enabled: false },
+        ],
+      },
+      {
+        id: 2,
+        title: 'Professional',
+        description: 'Manage up to 10 client websites',
+        price: 499,
+        variant: 'basic' as const,
+        features: [
+          { label: 'Up to 10 client websites', enabled: true },
+          { label: 'SEO automation up to 2000 pages', enabled: true },
+          { label: '6 AI Blogs monthly per site', enabled: true },
+          { label: 'Up to 10 user logins', enabled: true },
+          { label: 'Monthly performance reports', enabled: true },
+          { label: 'White-label reports', enabled: true },
+          { label: 'Priority email support', enabled: true },
+          { label: 'CRO scan & tips', enabled: true },
+        ],
+      },
+      {
+        id: 3,
+        title: 'Premium',
+        description: 'Manage up to 25 client websites',
+        price: 999,
+        variant: 'premium' as const,
+        highlight: 'Most Popular',
+        features: [
+          { label: 'Up to 25 client websites', enabled: true },
+          { label: 'SEO automation up to 5000 pages', enabled: true },
+          { label: '7 AI Blogs monthly per site', enabled: true },
+          { label: 'Up to 25 user logins', enabled: true },
+          { label: 'Monthly performance reports', enabled: true },
+          { label: 'White-label reports', enabled: true },
+          { label: 'Priority email support', enabled: true },
+          { label: 'CRO scan & tips', enabled: true },
+        ],
+      },
+      {
+        id: 4,
+        title: 'Enterprise',
+        description: 'Manage unlimited client websites',
+        price: null,
+        variant: 'enterprise' as const,
+        features: [
+          { label: 'Unlimited client websites', enabled: true },
+          { label: 'Unlimited pages', enabled: true },
+          { label: 'Unlimited AI Blogs', enabled: true },
+          { label: 'Unlimited user logins', enabled: true },
+          { label: 'Monthly performance reports', enabled: true },
+          { label: 'White-label reports', enabled: true },
+          { label: 'Priority Support', enabled: true },
+          { label: 'On Demand Course: Future of SEO', enabled: true },
+        ],
+      },
+    ],
+    quarterly: [
+      { ...{ price: 224 } },
+      { ...{ price: 453 } },
+      { ...{ price: 899 } },
+      { ...{ price: null } },
+    ],
+    yearly: [
+      { ...{ price: 205 } },
+      { ...{ price: 415 } },
+      { ...{ price: 799 } },
+      { ...{ price: null } },
+    ],
+  };
+
+  const currentPricing = pricingType === 'business' ? businessPricing : agencyPricing;
+  const plans = currentPricing.monthly.map((plan, index) => ({
+    ...plan,
+    price:
+      billingCycle === 'monthly'
+        ? plan.price
+        : billingCycle === 'quarterly'
+          ? currentPricing.quarterly[index].price
+          : currentPricing.yearly[index].price,
+  }));
+
   return (
     <section className="py-[100px] bg-white dark:bg-background-5 overflow-hidden">
       <div className="main-container">
@@ -17,48 +203,189 @@ const Pricing = () => {
               <span className="badge badge-primary mb-5"> Our pricing </span>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
-              <h2 className="max-w-[650px] mx-auto mb-8">Select the pricing plan that best suits your needs.</h2>
+              <h2 className="max-w-[650px] mx-auto mb-8">Select the pricing plan that best suits your needs</h2>
             </RevealAnimation>
-            <RevealAnimation delay={0.9} duration={2} useSpring={true} direction="up" offset={200}>
-              <span
-                className="bg-secondary dark:bg-accent absolute top-[74%] md:top-[77%] w-[90px] md:w-auto max-[376px]:left-[16%] sm:left-[16%] md:left-[32%] lg:left-[37%] xl:top-[81%] xl:left-[40%] -translate-x-[41%] -translate-y-[81%] text-accent dark:text-secondary font-normal capitalize text-tagline-2 lg:inline-block px-3.5 py-1.5 rounded-[36px] rotate-[20deg] ms-60 z-10"
-                aria-label="Save 40% discount">
-                save 40%
-              </span>
+
+            {/* Business/Agency Toggle */}
+            <RevealAnimation delay={0.3}>
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <button
+                  onClick={() => setPricingType('business')}
+                  className={`px-6 py-3 rounded-full font-medium transition-all ${
+                    pricingType === 'business'
+                      ? 'bg-primary-500 text-white'
+                      : 'bg-background-3 dark:bg-background-8 text-secondary dark:text-accent hover:bg-primary/10'
+                  }`}>
+                  Business
+                </button>
+                <button
+                  onClick={() => setPricingType('agency')}
+                  className={`px-6 py-3 rounded-full font-medium transition-all ${
+                    pricingType === 'agency'
+                      ? 'bg-primary-500 text-white'
+                      : 'bg-background-3 dark:bg-background-8 text-secondary dark:text-accent hover:bg-primary/10'
+                  }`}>
+                  Agency
+                </button>
+              </div>
             </RevealAnimation>
+
+            {/* Billing Cycle Tabs */}
             <RevealAnimation delay={0.4}>
-              <div className="bg-background-3 dark:bg-background-9 rounded-[160px] py-6 px-14">
-                <label className="relative inline-flex items-center cursor-pointer z-[10]" htmlFor="pricing-toggle">
+              <div className="flex items-center justify-center gap-2 flex-wrap">
+                <button
+                  onClick={() => setBillingCycle('monthly')}
+                  className={`px-6 py-3 rounded-full font-medium transition-all ${
+                    billingCycle === 'monthly'
+                      ? 'bg-primary-500 text-white'
+                      : 'bg-background-3 dark:bg-background-8 text-secondary dark:text-accent hover:bg-primary/10'
+                  }`}>
+                  Monthly
+                </button>
+                <button
+                  onClick={() => setBillingCycle('quarterly')}
+                  className={`px-6 py-3 rounded-full font-medium transition-all flex items-center gap-2 ${
+                    billingCycle === 'quarterly'
+                      ? 'bg-primary-500 text-white'
+                      : 'bg-background-3 dark:bg-background-8 text-secondary dark:text-accent hover:bg-primary/10'
+                  }`}>
+                  Quarterly
                   <span
-                    className={cn(
-                      'mr-2.5 text-base font-normal transition-colors',
-                      !isAnnual ? 'text-secondary dark:text-accent' : 'text-secondary/60 dark:text-accent/60',
-                    )}>
-                    Monthly
+                    className={`text-xs px-2 py-0.5 rounded-full ${
+                      billingCycle === 'quarterly' ? 'bg-white/20 text-white' : 'bg-green-500 text-white'
+                    }`}>
+                    -10%
                   </span>
-                  <input
-                    id="pricing-toggle"
-                    type="checkbox"
-                    onChange={(e) => setIsAnnual(e.target.checked)}
-                    checked={isAnnual}
-                    className="sr-only peer"
-                    aria-label="Toggle between monthly and yearly pricing"
-                  />
-                  <span className="relative w-13 h-[28px] bg-secondary dark:bg-accent rounded-[34px] peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:start-[2px] peer-checked:after:start-[2px] after:bg-accent dark:after:bg-secondary after:rounded-full after:h-6 after:w-6 after:transition-all duration-200" />
+                </button>
+                <button
+                  onClick={() => setBillingCycle('yearly')}
+                  className={`px-6 py-3 rounded-full font-medium transition-all flex items-center gap-2 ${
+                    billingCycle === 'yearly'
+                      ? 'bg-primary-500 text-white'
+                      : 'bg-background-3 dark:bg-background-8 text-secondary dark:text-accent hover:bg-primary/10'
+                  }`}>
+                  Yearly
                   <span
-                    className={cn(
-                      'ms-2.5 text-base font-normal transition-colors',
-                      isAnnual ? 'text-secondary dark:text-accent' : 'text-secondary/60 dark:text-accent/60',
-                    )}>
-                    Yearly
+                    className={`text-xs px-2 py-0.5 rounded-full ${
+                      billingCycle === 'yearly' ? 'bg-white/20 text-white' : 'bg-green-500 text-white'
+                    }`}>
+                    -20%
                   </span>
-                </label>
+                </button>
               </div>
             </RevealAnimation>
           </div>
+
           {/* pricing cards */}
           <div className="relative">
-            <PricingCard isAnnual={isAnnual} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-stretch justify-center gap-8">
+              {plans.map((plan, idx) => (
+                <RevealAnimation key={plan.id} delay={0.5 + idx * 0.1}>
+                  <div
+                    className={cn(
+                      'w-full rounded-[20px] h-full flex flex-col',
+                      plan.variant === 'premium'
+                        ? 'bg-primary-100 dark:bg-background-9 p-2'
+                        : 'bg-background-3 dark:bg-background-7 p-8',
+                    )}>
+                    <div className={cn('flex flex-col h-full', plan.variant === 'premium' && 'rounded-[12px] bg-primary-500 p-8')}>
+                      {/* Highlight Badge */}
+                      {plan.highlight && (
+                        <div className="-mt-3 mb-2.5 flex justify-end">
+                          <span className="bg-ns-green text-background-8 -mr-4 rounded-full px-3 py-1.5 font-normal capitalize">
+                            {plan.highlight}
+                          </span>
+                        </div>
+                      )}
+
+                      {/* Title + Description */}
+                      <h3
+                        className={cn(
+                          'mb-2 font-normal text-heading-5',
+                          plan.variant === 'premium' && 'text-white',
+                        )}>
+                        {plan.title}
+                      </h3>
+                      <p
+                        className={cn(
+                          'mb-6',
+                          plan.variant === 'premium' ? 'text-accent/60' : 'text-secondary/60 dark:text-accent/60',
+                        )}>
+                        {plan.description}
+                      </p>
+
+                      {/* Pricing */}
+                      <div className="mb-7">
+                        <h4 className={cn('text-heading-4 font-normal', plan.variant === 'premium' && 'text-white')}>
+                          {plan.price ? `€${plan.price}` : 'Contact us'}
+                        </h4>
+                        {plan.price && (
+                          <p className={cn(plan.variant === 'premium' ? 'text-white' : 'text-secondary dark:text-accent')}>
+                            Per Month
+                          </p>
+                        )}
+                      </div>
+
+                      {/* CTA Button */}
+                      <Link
+                        href="/contact-us"
+                        className={cn(
+                          'btn btn-md w-full block text-center mb-8 before:content-none first-letter:uppercase',
+                          plan.variant === 'basic' && 'btn-white hover:btn-primary dark:btn-white-dark',
+                          plan.variant === 'premium' && 'btn-accent hover:btn-secondary dark:hover:btn-secondary',
+                          plan.variant === 'enterprise' && 'btn-white hover:btn-primary dark:btn-white-dark',
+                        )}>
+                        {plan.price ? 'Get started' : 'Contact us'}
+                      </Link>
+
+                      {/* Features */}
+                      <ul className="relative list-none space-y-2.5 flex-grow">
+                        {plan.features.map((feature, i) => (
+                          <li key={i} className="flex items-center shrink-0 gap-2.5">
+                            <span
+                              className={cn(
+                                'size-5 rounded-full',
+                                feature.enabled
+                                  ? plan.variant === 'premium'
+                                    ? 'bg-white dark:bg-accent'
+                                    : 'bg-secondary dark:bg-accent'
+                                  : plan.variant === 'premium'
+                                    ? 'bg-accent/20'
+                                    : 'bg-white dark:bg-accent/10',
+                              )}>
+                              <CheckIcon
+                                className={cn(
+                                  feature.enabled
+                                    ? plan.variant === 'premium'
+                                      ? 'fill-secondary/60'
+                                      : 'fill-white dark:fill-accent'
+                                    : plan.variant === 'premium'
+                                      ? 'fill-accent/60'
+                                      : 'fill-secondary/60 dark:fill-accent/60',
+                                )}
+                              />
+                            </span>
+                            <span
+                              className={cn(
+                                'font-normal text-tagline-1',
+                                feature.enabled
+                                  ? plan.variant === 'premium'
+                                    ? 'text-accent'
+                                    : 'text-secondary dark:text-accent'
+                                  : plan.variant === 'premium'
+                                    ? 'text-accent/60'
+                                    : 'text-secondary/60 dark:text-accent/60',
+                              )}>
+                              {feature.label}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </RevealAnimation>
+              ))}
+            </div>
           </div>
         </div>
       </div>

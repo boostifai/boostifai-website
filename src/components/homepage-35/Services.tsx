@@ -21,14 +21,14 @@ const services: Service[] = [
   // },
   {
     id: 2,
-    icon: 'ns-shape-35',
+    icon: 'ns-shape-12',
     title: 'Auto Blogging',
     description:
       'Generates niche-relevant blog posts tailored to your business. Fresh, engaging content without any effort.',
   },
   {
     id: 3,
-    icon: 'ns-shape-15',
+    icon: 'ns-shape-55',
     title: 'Rank analyzer',
     description:
       "Real-time insights into your website's Google rankings. Monitor performance and make informed decisions that boost visibility.",
@@ -42,7 +42,7 @@ const services: Service[] = [
   },
   {
     id: 5,
-    icon: 'ns-shape-34',
+    icon: 'ns-shape-106',
     title: 'AI insight',
     description:
       "Intelligent recommendations powered by AI. Understand what works and receive actionable insights to improve your SEO strategy.",
@@ -85,16 +85,15 @@ const Services = () => {
         <div className="text-center space-y-3 mb-[70px]">
           <RevealAnimation delay={0.1}>
             <h2 className="md:max-w-[828px] sm:max-w-[600px] max-[375px]:max-w-[270px] mx-auto">
-              Key Benefits
+              Key Benefits of boostifai
             </h2>
           </RevealAnimation>
 
-          {/* <RevealAnimation delay={0.2}>
+          <RevealAnimation delay={0.2}>
             <p className="md:max-w-[606px] sm:max-w-[400px] max-w-[390px] mx-auto">
-              NextSaaS offers a smarter approach to managing your digital assets by providing intuitive tools and expert
-              guidance tailored to your needs.
+              Automate your SEO with AI-powered tools that work 24/7. Save time and boost rankings
             </p>
-          </RevealAnimation> */}
+          </RevealAnimation>
         </div>
         {/* Services Grid */}
         <div className="grid grid-cols-12 lg:gap-9 md:gap-8 gap-y-6 mb-14">

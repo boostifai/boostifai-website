@@ -9,7 +9,7 @@ const Contact = () => {
           {/* heading  */}
           <div className="main-w-[850px] md:w-full mx-auto text-center space-y-5">
             <RevealAnimation delay={0.2}>
-              <span className="badge badge-cyan">Contact</span>
+              <span className="badge badge-primary">Contact</span>
             </RevealAnimation>
             <div className="space-y-3">
               <RevealAnimation delay={0.3}>

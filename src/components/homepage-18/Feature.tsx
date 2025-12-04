@@ -11,7 +11,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 import blog from '@public/images/home-page-24/blog.png';
 import internallinks from '@public/images/home-page-24/internal-links.png';
 import seotools from '@public/images/home-page-24/seo-tools.png';
-import recommendations from '@public/images/home-page-24/recommendations.png';
+import recommendations from '@public/images/home-page-24/recommendations2.png';
 
 const Feature = () => {
   return (

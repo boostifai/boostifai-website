@@ -80,7 +80,7 @@ const Homepage24 = () => {
       
         {/* <FeatureV3 /> */}
 {/* <Features3 /> */}
-        <Pricing2 />
+        {/* <Pricing2 /> */}
 
      
         <Testimonial2 badgeText="Reviews" />

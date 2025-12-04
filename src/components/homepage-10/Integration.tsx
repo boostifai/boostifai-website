@@ -26,7 +26,7 @@ const Integration = () => {
         <div className="relative overflow-hidden z-10 rounded-[25px] border border-stroke-1 dark:border-stroke-5 dark:bg-background-5 bg-background-2 sm:py-[100px] py-[50px]">
           <div className="space-y-5 text-center sm:mb-[70px] mb-[50px]">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-green">Integrations</span>
+              <span className="badge badge-primary">Integrations</span>
             </RevealAnimation>
             <div className="space-y-3">
               <RevealAnimation delay={0.2}>

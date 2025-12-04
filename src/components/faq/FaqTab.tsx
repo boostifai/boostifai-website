@@ -9,7 +9,7 @@ const FaqTab = () => {
       <div className="main-container">
         <div className="text-center space-y-5">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan">FAQ</span>
+            <span className="badge badge-primary">FAQ</span>
           </RevealAnimation>
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.3}>
@@ -17,8 +17,7 @@ const FaqTab = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[600px] mx-auto">
-                By offering concise and informative responses, this section helps users find solutions without the need
-                to contact customer support, saving time
+                Find answers to the most frequently asked questions about Boostifai's AI-powered SEO automation.
               </p>
             </RevealAnimation>
           </div>
