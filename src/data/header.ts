@@ -108,25 +108,25 @@ export const homeMegaMenuColumns: MegaMenuColumn[] = [
   {
     id: 'column-1',
     items: [
-       { id: 'about-1', label: 'AI Articles', href: '/about-01' },
-  { id: 'about-2', label: 'Internal Linking', href: '/about-02' },
-    { id: 'about-2', label: 'Email Reports', href: '/about-02' },
+       { id: 'about-1', label: 'AI Articles', href: '#' },
+  { id: 'about-2', label: 'Internal Linking', href: '#' },
+    { id: 'about-2', label: 'Email Reports', href: '#' },
     ],
   },
   {
     id: 'column-2',
     items: [
-  { id: 'about-3', label: 'AI Recommendations', href: '/about-03' },
-  { id: 'about-2', label: 'AI Insight', href: '/about-02' },
-    { id: 'about-5', label: 'On Page SEO', href: '/about-02' },
+  { id: 'about-3', label: 'AI Recommendations', href: '#' },
+  { id: 'about-2', label: 'AI Insight', href: '#' },
+    { id: 'about-5', label: 'On Page SEO', href: '#' },
     ],
   },
   {
     id: 'column-3',
     items: [
-    { id: 'about-1', label: 'Rank Analyzer', href: '/about-01' },
-  { id: 'about-3', label: 'Backlink Marketplace', href: '/about-03' },
-    { id: 'about-3', label: 'Free SEO Tools', href: '/about-03' },
+    { id: 'about-1', label: 'Rank Analyzer', href: '#' },
+  { id: 'about-3', label: 'Backlink Marketplace', href: '#' },
+    { id: 'about-3', label: 'Free SEO Tools', href: '#' },
     ],
   },
 ];
