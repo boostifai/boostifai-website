@@ -1,23 +1,11 @@
-import SmoothScrollProvider from '@/components/shared/SmoothScroll';
-import { ThemeProvider } from '@/components/shared/ThemeProvider';
-import { interTight } from '@/utils/font';
-import { ReactNode, Suspense } from 'react';
-import './globals.css';
+import { ReactNode } from 'react';
 
+// Since we have a `[locale]` segment, this root layout is required
+// but it won't render anything itself
 export default function RootLayout({
   children,
 }: Readonly<{
   children: ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${interTight.variable} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <Suspense fallback={<div>Loading...</div>}>
-            <SmoothScrollProvider>{children}</SmoothScrollProvider>
-          </Suspense>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+  return children;
 }

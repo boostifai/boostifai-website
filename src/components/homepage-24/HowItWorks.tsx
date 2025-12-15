@@ -1,8 +1,12 @@
+'use client';
+
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
 const HowItWork = () => {
+  const t = useTranslations('HomePage.howItWorks');
   return (
     <section className="py-20 md:py-28 lg:py-30 xl:pt-39 xl:pb-30">
       <div className="main-container">
@@ -11,7 +15,7 @@ const HowItWork = () => {
             <span className="badge badge-gray-light-v2 mb-4">How It Works</span>
           </RevealAnimation> */}
           <RevealAnimation delay={0.2}>
-            <h2 className="mb-3">From install to traffic boost in 3 simple steps</h2>
+            <h2 className="mb-3">{t('title')}</h2>
           </RevealAnimation>
           {/* <RevealAnimation delay={0.3}>
             <p className="max-w-[350px] mx-auto">
@@ -27,8 +31,8 @@ const HowItWork = () => {
             <div className="text-center flex flex-col items-center justify-center space-y-6 py-10 px-5">
               <div className="px-9 py-2.5 bg-white border-8 border-[#c9cad5] rounded-[60px] text-secondary">1</div>
               <div className="space-y-1">
-                <h5>Install</h5>
-                <p className="text-tagline-1">Add the Boostifai pixel to your site in minutes—no coding required.</p>
+                <h5>{t('step1Title')}</h5>
+                <p className="text-tagline-1">{t('step1Description')}</p>
               </div>
             </div>
           </RevealAnimation>
@@ -36,9 +40,9 @@ const HowItWork = () => {
             <div className="text-center flex flex-col items-center justify-center space-y-6 py-10 px-5">
               <div className="px-9 py-2.5 bg-white border-8 border-[#c9cad5] rounded-[60px] text-secondary">2</div>
               <div className="space-y-1">
-                <h5>Approve</h5>
+                <h5>{t('step2Title')}</h5>
                 <p className="text-tagline-1">
-                  Check AI-powered SEO suggestions and approve them with a single click.
+                  {t('step2Description')}
                 </p>
               </div>
             </div>
@@ -47,8 +51,8 @@ const HowItWork = () => {
             <div className="text-center flex flex-col items-center justify-center space-y-6 py-10 px-5">
               <div className="px-9 py-2.5 bg-white border-8 border-[#c9cad5] rounded-[60px] text-secondary">3</div>
               <div className="space-y-1">
-                <h5>Boost & Track</h5>
-                <p className="text-tagline-1">Watch your website rise as Boostifai automatically improves your rankings in real time.</p>
+                <h5>{t('step3Title')}</h5>
+                <p className="text-tagline-1">{t('step3Description')}</p>
               </div>
             </div>
           </RevealAnimation>
@@ -59,7 +63,7 @@ const HowItWork = () => {
             <LinkButton
               href="/our-services-02"
               className="btn hover:btn-secondary dark:hover:btn-accent btn-primary btn-md">
-              <span>See Our Process</span>
+              <span>{t('ctaButton')}</span>
             </LinkButton>
           </RevealAnimation>
         </div>

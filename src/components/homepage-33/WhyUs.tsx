@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import us from '@public/images/home-page-24/uss.png'
@@ -59,6 +62,7 @@ const featureItems: FeatureItem[] = [
 ];
 
 const WhyUs = () => {
+  const t = useTranslations('HomePage.calculator');
   const leftFeatures = featureItems.filter((item) => item.side === 'left');
   const rightFeatures = featureItems.filter((item) => item.side === 'right');
 
@@ -76,11 +80,11 @@ const WhyUs = () => {
               <div className="md:w-full space-y-7 text-center md:text-left">
                 <div className="md:w-full space-y-3">
                   <RevealAnimation delay={0.2}>
-                    <h2 className="max-w-[571px] text-accent">Cost Saving Calculator</h2>
+                    <h2 className="max-w-[571px] text-accent">{t('title')}</h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
                     <p className="max-w-[448px] md:w-full text-accent/60">
-                     Discover how much you can save by automating SEO recommendations across all your sites.
+                     {t('description')}
                     </p>
                   </RevealAnimation>
                 </div>

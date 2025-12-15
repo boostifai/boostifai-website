@@ -1,11 +1,16 @@
+'use client';
+
 import heroImage from '@public/images/home-page-24/frame_safari_dark.png';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import HeroAvatar from './HeroAvatar';
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
 
 const Hero = () => {
+  const t = useTranslations('HomePage.hero');
+  
   return (
     <section className="relative bg-[url('/images/home-page-24/hero-bg.png')] bg-no-repeat bg-top 2xl:pt-[190px] lg:pt-[170px] md:pt-[160px] pt-[150px] pb-[100px]">
       {/* hero line  */}
@@ -18,12 +23,16 @@ const Hero = () => {
           <div className="flex flex-col items-center text-center">
             <RevealAnimation delay={0.1}>
                <h1 className="font-semibold mb-4 xl:max-w-[1000px] lg:max-w-[850px] md:max-w-[650px] sm:max-w-[580px] max-w-[450px]">
-                Automate Your <RoughNotation type="underline" strokeWidth={6} color='#303fa1' show={true}>Website</RoughNotation> Growth with AI-Powered SEO
+                {t('title').split(t('titleHighlight'))[0]}
+                <RoughNotation type="underline" strokeWidth={6} color='#303fa1' show={true}>
+                  {t('titleHighlight')}
+                </RoughNotation>
+                {t('title').split(t('titleHighlight'))[1]}
               </h1>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="xl:max-w-[850px] lg:max-w-[650px] md:max-w-[500px] sm:max-w-[500px] max-w-[450px] mb-7 md:mb-14">
-                At Boostifai, we help businesses of all sizes grow their online presence with smart, automated SEO solutions—boosting rankings, creating optimized content, and saving time, all without any technical hassle.
+                {t('description')}
               </p>
             </RevealAnimation>
             <ul className="flex flex-col sm:flex-row sm:gap-4 mb-7 md:mb-14 w-full items-center justify-center gap-y-4">
@@ -32,7 +41,7 @@ const Hero = () => {
                   <LinkButton
                     href="/pricing-01"
                     className="btn btn-secondary btn-lg md:btn-xl sm:w-auto w-[90%] hover:btn-primary dark:btn-accent">
-                    Get Started now
+                    {t('getStarted')}
                   </LinkButton>
                 </li>
               </RevealAnimation>
@@ -41,7 +50,7 @@ const Hero = () => {
                   <LinkButton
                     href="/our-services-01"
                     className="btn btn-light btn-lg md:btn-xl sm:w-auto w-[90%] hover:btn-secondary dark:btn-white-dark dark:hover:btn-accent">
-                    Book a meeting
+                    {t('bookMeeting')}
                   </LinkButton>
                 </li>
               </RevealAnimation>

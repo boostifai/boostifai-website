@@ -56,11 +56,11 @@ All the varaiables are added here
   --color-gradient-9: linear-gradient(156deg, #dfb0ff 32.92%, #fdbedc 91%);
 
   /* =============== TYPOGRAPHY =============== */
-  --text-heading-1: 4.25rem;
+  --text-heading-1: 3.8rem;
   --text-heading-1--line-height: 110%;
-  --text-heading-2: 3.25rem;
+  --text-heading-2: 3rem;
   --text-heading-2--line-height: 120%;
-  --text-heading-3: 2.5rem;
+  --text-heading-3: 2.4rem;
   --text-heading-3--line-height: 120%;
   --text-heading-4: 2rem;
   --text-heading-4--line-height: 130%;

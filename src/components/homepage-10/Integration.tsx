@@ -1,3 +1,5 @@
+'use client';
+
 import gradient4 from '@public/images/gradient/gradient-4.png';
 import figma from '@public/images/icons/figma.svg';
 import shopify from '@public/images/icons/shopify.svg';
@@ -10,6 +12,7 @@ import wix from '@public/images/icons/wix.svg';
 import blogger from '@public/images/icons/blogger.svg';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 
 const integrations = [
@@ -20,21 +23,23 @@ const integrations = [
 ];
 
 const Integration = () => {
+  const t = useTranslations('HomePage.integration');
+  
   return (
     <section className="py-14 md:py-16 lg:py-[88px] xl:py-[100px]">
       <div className="main-container">
         <div className="relative overflow-hidden z-10 rounded-[25px] border border-stroke-1 dark:border-stroke-5 dark:bg-background-5 bg-background-2 sm:py-[100px] py-[50px]">
           <div className="space-y-5 text-center sm:mb-[70px] mb-[50px]">
             <RevealAnimation delay={0.1}>
-              <span className="badge badge-primary">Integrations</span>
+              <span className="badge badge-primary">{t('badge')}</span>
             </RevealAnimation>
             <div className="space-y-3">
               <RevealAnimation delay={0.2}>
-                <h2 className="sm:max-w-full max-w-[300px] sm:mx-0 mx-auto">Link up with your favorite CMS system</h2>
+                <h2 className="sm:max-w-full max-w-[300px] sm:mx-0 mx-auto">{t('title')}</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <p className="sm:max-w-[510px] max-w-[300px] mx-auto w-full">
-                  Fresh, SEO-ready blogs appear in your CMS — no manual work needed. 
+                  {t('description')}
                 </p>
               </RevealAnimation>
             </div>

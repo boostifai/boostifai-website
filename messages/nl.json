@@ -1,0 +1,128 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Automatiseer de groei van uw website met AI-aangedreven SEO",
+      "titleHighlight": "website",
+      "description": "Bij Boostifai helpen we bedrijven van elke omvang hun online aanwezigheid te laten groeien met slimme, geautomatiseerde SEO-oplossingen—het verhogen van rankings, het creëren van geoptimaliseerde content en het besparen van tijd, allemaal zonder technische rompslomp.",
+      "getStarted": "Nu beginnen",
+      "bookMeeting": "Boek een afspraak"
+    },
+    "features": {
+      "badge": "Functies",
+      "title": "AI-aangedreven SEO die op de automatische piloot draait",
+      "description": "Slimme aanbevelingen, geautomatiseerde blogs en continue optimalisatie—alles in één platform. Automatiseer SEO-taken met Boostifai en focus op uw bedrijf.",
+      "feature1Title": "AI-aanbevelingen die alles optimaliseren",
+      "feature1Description": "Boostifai scant uw pagina's continu en levert slimme SEO-suggesties—metatags, koppen, afbeeldingen en interne links—klaar voor goedkeuring met één klik.",
+      "feature2Title": "Geautomatiseerde interne linkbuilding",
+      "feature2Description": "Verbind uw pagina's natuurlijk met AI-gestuurde interne links die de sitestructuur versterken en keyword rankings verhogen",
+      "feature3Title": "Alles-in-één SEO-toolkit",
+      "feature3Description": "Toegang tot een complete suite van SEO-tools—van audits tot analyses—gebouwd om zichtbaarheid te verbeteren en consistente organische groei te stimuleren",
+      "feature4Title": "Geautomatiseerde intelligente blogcreatie",
+      "feature4Description": "Onze AI genereert geoptimaliseerde blogposts rond uw focus keywords en publiceert ze direct naar uw CMS—verse, relevante en SEO-klare content op de automatische piloot."
+    },
+    "howItWorks": {
+      "title": "Van installatie tot verkeersboost in 3 eenvoudige stappen",
+      "step1Title": "Installeren",
+      "step1Description": "Voeg de Boostifai pixel in minuten toe aan uw site—geen codering vereist.",
+      "step2Title": "Goedkeuren",
+      "step2Description": "Controleer AI-aangedreven SEO-suggesties en keur ze goed met één klik.",
+      "step3Title": "Boosten & Volgen",
+      "step3Description": "Zie uw website stijgen terwijl Boostifai automatisch uw rankings in realtime verbetert.",
+      "ctaButton": "Bekijk ons proces"
+    },
+    "services": {
+      "title": "Belangrijkste voordelen van boostifai",
+      "description": "Automatiseer uw SEO met AI-aangedreven tools die 24/7 werken. Bespaar tijd en verhoog rankings",
+      "service1Title": "Auto Blogging",
+      "service1Description": "Genereert niche-relevante blogposts op maat van uw bedrijf. Verse, boeiende content zonder enige moeite.",
+      "service2Title": "Rank analyzer",
+      "service2Description": "Real-time inzichten in de Google-rankings van uw website. Monitor prestaties en neem weloverwogen beslissingen die de zichtbaarheid verhogen.",
+      "service3Title": "Link building",
+      "service3Description": "Strategische linkbuilding om zichtbaarheid te verbeteren. Interne links helpen Google uw site hoger te ranken en trekken organisch verkeer aan.",
+      "service4Title": "AI-inzicht",
+      "service4Description": "Intelligente aanbevelingen aangedreven door AI. Begrijp wat werkt en ontvang bruikbare inzichten om uw SEO-strategie te verbeteren.",
+      "service5Title": "Geen technische vaardigheden nodig",
+      "service5Description": "AI-tools werken achter de schermen om uw website hoger te ranken. Eenvoudig te implementeren zonder technische kennis. Werkt met elk CMS.",
+      "service6Title": "Kosteneffectief",
+      "service6Description": "Verminder advertentie-uitgaven door organisch zichtbaarheid te laten groeien. Bereik meer met minder investering door geautomatiseerde oplossingen.",
+      "ctaButton": "Verken het platform"
+    },
+    "calculator": {
+      "title": "Kostenbesparingscalculator",
+      "description": "Ontdek hoeveel u kunt besparen door SEO-aanbevelingen te automatiseren op al uw sites.",
+      "numberOfSites": "Aantal sites",
+      "sitesLabel": "Sites",
+      "numberOfPages": "Aantal pagina's per site",
+      "pagesLabel": "Pagina's",
+      "totalSavings": "Totale besparing",
+      "assumption1": "Elke pagina heeft gemiddeld {count} aanbevelingen.",
+      "assumption2": "Een SEO-expert voltooit {count} optimalisaties per uur.",
+      "assumption3": "Een SEO-expert rekent ${rate} per uur."
+    },
+    "integration": {
+      "badge": "Integraties",
+      "title": "Koppel met uw favoriete CMS-systeem",
+      "description": "Verse, SEO-klare blogs verschijnen in uw CMS — geen handmatig werk nodig."
+    },
+    "testimonials": {
+      "title": "Hoor van onze klanten over hun ervaringen met ons"
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "description": "Heeft u vragen? vraag het gewoon",
+      "ctaButton": "Lees meer",
+      "questions": [
+        {
+          "question": "Heb ik technische vaardigheden nodig om Boostifai te gebruiken?",
+          "answer": "Er is geen technische expertise vereist. Installatie is eenvoudig met een code snippet van één regel, en AI-gestuurde aanbevelingen kunnen met één klik worden goedgekeurd. Boostifai regelt alle SEO-automatisering voor u."
+        },
+        {
+          "question": "Hoe verbetert Boostifai de SEO van mijn website?",
+          "answer": "Boostifai analyseert uw site continu en past AI-gestuurde aanbevelingen toe—zoals geoptimaliseerde metatags, koppen, interne links en blogcontent—direct op uw pagina's. Deze automatisering helpt uw Google-rankings te verhogen en meer organisch verkeer aan te trekken zonder handmatige inspanning."
+        },
+        {
+          "question": "Hoe lang duurt het voordat ik resultaten zie?",
+          "answer": "Hoewel directe resultaten kunnen variëren, zien de meeste gebruikers meetbare verbeteringen in rankings en verkeer binnen 1-3 maanden, afhankelijk van concurrentie en backlinkprofielen. Boostifai biedt elke maand rapporten om uw voortgang bij te houden."
+        },
+        {
+          "question": "Kan ik Boostifai gebruiken met mijn CMS?",
+          "answer": "Ja, het werkt voor alle CMS-systemen. Zelfs als u een CMS heeft waar het normaal gesproken moeilijk is om codewijzigingen aan te brengen, kan Boostifai uw site optimaliseren voor SEO. Zolang u ons code snippet van één regel aan uw site kunt toevoegen, zal Boostifai de verbeteringen toevoegen."
+        },
+        {
+          "question": "Ondersteunt Boostifai meerdere talen?",
+          "answer": "Ja! Boostifai ondersteunt SEO-optimalisatie in verschillende talen voor uw website-inhoud. Domeinen met niet-Romeinse tekens (zoals .рф of .中国) worden momenteel echter niet ondersteund."
+        },
+        {
+          "question": "Is er een geld-terug-garantie?",
+          "answer": "Ja! Boostifai biedt een 7-daagse geld-terug-garantie. U kunt het platform risicovrij uitproberen en zien of het aan uw SEO-behoeften voldoet. Als u niet tevreden bent, kunt u binnen de 7-daagse periode een volledige terugbetaling aanvragen."
+        }
+      ]
+    },
+    "blog": {
+      "badge": "Blog",
+      "title": "Ons recente nieuws & inzichten",
+      "description": "Ons recente nieuws en inzichten benadrukken de nieuwste ontwikkelingen, prestaties en thought leadership die onze reis vooruit vormgeven. Van productinnovaties en strategische partnerschappen tot branchetrends"
+    },
+    "cta": {
+      "title": "Klaar om de eerste stap te zetten?",
+      "description": "Krijg een offerte op maat, controleer uw geschiktheid, of praat met een echte expert—vandaag nog.",
+      "button": "Start gratis proefperiode"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "Over",
+    "features": "Functies",
+    "pricing": "Prijzen",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getStarted": "Aan de slag"
+  },
+  "LanguageSwitcher": {
+    "english": "Engels",
+    "dutch": "Nederlands"
+  },
+  "BlogCard": {
+    "readMore": "Lees meer"
+  }
+}

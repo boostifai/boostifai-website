@@ -1,0 +1,128 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Automate Your Website Growth with AI-Powered SEO",
+      "titleHighlight": "Website",
+      "description": "At Boostifai, we help businesses of all sizes grow their online presence with smart, automated SEO solutions—boosting rankings, creating optimized content, and saving time, all without any technical hassle.",
+      "getStarted": "Get Started now",
+      "bookMeeting": "Book a meeting"
+    },
+    "features": {
+      "badge": "Features",
+      "title": "AI-powered SEO that runs on autopilot",
+      "description": "Smart recommendations, automated blogs, and continuous optimization—all in one platform. Automate SEO tasks with Boostifai and focus on your business.",
+      "feature1Title": "AI recommendations that optimize everything",
+      "feature1Description": "Boostifai continuously scans your pages and delivers smart SEO suggestions—meta tags, headings, images, and internal links—ready for one-click approval.",
+      "feature2Title": "Automated internal linking",
+      "feature2Description": "Connect your pages naturally with AI-driven internal links that strengthen site structure and boost keyword rankings",
+      "feature3Title": "All-in-one SEO toolkit",
+      "feature3Description": "Access a complete suite of SEO tools—from audits to analytics—built to enhance visibility and drive consistent organic growth",
+      "feature4Title": "Automated Intelligent blog creation",
+      "feature4Description": "Our AI generates optimized blog posts around your focus keywords and publishes them directly to your CMS—fresh, relevant, and SEO-ready content on autopilot."
+    },
+    "howItWorks": {
+      "title": "From install to traffic boost in 3 simple steps",
+      "step1Title": "Install",
+      "step1Description": "Add the Boostifai pixel to your site in minutes—no coding required.",
+      "step2Title": "Approve",
+      "step2Description": "Check AI-powered SEO suggestions and approve them with a single click.",
+      "step3Title": "Boost & Track",
+      "step3Description": "Watch your website rise as Boostifai automatically improves your rankings in real time.",
+      "ctaButton": "See Our Process"
+    },
+    "services": {
+      "title": "Key Benefits of boostifai",
+      "description": "Automate your SEO with AI-powered tools that work 24/7. Save time and boost rankings",
+      "service1Title": "Auto Blogging",
+      "service1Description": "Generates niche-relevant blog posts tailored to your business. Fresh, engaging content without any effort.",
+      "service2Title": "Rank analyzer",
+      "service2Description": "Real-time insights into your website's Google rankings. Monitor performance and make informed decisions that boost visibility.",
+      "service3Title": "Link building",
+      "service3Description": "Strategic link building to improve visibility. Internal links help Google rank your site higher, attracting organic traffic.",
+      "service4Title": "AI insight",
+      "service4Description": "Intelligent recommendations powered by AI. Understand what works and receive actionable insights to improve your SEO strategy.",
+      "service5Title": "No technical skills needed",
+      "service5Description": "AI tools work behind the scenes to rank your website higher. Easily implement without technical knowledge. Works with any CMS.",
+      "service6Title": "Cost-effective",
+      "service6Description": "Reduce ad spend by growing visibility organically. Achieve more with less investment through automated solutions.",
+      "ctaButton": "Explore the platform"
+    },
+    "calculator": {
+      "title": "Cost Saving Calculator",
+      "description": "Discover how much you can save by automating SEO recommendations across all your sites.",
+      "numberOfSites": "Number of Sites",
+      "sitesLabel": "Sites",
+      "numberOfPages": "Number of Pages per Site",
+      "pagesLabel": "Pages",
+      "totalSavings": "Total Savings",
+      "assumption1": "Every page has an average of {count} recommendations.",
+      "assumption2": "An SEO Expert completes {count} optimizations per hour.",
+      "assumption3": "An SEO Expert charges ${rate} per hour."
+    },
+    "integration": {
+      "badge": "Integrations",
+      "title": "Link up with your favorite CMS system",
+      "description": "Fresh, SEO-ready blogs appear in your CMS — no manual work needed."
+    },
+    "testimonials": {
+      "title": "Hear from our customers about their experiences with us"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Have questions? just ask",
+      "ctaButton": "Read More",
+      "questions": [
+        {
+          "question": "Do I need technical skills to use Boostifai?",
+          "answer": "No technical expertise is required. Installation is simple with a one-line code snippet, and AI-driven recommendations can be approved with a single click. Boostifai handles all the SEO automation for you."
+        },
+        {
+          "question": "How does Boostifai improve my website's SEO?",
+          "answer": "Boostifai continuously analyzes your site and applies AI-driven recommendations—like optimized meta tags, headings, internal links, and blog content—directly to your pages. This automation helps boost your Google rankings and attract more organic traffic without manual effort."
+        },
+        {
+          "question": "How long before I see results?",
+          "answer": "While immediate results can vary, most users see measurable improvements in rankings and traffic within 1–3 months, depending on competition and backlink profiles. Boostifai provides reports each month to track your progress."
+        },
+        {
+          "question": "Can I use Boostifai with my CMS?",
+          "answer": "Yes, it works for all CMS systems. Even if you have a CMS where it is normally difficult to make code changes, Boostifai can optimize your site for SEO. As long as you can add our one-line code snippet to your site, Boostifai will add the improvements."
+        },
+        {
+          "question": "Does Boostifai support multiple languages?",
+          "answer": "Yes! Boostifai supports SEO optimization in various languages for your website content. However, domains with non-Roman characters (like .рф or .中国) are currently not supported."
+        },
+        {
+          "question": "Is there a money-back guarantee?",
+          "answer": "Yes! Boostifai offers a 7-day money-back guarantee. You can try the platform risk-free and see if it meets your SEO needs. If not satisfied, you can request a full refund within the 7-day period."
+        }
+      ]
+    },
+    "blog": {
+      "badge": "Blog",
+      "title": "Our recent news & insights",
+      "description": "Our recent news and insights highlight the latest developments, achievements, and thought leadership shaping our journey forward. From product innovations and strategic partnerships to industry trends"
+    },
+    "cta": {
+      "title": "Ready to take the first step?",
+      "description": "Get a custom quote, check your eligibility, or talk to a real expert—today.",
+      "button": "Start Free Trial"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "features": "Features",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "LanguageSwitcher": {
+    "english": "English",
+    "dutch": "Dutch"
+  },
+  "BlogCard": {
+    "readMore": "Read more"
+  }
+}

@@ -1,8 +1,10 @@
 'use client';
 
 import { FC, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 const CostSavingCalculator: FC = () => {
+  const t = useTranslations('HomePage.calculator');
   const [sites, setSites] = useState(1);
   const [pagesPerSite, setPagesPerSite] = useState(10);
 
@@ -28,9 +30,9 @@ const CostSavingCalculator: FC = () => {
           <div>
             <div className="mb-4 flex items-center justify-between">
               <label htmlFor="sites-slider" className="text-base font-medium text-accent md:text-lg">
-                Number of Sites
+                {t('numberOfSites')}
               </label>
-              <span className="text-lg font-bold text-accent md:text-xl">{sites} Sites</span>
+              <span className="text-lg font-bold text-accent md:text-xl">{sites} {t('sitesLabel')}</span>
             </div>
             <div className="relative flex items-center">
               <div className="absolute inset-0 h-2 rounded-lg bg-accent/20" />
@@ -53,9 +55,9 @@ const CostSavingCalculator: FC = () => {
           <div>
             <div className="mb-4 flex items-center justify-between">
               <label htmlFor="pages-slider" className="text-base font-medium text-accent md:text-lg">
-                Number of Pages per Site
+                {t('numberOfPages')}
               </label>
-              <span className="text-lg font-bold text-accent md:text-xl">{pagesPerSite} Pages</span>
+              <span className="text-lg font-bold text-accent md:text-xl">{pagesPerSite} {t('pagesLabel')}</span>
             </div>
             <div className="relative flex items-center">
               <div className="absolute inset-0 h-2 rounded-lg bg-accent/20" />
@@ -76,7 +78,7 @@ const CostSavingCalculator: FC = () => {
 
           {/* Total Savings Display */}
           <div className="mt-10 rounded-2xl bg-white p-6 text-center md:p-8">
-            <p className="mb-2 text-sm font-medium uppercase tracking-wider text-[#252525]">Total Savings</p>
+            <p className="mb-2 text-sm font-medium uppercase tracking-wider text-[#252525]">{t('totalSavings')}</p>
             <p className="text-4xl text-[#252525] font-bold md:text-5xl lg:text-6xl">
               ${totalSavings.toLocaleString()}
             </p>
@@ -84,9 +86,9 @@ const CostSavingCalculator: FC = () => {
 
           {/* Assumptions */}
           <div className="mt-8 space-y-2 border-t border-accent/20 pt-6 text-sm">
-            <p className='text-white'>Every page has an average of {RECOMMENDATIONS_PER_PAGE} recommendations.</p>
-            <p className='text-white'>An SEO Expert completes {OPTIMIZATIONS_PER_HOUR} optimizations per hour.</p>
-            <p className='text-white'>An SEO Expert charges ${HOURLY_RATE} per hour.</p>
+            <p className='text-white'>{t('assumption1', { count: RECOMMENDATIONS_PER_PAGE })}</p>
+            <p className='text-white'>{t('assumption2', { count: OPTIMIZATIONS_PER_HOUR })}</p>
+            <p className='text-white'>{t('assumption3', { rate: HOURLY_RATE })}</p>
           </div>
         </div>
       </div>

@@ -1,11 +1,21 @@
-import faqData from '@/data/json/faq/faq.json';
+'use client';
+
 import gradient23 from '@public/images/gradient/gradient-23.png';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 import LinkButton from '../ui/button/LinkButton';
 
 const FAQ = () => {
+  const t = useTranslations('HomePage.faq');
+  
+  // Get FAQ questions from translations
+  const faqData = Array.from({ length: 6 }, (_, i) => ({
+    id: i + 1,
+    question: t(`questions.${i}.question`),
+    answer: t(`questions.${i}.answer`)
+  }));
   return (
     <section className="lg:pt-[100px] pt-16 md:pt-20 lg:pb-[200px] md:pb-[100px] pb-16 bg-white dark:bg-background-6">
       <div className="main-container">
@@ -13,10 +23,10 @@ const FAQ = () => {
           <div className="col-span-12 lg:col-span-5">
             <div className="space-y-3 text-center lg:text-left mb-8">
               <RevealAnimation delay={0.1}>
-                <h2>Frequently Asked Questions</h2>
+                <h2>{t('title')}</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <p>Have questions? just ask</p>
+                <p>{t('description')}</p>
               </RevealAnimation>
             </div>
             <div className="mt-10">
@@ -24,7 +34,7 @@ const FAQ = () => {
             <LinkButton
               href="/our-services-02"
               className="btn hover:btn-secondary dark:hover:btn-accent btn-primary btn-md">
-              <span>Read More</span>
+              <span>{t('ctaButton')}</span>
             </LinkButton>
           </RevealAnimation>
         </div>

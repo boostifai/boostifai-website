@@ -1,28 +1,32 @@
+'use client';
+
 import { IBlogPost } from '@/interface';
-import getMarkDownData from '@/utils/getMarkDownData';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 import BlogCardV1 from '../shared/card/BlogCardV1';
 
-const blogs: IBlogPost[] = getMarkDownData('src/data/blogs').slice(2, 5);
+interface BlogsProps {
+  blogs?: IBlogPost[];
+}
 
-const Blogs = () => {
+const Blogs = ({ blogs = [] }: BlogsProps) => {
+  const t = useTranslations('HomePage.blog');
   return (
     <section className="py-14 md:py-20 xl:py-[100px]">
       <div className="main-container">
         <div className="mb-[70px] space-y-5 text-center">
           <RevealAnimation delay={0.1}>
-            <span className="badge badge-primary">Blog</span>
+            <span className="badge badge-primary">{t('badge')}</span>
           </RevealAnimation>
 
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
-              <h2>Our recent news &amp; insights</h2>
+              <h2>{t('title')}</h2>
             </RevealAnimation>
 
             <RevealAnimation delay={0.3}>
               <p className="mx-auto max-w-[738px]">
-                Our recent news and insights highlight the latest developments, achievements, and thought leadership
-                shaping our journey forward. From product innovations and strategic partnerships to industry trends
+                {t('description')}
               </p>
             </RevealAnimation>
           </div>

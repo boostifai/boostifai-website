@@ -1,7 +1,10 @@
+'use client';
+
 import testimonials from '@/data/json/testimonials/testimonials.json';
 import { cn } from '@/utils/cn';
 import trustPilotLogo from '@public/images/icons/trustpilot-logo.svg';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import Marquee from 'react-fast-marquee';
 import RevealAnimation from '../animation/RevealAnimation';
 
@@ -13,6 +16,8 @@ interface TestimonialProps {
 }
 
 const Testimonial = ({ badgeText, title, classname, badgeColor }: TestimonialProps) => {
+  const t = useTranslations('HomePage.testimonials');
+  
   return (
     <section
       className={cn(
@@ -31,9 +36,7 @@ const Testimonial = ({ badgeText, title, classname, badgeColor }: TestimonialPro
               <h2 className="mb-3 max-w-[750px] mx-auto">{title}</h2>
             ) : (
               <h2 className="mb-3">
-                Hear from our customers about
-                <br className="hidden md:block" />
-                their <span className="text-primary-500 inline-block"> experiences with us</span>
+                {t('title')}
               </h2>
             )}
           </RevealAnimation>

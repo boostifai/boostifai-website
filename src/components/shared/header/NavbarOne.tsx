@@ -13,6 +13,7 @@ import PricingMenu from '../mega-menu/PricingMenu';
 import HomeMegaMenu from '../mega-menu/HomeMegaMenu';
 import PageMegaMenu from '../mega-menu/PageMegaMenu';
 import ServicesMenu from '../mega-menu/ServicesMenu';
+import LanguageSwitcher from '../LanguageSwitcher';
 import Logo from './Logo';
 import MobileMenuButton from './MobileMenuButton';
 import NavCTAButton from './NavCTAButton';
@@ -70,7 +71,13 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
               })}
             </ul>
           </nav>
-          <NavCTAButton href="/signup-01" btnClassName={btnClassName} label="Get started" />
+          <div className="flex items-center gap-4">
+            {/* Language Switcher */}
+            <div className="hidden xl:block">
+              <LanguageSwitcher />
+            </div>
+            <NavCTAButton href="/signup-01" btnClassName={btnClassName} label="Get started" />
+          </div>
           {/* mobile menu btn */}
           <MobileMenuButton />
         </div>

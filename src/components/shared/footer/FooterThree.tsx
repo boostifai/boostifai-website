@@ -285,7 +285,7 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
           </RevealAnimation>
         </div>
       </div>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
     </footer>
   );
 };

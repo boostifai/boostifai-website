@@ -1,5 +1,6 @@
 import { IBlogPost } from '@/interface';
 import { cn } from '@/utils/cn';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import LinkButton from '../../ui/button/LinkButton';
@@ -10,6 +11,7 @@ interface BlogCardV1Props {
 }
 
 const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
+  const t = useTranslations('BlogCard');
   return (
     <article>
       <div
@@ -30,7 +32,7 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
         <div className="space-y-6 p-6">
           <div className="flex items-center gap-2">
             <span className="badge badge-green mr-1">
-              <Link href={`/blog-03?category=${blog?.tag.toLowerCase()}`}>{blog?.tag}</Link>
+              <Link href={blog?.categoryUrl || `/blog/category/${blog?.tag.toLowerCase()}`}>{blog?.tag}</Link>
             </span>
             <span rel="author" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
               {blog?.author}
@@ -55,7 +57,7 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
               href={`/blog/${blog.slug}`}
               className="btn btn-md btn-white hover:btn-secondary dark:btn-transparent dark:hover:btn-accent dark:hover:text-secondary w-full sm:w-auto"
               aria-label="Read full article about electronic prescription">
-              Read more
+              {t('readMore')}
             </LinkButton>
           </div>
         </div>

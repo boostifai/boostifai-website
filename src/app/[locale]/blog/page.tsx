@@ -1,0 +1,40 @@
+import BlogListWrapper from '@/components/blog-03/BlogListWrapper';
+import FooterThree from '@/components/shared/footer/FooterThree';
+import NavbarOne from '@/components/shared/header/NavbarOne';
+import CTA2 from '@/components/homepage-14/CTA';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Blog page 03 - NextSaaS',
+};
+
+// Enable dynamic rendering for blog list page
+export const dynamic = 'force-dynamic';
+
+interface BlogPageProps {
+  searchParams: Promise<{
+    page?: string;
+    category?: string;
+    search?: string;
+  }>;
+}
+
+const BlogPage03 = async ({ searchParams }: BlogPageProps) => {
+  const params = await searchParams;
+
+  return (
+    <>
+      <NavbarOne
+        className="border border-white backdrop-blur-[25px]"
+        btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
+      />
+      <main className="bg-background-3 dark:bg-background-5">
+        <BlogListWrapper searchParams={params} />
+        <CTA2 />
+      </main>
+      <FooterThree className="relative border-t border-stroke-1 dark:border-0" />
+    </>
+  );
+};
+
+export default BlogPage03;

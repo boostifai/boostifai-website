@@ -23,13 +23,21 @@ const BlogCard = ({ blog }: BlogCardProps) => {
 
           {/* Blog Content */}
           <div className="max-lg:pl-4 pr-8 sm:py-8 py-5">
-            <div className="flex items-center gap-2 mb-8">
-              <Link href={`/blog-03?category=${blog.tag.toLowerCase()}`} className="inline-block">
-                <span className="badge badge-white font-medium dark:!bg-accent/10 dark:!text-accent/60 dark:backdrop-blur-[17px]">
-                  {blog.tag}
-                </span>
-              </Link>
-            </div>
+            {blog.tag && (
+              <div className="flex items-center gap-2 mb-8">
+                {blog.categoryUrl ? (
+                  <Link href={blog.categoryUrl} className="inline-block">
+                    <span className="badge badge-white font-medium dark:!bg-accent/10 dark:!text-accent/60 dark:backdrop-blur-[17px]">
+                      {blog.tag}
+                    </span>
+                  </Link>
+                ) : (
+                  <span className="badge badge-white font-medium dark:!bg-accent/10 dark:!text-accent/60 dark:backdrop-blur-[17px]">
+                    {blog.tag}
+                  </span>
+                )}
+              </div>
+            )}
 
             <div className="flex items-center gap-4 mb-3">
               <time

@@ -1,9 +1,13 @@
+'use client';
+
 import gradient10 from '@public/images/gradient/gradient-10.png';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
 const CTA = () => {
+  const t = useTranslations('HomePage.cta');
   return (
     <section aria-label="Call to Action" className="relative top-12 z-20">
       <div className="max-w-[1400px] max-lg:px-5 mx-auto">
@@ -18,12 +22,12 @@ const CTA = () => {
             <div className="space-y-2">
               <RevealAnimation delay={0.2}>
                 <h2 className="text-white" id="cta-heading">
-                  Ready to take the first step?
+                  {t('title')}
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
                 <p className="text-accent/60">
-                  Get a custom quote, check your eligibility, or talk to a real expert—today.
+                  {t('description')}
                 </p>
               </RevealAnimation>
             </div>
@@ -32,7 +36,7 @@ const CTA = () => {
                 <LinkButton
                   href="/login-01"
                   className="btn btn-primary border-0 btn-lg hover:btn-white dark:hover:btn-secondary w-[90%] md:w-auto mx-auto md:mx-0">
-                  Start Free Trial
+                  {t('button')}
                 </LinkButton>
               </div>
             </RevealAnimation>
