@@ -1,23 +1,28 @@
+'use client';
+
 import { TabProvider } from '@/context/TabContext';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 import FaqTabContent from './FaqTabContent';
 import FaqTabList from './FaqTabList';
 
 const FaqTab = () => {
+  const t = useTranslations('FAQPage');
+  
   return (
     <section className="py-[100px]">
       <div className="main-container">
         <div className="text-center space-y-5">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-primary">FAQ</span>
+            <span className="badge badge-primary">{t('badge')}</span>
           </RevealAnimation>
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.3}>
-              <h2>Commonly asked questions</h2>
+              <h2>{t('title')}</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[600px] mx-auto">
-                Find answers to the most frequently asked questions about Boostifai&apos;s AI-powered SEO automation.
+                {t('description')}
               </p>
             </RevealAnimation>
           </div>

@@ -39,7 +39,7 @@ const Hero = () => {
               <RevealAnimation delay={0.3} direction="left" offset={50}>
                 <li className="w-full sm:w-auto">
                   <LinkButton
-                    href="/pricing-01"
+                    href="/business-pricing"
                     className="btn btn-secondary btn-lg md:btn-xl sm:w-auto w-[90%] hover:btn-primary dark:btn-accent">
                     {t('getStarted')}
                   </LinkButton>
@@ -48,7 +48,7 @@ const Hero = () => {
               <RevealAnimation delay={0.5} direction="left" offset={50}>
                 <li className="w-full sm:w-auto">
                   <LinkButton
-                    href="/our-services-01"
+                    href="/book-meeting"
                     className="btn btn-light btn-lg md:btn-xl sm:w-auto w-[90%] hover:btn-secondary dark:btn-white-dark dark:hover:btn-accent">
                     {t('bookMeeting')}
                   </LinkButton>

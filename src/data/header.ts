@@ -25,13 +25,13 @@ export const navigationItems: NavigationItem[] = [
     hasDropdown: false,
     megaMenuComponent: 'HomeMegaMenu',
   },
-  {
-    id: 'about',
-    label: 'About',
-    href: '/about',
-    hasDropdown: false,
-    megaMenuComponent: 'PageMegaMenu',
-  },
+  // {
+  //   id: 'about',
+  //   label: 'About',
+  //   href: '/about',
+  //   hasDropdown: false,
+  //   megaMenuComponent: 'PageMegaMenu',
+  // },
   {
     id: 'features',
     label: 'Features',
@@ -46,17 +46,17 @@ export const navigationItems: NavigationItem[] = [
     hasDropdown: false,
   },
   {
-    id: 'blog',
-    label: 'Blog',
-    href: '/blog',
-    hasDropdown: false,
-  },
-  {
     id: 'pricing',
     label: 'Pricing',
     href: '#',
     hasDropdown: true,
     megaMenuComponent: 'PricingMenu',
+  },
+  {
+    id: 'blog',
+    label: 'Blog',
+    href: '/blog',
+    hasDropdown: false,
   },
   {
     id: 'faq',
@@ -65,9 +65,9 @@ export const navigationItems: NavigationItem[] = [
     hasDropdown: false,
   },
   {
-    id: 'support',
-    label: 'Support',
-    href: '/support',
+    id: 'contact',
+    label: 'Contact Us',
+    href: '/contact-us',
     hasDropdown: false,
   },
 ];

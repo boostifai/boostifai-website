@@ -76,7 +76,7 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
             <div className="hidden xl:block">
               <LanguageSwitcher />
             </div>
-            <NavCTAButton href="/signup-01" btnClassName={btnClassName} label="Get started" />
+            <NavCTAButton href="/business-pricing" btnClassName={btnClassName} label="Get started" />
           </div>
           {/* mobile menu btn */}
           <MobileMenuButton />

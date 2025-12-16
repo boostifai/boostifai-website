@@ -1,6 +1,7 @@
 'use client';
 
 import { IBlogPost } from '@/interface';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,9 +10,11 @@ interface RecentBlogsProps {
 }
 
 const RecentBlogs = ({ blogs }: RecentBlogsProps) => {
+  const t = useTranslations('BlogPage.recentArticles');
+  
   return (
     <div>
-      <h3 className="text-heading-5">Recent articles</h3>
+      <h3 className="text-heading-5">{t('title')}</h3>
       <div className="space-y-5 mt-6">
         {blogs.map((blog) => (
           <div key={blog.slug} className="flex items-center gap-4">

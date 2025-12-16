@@ -1,70 +1,118 @@
+'use client';
+
 import supportContact from '@public/images/support-page/support-contact.jpg';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
+import LinkButton from '../ui/button/LinkButton';
 
 const Contact = () => {
+  const t = useTranslations('ContactPage.form');
+  const tt = useTranslations('ContactPage.info');
+  
   return (
-    <section className="pt-[100px] pb-[100px] md:pb-[200px]">
+    <section className="pt-[50px] pb-[50px] md:pb-[100px]">
       <div className="main-container">
         <div className="grid grid-cols-12 max-lg:gap-y-[100px] lg:gap-[100px]">
           <div className="col-span-12 lg:col-span-6">
             <div className="text-left space-y-5 mb-[70px]">
-              <RevealAnimation delay={0.1}>
-                <span className="badge badge-green">Our services</span>
-              </RevealAnimation>
+              {/* <RevealAnimation delay={0.1}>
+                <span className="badge badge-primary">{t('badge')}</span>
+              </RevealAnimation> */}
               <div className="space-y-3">
                 <RevealAnimation delay={0.2}>
-                  <h2>Create a support ticket</h2>
+                  <h2>{t('title')}</h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
-                  <p className="max-w-[550px]">
-                    Have a question, feedback, or feature request? We’d love to hear from you! Please fill out the form
-                    below, and our support team will get back to you as soon as possible.
-                  </p>
+                  <p className="max-w-[550px]">{t('description')}</p>
                 </RevealAnimation>
               </div>
             </div>
-            <RevealAnimation delay={0.4}>
-              <figure className="lg:max-w-[595px] w-full overflow-hidden rounded-[20px]">
-                <Image src={supportContact} className="size-full object-cover" alt="support-contact" />
-              </figure>
-            </RevealAnimation>
+            <div className='flex flex-col gap-4'>
+                              {/* Contact Details */}
+                <div className="col-span-12 lg:col-span-8">
+                  <div className="space-y-6 flex gap-20">
+
+                    {/* Address */}
+                    <div>
+                      <p className="text-sm text-secondary/60 dark:text-accent/60 mb-1">
+                        {tt('addressLabel')}
+                      </p>
+                      <p className="text-secondary dark:text-accent">
+                        Dulgaardstraat 26<br />
+                        3740 Bilzen<br />
+                        Belgium
+                      </p>
+                    </div>
+
+                    {/* Email */}
+                    <div>
+                      <p className="text-sm text-secondary/60 dark:text-accent/60 mb-1">
+                        {tt('emailLabel')}
+                      </p>
+                      <a
+                        href="mailto:bert@boostifai.com"
+                        className="text-secondary dark:text-accent hover:text-primary dark:hover:text-primary transition-colors">
+                        bert@boostifai.com
+                      </a>
+                    </div>
+
+                    {/* VAT Number */}
+                    <div>
+                      <p className="text-sm text-secondary/60 dark:text-accent/60 mb-1">
+                        {tt('vatLabel')}
+                      </p>
+                      <p className="text-secondary dark:text-accent">
+                        BE 0761.353.493
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <RevealAnimation delay={0.6}>
+            <LinkButton
+              href="/book-meeting"
+              className="btn hover:btn-secondary dark:hover:btn-accent btn-primary btn-md inline-flex w-fit">
+              <span>Book a meeting</span>
+            </LinkButton>
+          </RevealAnimation>
+            </div>
           </div>
           <div className="col-span-12 lg:col-span-6">
             <RevealAnimation delay={0.5}>
               <form className="p-6 lg:p-[42px] rounded-[20px] bg-white dark:bg-background-8">
                 <fieldset className="space-y-2 mb-8">
                   <label htmlFor="name" className="text-tagline-1 text-secondary dark:text-accent font-medium block">
-                    Your name
+                    {t('nameLabel')}
                   </label>
                   <input
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Enter your name"
+                    placeholder={t('namePlaceholder')}
                     className="w-full block border border-stroke-3 bg-background-1 dark:border-stroke-7 dark:bg-background-6 py-3 px-[18px] rounded-full h-12 focus:outline-none focus:ring-0 focus:ring-offset-0 placeholder:text-tagline-1 placeholder:font-normal font-normal placeholder:text-secondary/60 dark:placeholder:text-accent/60 dark:text-accent shadow-1"
                   />
                 </fieldset>
                 <fieldset className="space-y-2 mb-8">
                   <label htmlFor="email" className="text-tagline-1 text-secondary dark:text-accent font-medium block">
-                    Email address
+                    {t('emailLabel')}
                   </label>
                   <input
                     type="text"
                     name="email"
                     id="email"
-                    placeholder="Enter your email address"
+                    placeholder={t('emailPlaceholder')}
                     className="w-full block border border-stroke-3 bg-background-1 dark:border-stroke-7 dark:bg-background-6 py-3 px-[18px] rounded-full h-12 focus:outline-none focus:ring-0 focus:ring-offset-0 placeholder:text-tagline-1 placeholder:font-normal font-normal dark:text-accent placeholder:text-secondary/60 dark:placeholder:text-accent/60 shadow-1"
                   />
                 </fieldset>
                 <fieldset className="space-y-2">
                   <label htmlFor="comment" className="text-tagline-1 text-secondary dark:text-accent font-medium block">
-                    Comment
+                    {t('commentLabel')}
                   </label>
                   <textarea
                     name="comment"
                     id="comment"
-                    placeholder="Enter your comment"
+                    placeholder={t('commentPlaceholder')}
                     className="w-full min-h-[115px] block border border-stroke-3 bg-background-1 dark:border-stroke-7 dark:bg-background-6 py-3 px-[18px] rounded-xl focus:outline-none focus:ring-0 focus:ring-offset-0 placeholder:text-tagline-1 placeholder:font-normal font-normal placeholder:text-secondary/60 dark:placeholder:text-accent/60 dark:text-accent shadow-1"
                     defaultValue={''}
                   />
@@ -77,16 +125,16 @@ const Contact = () => {
                   <label
                     htmlFor="agree-terms"
                     className="text-tagline-3 text-secondary/60 dark:text-accent/60 cursor-pointer">
-                    I agree with the
+                    {t('termsText')}{' '}
                     <a href="#" className="text-primary-500 underline text-tagline-3">
-                      terms and conditions
+                      {t('termsLink')}
                     </a>
                   </label>
                 </fieldset>
                 <button
                   type="submit"
                   className="btn btn-md btn-secondary hover:btn-primary dark:btn-accent w-full before:content-none first-letter:uppercase">
-                  Submit
+                  {t('submitButton')}
                 </button>
               </form>
             </RevealAnimation>

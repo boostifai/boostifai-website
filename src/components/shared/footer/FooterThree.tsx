@@ -35,7 +35,7 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                   {/* <Image src={DarkLogo} className="hidden dark:block" alt="NextSass" /> */}
                 </figure>
                 <p className="text-secondary dark:text-accent mt-4 mb-7">
-                  Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
+                  Focus on your passion, leave website ranking to us.
                 </p>
                 <div className="flex items-center gap-3">
                   <Link target="_blank" href="https://www.facebook.com" className="footer-social-link">
@@ -124,53 +124,6 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                       />
                     </svg>
                   </Link>
-                  <div className="bg-stroke-1 dark:bg-stroke-8 h-5 w-px"></div>
-                  <Link target="_blank" href="https://www.dribbble.com" className="footer-social-link">
-                    <span className="sr-only">Dribbble</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M9.81146 14.7617C6.69789 15.5957 3.41731 14.1957 1.86521 11.3707C0.313116 8.54567 0.890795 5.02595 3.26447 2.84524C5.63814 0.66452 9.19411 0.386619 11.8777 2.1721C14.5614 3.95759 15.6788 7.34483 14.5845 10.3767C13.8079 12.532 12.0248 14.1702 9.81146 14.7617Z"
-                        className="stroke-secondary dark:stroke-accent"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M9.06142 14.7162C9.03653 15.1297 9.35153 15.485 9.765 15.5099C10.1785 15.5348 10.5338 15.2198 10.5587 14.8063L9.06142 14.7162ZM6.84286 0.874373C6.64188 0.512186 6.18534 0.381502 5.82315 0.582483C5.46097 0.783464 5.33028 1.24 5.53126 1.60219L6.84286 0.874373ZM13.2187 2.9035C13.3591 2.5138 13.157 2.08408 12.7673 1.94368C12.3776 1.80328 11.9479 2.00537 11.8075 2.39506L13.2187 2.9035ZM7.74006 7.03428L7.54644 6.30971L7.54546 6.30997L7.74006 7.03428ZM1.89802 5.05032C1.58158 4.78304 1.10838 4.82289 0.841101 5.13932C0.573819 5.45576 0.613667 5.92896 0.930105 6.19624L1.89802 5.05032ZM2.77955 13.0958C2.63901 13.4855 2.84095 13.9153 3.23059 14.0558C3.62023 14.1963 4.05003 13.9944 4.19057 13.6048L2.77955 13.0958ZM8.25822 8.96384L8.06412 8.23939L8.25822 8.96384ZM14.1013 10.9494C14.4178 11.2166 14.891 11.1766 15.1582 10.8601C15.4254 10.5435 15.3854 10.0703 15.0688 9.80317L14.1013 10.9494ZM9.81006 14.7613L10.5587 14.8063C10.7186 12.1509 10.1178 9.27114 9.32769 6.78072C8.53534 4.28333 7.53363 2.11922 6.84286 0.874373L6.18706 1.23828L5.53126 1.60219C6.17449 2.76135 7.13628 4.83373 7.89793 7.23434C8.66179 9.64192 9.20557 12.3216 9.06142 14.7162L9.81006 14.7613ZM12.5131 2.64928L11.8075 2.39506C11.1142 4.31922 9.52233 5.7817 7.54644 6.30971L7.74006 7.03428L7.93369 7.75886C10.3844 7.10397 12.3588 5.29004 13.2187 2.9035L12.5131 2.64928ZM7.74006 7.03428L7.54546 6.30997C5.57029 6.84064 3.46046 6.37005 1.89802 5.05032L1.41406 5.62328L0.930105 6.19624C2.86801 7.83311 5.48485 8.41679 7.93467 7.75859L7.74006 7.03428ZM3.48506 13.3503L4.19057 13.6048C4.88464 11.6805 6.47642 10.2177 8.45232 9.68829L8.25822 8.96384L8.06412 8.23939C5.614 8.89585 3.64019 10.7097 2.77955 13.0958L3.48506 13.3503ZM8.25822 8.96384L8.45232 9.68829C10.4282 9.15889 12.5381 9.62992 14.1013 10.9494L14.5851 10.3763L15.0688 9.80317C13.1305 8.16701 10.5142 7.58293 8.06412 8.23939L8.25822 8.96384Z"
-                        className="fill-secondary dark:fill-accent"
-                      />
-                    </svg>
-                  </Link>
-                  <div className="bg-stroke-1 dark:bg-stroke-8 h-5 w-px"></div>
-                  <Link target="_blank" href="https://www.behance.net" className="footer-social-link">
-                    <span className="sr-only">Behance</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M1 7V1H4C5.65685 1 7 2.34315 7 4C7 5.65685 5.65685 7 4 7C5.65685 7 7 8.34315 7 10C7 11.6569 5.65685 13 4 13H1V7Z"
-                        className="stroke-secondary dark:stroke-accent"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10H15Z"
-                        className="stroke-secondary dark:stroke-accent"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M1 6.25C0.585786 6.25 0.25 6.58579 0.25 7C0.25 7.41421 0.585786 7.75 1 7.75V6.25ZM4 7.75C4.41421 7.75 4.75 7.41421 4.75 7C4.75 6.58579 4.41421 6.25 4 6.25V7.75ZM9.75 9.99998C9.74999 9.58577 9.41419 9.24999 8.99998 9.25C8.58577 9.25001 8.24999 9.58581 8.25 10L9.75 9.99998ZM10.9295 12.8024L10.6619 13.5031L10.9295 12.8024ZM14.795 12.5C15.0712 12.1913 15.0447 11.7172 14.736 11.441C14.4273 11.1648 13.9532 11.1913 13.677 11.5L14.795 12.5ZM14 5.75C14.4142 5.75 14.75 5.41421 14.75 5C14.75 4.58579 14.4142 4.25 14 4.25V5.75ZM10 4.25C9.58579 4.25 9.25 4.58579 9.25 5C9.25 5.41421 9.58579 5.75 10 5.75V4.25ZM1 7V7.75H4V7V6.25H1V7ZM9 10L8.25 10C8.25004 11.5548 9.20948 12.9483 10.6619 13.5031L10.9295 12.8024L11.1971 12.1018C10.3257 11.7689 9.75002 10.9328 9.75 9.99998L9 10ZM10.9295 12.8024L10.6619 13.5031C12.1143 14.0578 13.7584 13.6588 14.795 12.5L14.236 12L13.677 11.5C13.0551 12.1953 12.0686 12.4347 11.1971 12.1018L10.9295 12.8024ZM14 5V4.25H10V5V5.75H14V5Z"
-                        className="fill-secondary dark:fill-accent"
-                      />
-                    </svg>
-                  </Link>
                 </div>
               </div>
             </RevealAnimation>
@@ -184,23 +137,23 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                   </p>
                   <ul className="space-y-5">
                     <li>
-                      <Link href="/about-01" className="footer-link-v2">
+                      <Link href="/about" className="footer-link-v2">
                         About Us
                       </Link>
                     </li>
                     <li>
-                      <Link href="/career" className="footer-link-v2">
-                        Career
+                      <Link href="/newsletter" className="footer-link-v2">
+                        Newsletter
                       </Link>
                     </li>
                     <li>
-                      <Link href="/case-study" className="footer-link-v2">
-                        Case Studies
+                      <Link href="/affiliates" className="footer-link-v2">
+                        Affiliates
                       </Link>
                     </li>
                     <li>
-                      <Link href="/contact-us" className="footer-link-v2">
-                        Contact Us
+                      <Link href="/book-meeting" className="footer-link-v2">
+                        Book Meeting
                       </Link>
                     </li>
                   </ul>
@@ -225,13 +178,13 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                       </Link>
                     </li>
                     <li>
-                      <Link href="/learn" className="footer-link-v2">
-                        Tutorial
+                      <Link href="/blog" className="footer-link-v2">
+                        Blog
                       </Link>
                     </li>
                     <li>
-                      <Link href="/support" className="footer-link-v2">
-                        Support
+                      <Link href="/contact-us" className="footer-link-v2">
+                        Contact Us
                       </Link>
                     </li>
                   </ul>
@@ -263,11 +216,6 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                     <li>
                       <Link href="/gdpr" className="footer-link-v2">
                         GDPR Compliance
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/affiliate-policy" className="footer-link-v2">
-                        Affiliate Policy
                       </Link>
                     </li>
                   </ul>

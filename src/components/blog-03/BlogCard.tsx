@@ -1,4 +1,7 @@
+'use client';
+
 import { IBlogPost } from '@/interface';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,6 +10,7 @@ interface BlogCardProps {
 }
 
 const BlogCard = ({ blog }: BlogCardProps) => {
+  const t = useTranslations('BlogPage.blogCard');
   return (
     <article className="group">
       <div className="bg-background-2 dark:bg-background-6 rounded-[20px] relative overflow-hidden scale-100 hover:scale-[102%] transition-transform duration-500 hover:transition-transform hover:duration-500">
@@ -77,7 +81,7 @@ const BlogCard = ({ blog }: BlogCardProps) => {
                     </clipPath>
                   </defs>
                 </svg>
-                {blog.readTime}
+                {blog.readTime.replace('min read', '').trim()} {t('minRead')}
               </time>
             </div>
 
@@ -92,7 +96,7 @@ const BlogCard = ({ blog }: BlogCardProps) => {
                 href={`/blog/${blog.slug}`}
                 className="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block"
                 aria-label={`Read full article about ${blog.title}`}>
-                <span>Read more</span>
+                <span>{t('readMore')}</span>
               </Link>
             </div>
           </div>

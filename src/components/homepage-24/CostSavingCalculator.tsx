@@ -77,7 +77,7 @@ const CostSavingCalculator: FC = () => {
           </div>
 
           {/* Total Savings Display */}
-          <div className="mt-10 rounded-2xl bg-white p-6 text-center md:p-8">
+          <div className="mt-10 rounded-2xl bg-[#deffa3] p-6 text-center md:p-8">
             <p className="mb-2 text-sm font-medium uppercase tracking-wider text-[#252525]">{t('totalSavings')}</p>
             <p className="text-4xl text-[#252525] font-bold md:text-5xl lg:text-6xl">
               ${totalSavings.toLocaleString()}

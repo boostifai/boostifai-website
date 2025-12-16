@@ -3,7 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import { TileLayer } from 'react-leaflet';
 import { MapContainer } from 'react-leaflet/MapContainer';
 
-const position: [number, number] = [39.8283, -98.5795];
+const position: [number, number] = [50.886385, 5.539041];
 
 const Map = () => {
   if (typeof window === 'undefined') return;

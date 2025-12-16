@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 interface Category {
@@ -11,10 +12,10 @@ interface CategoriesProps {
   categories: Category[];
   selectedCategory: string;
   onCategoryChange: (category: string) => void;
-  title?: string;
 }
 
-const Categories = ({ categories, selectedCategory, onCategoryChange, title = 'Categories' }: CategoriesProps) => {
+const Categories = ({ categories, selectedCategory, onCategoryChange }: CategoriesProps) => {
+  const t = useTranslations('BlogPage.categories');
   const [loadingCategory, setLoadingCategory] = useState<string | null>(null);
 
   const handleCategoryClick = (categoryName: string) => {
@@ -24,7 +25,7 @@ const Categories = ({ categories, selectedCategory, onCategoryChange, title = 'C
 
   return (
     <div>
-      <h3 className="text-heading-5">{title}</h3>
+      <h3 className="text-heading-5">{t('title')}</h3>
       <div className="space-y-2 mt-2.5">
         <button
           onClick={() => handleCategoryClick('all')}
@@ -32,7 +33,7 @@ const Categories = ({ categories, selectedCategory, onCategoryChange, title = 'C
           className={`py-1.5 text-tagline-1 w-full text-left transition-colors duration-300 flex items-center justify-between ${
             selectedCategory === 'all' ? 'text-primary-500' : 'hover:text-primary-500 dark:text-accent'
           } disabled:opacity-50`}>
-          <span>All</span>
+          <span>{t('all')}</span>
           {loadingCategory === 'all' && (
             <svg
               className="animate-spin h-4 w-4"

@@ -1,7 +1,7 @@
 'use client';
 
-import { cn } from '@/utils/cn';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
@@ -15,37 +15,37 @@ interface Service {
 const servicesData: Service[] = [
   {
     id: 2,
-    icon: 'ns-shape-12',
+    icon: '/images/home-page-24/auto-blogging.png',
     titleKey: 'service1Title',
     descriptionKey: 'service1Description',
   },
   {
     id: 3,
-    icon: 'ns-shape-55',
+    icon: '/images/home-page-24/rank-analyzer.png',
     titleKey: 'service2Title',
     descriptionKey: 'service2Description',
   },
   {
     id: 4,
-    icon: 'ns-shape-36',
+    icon: '/images/home-page-24/link-building.png',
     titleKey: 'service3Title',
     descriptionKey: 'service3Description',
   },
   {
     id: 5,
-    icon: 'ns-shape-106',
+    icon: '/images/home-page-24/ai-insight.png',
     titleKey: 'service4Title',
     descriptionKey: 'service4Description',
   },
   {
     id: 8,
-    icon: 'ns-shape-7',
+    icon: '/images/home-page-24/technical-skill.png',
     titleKey: 'service5Title',
     descriptionKey: 'service5Description',
   },
   {
     id: 9,
-    icon: 'ns-shape-9',
+    icon: '/images/home-page-24/cost-effective.png',
     titleKey: 'service6Title',
     descriptionKey: 'service6Description',
   },
@@ -78,8 +78,13 @@ const Services = () => {
                 <div className="bg-white dark:bg-background-6 rounded-[20px] sm:p-8 p-6 sm:space-y-6 space-y-4 flex flex-col w-full">
                   {/* Service Icon */}
                   <div>
-                    <span
-                      className={cn(service.icon, 'sm:text-[52px] text-[40px] text-secondary dark:text-accent')}></span>
+                    <Image
+                      src={service.icon}
+                      alt={t(service.titleKey)}
+                      width={52}
+                      height={52}
+                      className="sm:w-[52px] sm:h-[52px] w-[40px] h-[40px] object-contain"
+                    />
                   </div>
 
                   {/* Service Content */}
@@ -96,7 +101,7 @@ const Services = () => {
         <div className="flex items-center justify-center">
           <RevealAnimation delay={0.6}>
             <LinkButton
-              href="/our-services-02"
+              href="#"
               className="btn hover:btn-secondary dark:hover:btn-accent btn-primary btn-md">
               <span>{t('ctaButton')}</span>
             </LinkButton>

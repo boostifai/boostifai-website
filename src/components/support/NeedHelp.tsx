@@ -1,41 +1,33 @@
+'use client';
+
 import support from '@public/images/support-page/support.jpg';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
-import LinkButton from '../ui/button/LinkButton';
 
 const NeedHelp = () => {
+  const t = useTranslations('ContactPage.hero');
+  
   return (
-    <section className="pb-[100px] lg:pb-[200px] pt-[100px]">
+    <section className="pb-[40px] lg:pb-[50px] pt-[150px]">
       <div className="main-container">
-        <div className="text-center space-y-14 mb-[70px]">
+        <div className="text-center space-y-14 mb-[20px]">
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
-              <h2>Need help with Boostifai?</h2>
+              <h2>{t('title')}</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
-              <p>
-                Welcome to the boostifai Support Center! We&apos;re ready to assist you if you have an issue or a
-                question.
-              </p>
+              <p>{t('description')}</p>
             </RevealAnimation>
           </div>
-          <RevealAnimation delay={0.5}>
-            <div>
-              <LinkButton
-                href="/contact-us"
-                className="btn btn-xl hover:btn-secondary dark:hover:btn-accent btn-primary">
-                Get help
-              </LinkButton>
-            </div>
-          </RevealAnimation>
         </div>
-        <RevealAnimation delay={0.6} instant>
+        {/* <RevealAnimation delay={0.6} instant>
           <div className="section-reveal">
             <figure className="rounded-[20px] overflow-hidden">
               <Image src={support} alt="support" />
             </figure>
           </div>
-        </RevealAnimation>
+        </RevealAnimation> */}
       </div>
     </section>
   );

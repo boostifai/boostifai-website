@@ -124,5 +124,447 @@
   },
   "BlogCard": {
     "readMore": "Lees meer"
+  },
+  "AgencyPricing": {
+    "badge": "Bureau prijzen",
+    "title": "Schaal uw bureau met flexibele prijzen",
+    "monthly": "Maandelijks",
+    "quarterly": "Kwartaal",
+    "yearly": "Jaarlijks",
+    "whatsIncluded": "Wat is inbegrepen",
+    "features": {
+      "clientWebsites": "Klant websites",
+      "seoPages": "SEO automatisering pagina's",
+      "aiBlogs": "AI Blogs maandelijks per site",
+      "userLogins": "Gebruikerslogins",
+      "monthlyReports": "Maandelijkse prestatierapporten",
+      "whiteLabelReports": "White-label rapporten",
+      "prioritySupport": "Prioriteit e-mailondersteuning",
+      "croScan": "CRO scan & tips",
+      "seoCourse": "On Demand Cursus: Toekomst van SEO"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Beheer tot 4 klantwebsites",
+        "websites": "1 tot 4",
+        "pages": "Tot 500",
+        "blogs": "5",
+        "users": "1"
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Beheer tot 10 klantwebsites",
+        "websites": "Tot 10",
+        "pages": "Tot 2000",
+        "blogs": "6",
+        "users": "Tot 10"
+      },
+      "premium": {
+        "name": "Premium",
+        "description": "Beheer tot 25 klantwebsites",
+        "websites": "Tot 25",
+        "pages": "Tot 5000",
+        "blogs": "7",
+        "users": "Tot 25"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Neem contact op",
+        "description": "Beheer onbeperkt klantwebsites",
+        "unlimited": "Onbeperkt"
+      }
+    },
+    "getStarted": "Aan de slag",
+    "contactUs": "Neem contact op",
+    "faqTitle": "Veelgestelde vragen",
+    "faqDescription": "Vind antwoorden op veelgestelde vragen over onze bureautarieven"
+  },
+  "BusinessPricing": {
+    "badge": "Onze prijzen",
+    "title": "Selecteer het prijsplan dat het beste bij uw bedrijf past",
+    "monthly": "Maandelijks",
+    "quarterly": "Kwartaal",
+    "yearly": "Jaarlijks",
+    "whatsIncluded": "Wat is inbegrepen",
+    "features": {
+      "websites": "Websites",
+      "seoPages": "SEO automatisering pagina's",
+      "aiBlogs": "AI Blogs per maand",
+      "rankAnalyzer": "Rank Analyzer",
+      "onPageSeo": "On-page SEO verbeteringen",
+      "linkBuilding": "Link Building",
+      "monthlyReports": "Maandelijkse prestatierapporten",
+      "monthlyCall": "Maandelijks videogesprek",
+      "croScan": "CRO scan & tips",
+      "seoCourse": "On Demand Cursus: Toekomst van SEO"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Ideaal voor een kleine website of blog",
+        "websites": "1",
+        "pages": "Tot 100",
+        "blogs": "1"
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Perfect voor een professionele website",
+        "websites": "1 tot 4",
+        "pages": "Tot 500",
+        "blogs": "5 per site"
+      },
+      "corporate": {
+        "name": "Corporate",
+        "description": "Het beste voor websites met veel verkeer",
+        "websites": "1 tot 10",
+        "pages": "Tot 2000",
+        "blogs": "6 per site"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Neem contact op",
+        "description": "Perfect voor grote bedrijven",
+        "unlimited": "Onbeperkt"
+      }
+    },
+    "getStarted": "Aan de slag",
+    "contactUs": "Neem contact op",
+    "faqTitle": "Veelgestelde vragen",
+    "faqDescription": "Vind antwoorden op veelgestelde vragen over onze bedrijfsprijzen"
+  },
+  "PricingFAQ": {
+    "agencies": [
+      {
+        "question": "Hoe onderscheidt Boostifai zich van andere SEO-tools? Wat zijn de verschillen?",
+        "answer": "In tegenstelling tot traditionele SEO-tools die checklists en aanbevelingen bieden, voert Boostifai real-time aanpassingen direct op uw website uit. Dit betekent snellere implementatie van SEO-strategieën, onmiddellijke optimalisatie van content en een aanzienlijke vermindering van handmatig werk. Inclusief contentgeneratie, metatagbeheer, zoekwoordanalyse, linkbuilding, het toevoegen van blogs en real-time on-page SEO-aanpassingen direct binnen webpagina's."
+      },
+      {
+        "question": "Hoe integreert Boostifai met onze bestaande CMS-platforms?",
+        "answer": "Boostifai is ontworpen om naadloos te integreren met een breed scala aan CMS-platforms. Onze geautomatiseerde oplossingen kunnen worden geactiveerd met een enkele regel code, waardoor optimalisaties direct op de website van uw klant worden toegepast. Bekijk deze pagina voor het eenvoudige installatieproces: https://www.boostifai.com/how-it-works/"
+      },
+      {
+        "question": "Wat zijn de belangrijkste functies van Boostifai?",
+        "answer": "Boostifai biedt geautomatiseerde SEO-optimalisaties, waaronder contentgeneratie, metatagbeheer, zoekwoordanalyse en real-time on-page SEO-aanpassingen direct binnen webpagina's."
+      },
+      {
+        "question": "Hoe verbetert Boostifai de SEO-prestaties?",
+        "answer": "Boostifai verbetert SEO-prestaties door taken te automatiseren die de zichtbaarheid van websites verbeteren, organische zoekrankings door het creëren van blogs, backlinks en on-page SEO. Boostifai onderscheidt zich van conventionele SEO-tools die op oppervlakteniveau werken, door on-page SEO-verbeteringen direct binnen websitepagina's te faciliteren, waardoor onmiddellijke optimalisatie van content, metatags en andere essentiële elementen op de site van de klant wordt gegarandeerd. Deze real-time mogelijkheid biedt geïntegreerde optimalisaties naadloos om snelle resultaten te behalen en klanttevredenheid te verbeteren.\n\nBlogfuncties:\n- Efficiënte contentproductie: Automatisch gegenereerde niche-relevante artikelen op maat van de industrieën van uw klanten.\n- Verbeterde klantbetrokkenheid: Thematisch relevante content die het publiek van uw klanten betrokken en geïnformeerd houdt.\n- Professionele beelden: Gebruik niche-relevante uitgelichte en in-artikel afbeeldingen om de visuele aantrekkingskracht van de blogs van uw klanten te verbeteren.\n- Geoptimaliseerde structuur: Zorg ervoor dat alle artikelen goed gestructureerde koppen hebben voor betere leesbaarheid en SEO-prestaties.\n- Aangepaste call-to-actions: Stuur verkeer naar de bedrijven van uw klanten met strategisch geplaatste externe links en aangepaste CTA's.\n- Naadloze automatisering: Automatiseer het hele proces van contentgeneratie en publicatie, zodat uw team zich kan concentreren op meer strategische taken."
+      },
+      {
+        "question": "Hoe gaat Boostifai om met algoritmewijzigingen van zoekmachines?",
+        "answer": "Boostifai werkt zijn engine bij op basis van zoekmachine-algoritmen. Onze functies worden regelmatig bijgewerkt om zich aan te passen aan algoritmewijzigingen van zoekmachines en best practices in de sector."
+      },
+      {
+        "question": "Is Boostifai compatibel met meerdere talen?",
+        "answer": "Ja, Boostifai ondersteunt veel talen. Op dit moment ondersteunen we echter GEEN domeinen met tekens uit niet-Romeinse alfabetten. Dat betekent geen TLD's zoals .рф, .中国, .みんな en anderen. Als u ondersteuning voor deze domeinen nodig heeft, stuur ons dan een bericht. We kunnen ze in de toekomst toevoegen."
+      },
+      {
+        "question": "Biedt Boostifai rapportage?",
+        "answer": "Ja, Boostifai genereert gedetailleerde analyses en prestatierapporten om SEO-voortgang bij te houden en verbeterpunten te identificeren. Lever merkgebonden SEO-rapporten aan uw klanten. We genereren en beoordelen SEO-prestatierapporten om voortgang bij te houden en verbeterpunten te identificeren."
+      },
+      {
+        "question": "Welke soorten bedrijven profiteren het meest van Boostifai?",
+        "answer": "Boostifai is voordelig voor bureaus, bedrijven en e-commercesites die hun online aanwezigheid willen optimaliseren en groei willen stimuleren door verbeterde SEO-praktijken."
+      },
+      {
+        "question": "Hoe helpt Boostifai bureaus?",
+        "answer": "Boostifai automatiseert tijdrovende SEO-taken zoals zoekwoordonderzoek, contentgeneratie en metatagoptimalisatie. Door deze taken automatisch af te handelen, kan uw team zich concentreren op strategische initiatieven op hoger niveau en creatieve projecten, waardoor de algehele efficiëntie wordt verbeterd. Om te ontdekken hoe we uw bureau kunnen helpen, plan een strategiegesprek op https://www.boostifai.com/demo-strategy/"
+      }
+    ],
+    "business": [
+      {
+        "question": "Hoe onderscheidt Boostifai zich van andere SEO-tools? Wat zijn de verschillen?",
+        "answer": "In tegenstelling tot traditionele SEO-tools die checklists en aanbevelingen bieden, voert Boostifai real-time aanpassingen direct op uw website uit. Dit betekent snellere implementatie van SEO-strategieën, onmiddellijke optimalisatie van content en een aanzienlijke vermindering van handmatig werk. Inclusief contentgeneratie, metatagbeheer, zoekwoordanalyse, linkbuilding, het toevoegen van blogs en real-time on-page SEO-aanpassingen direct binnen webpagina's."
+      },
+      {
+        "question": "Hoe integreert Boostifai met onze bestaande CMS-platforms?",
+        "answer": "Boostifai is ontworpen om naadloos te integreren met een breed scala aan CMS-platforms. Onze geautomatiseerde oplossingen kunnen worden geactiveerd met een enkele regel code, waardoor optimalisaties direct op de website van uw klant worden toegepast. Bekijk deze pagina voor het eenvoudige installatieproces: https://www.boostifai.com/how-it-works/"
+      },
+      {
+        "question": "Wat zijn de belangrijkste functies van Boostifai?",
+        "answer": "Boostifai biedt geautomatiseerde SEO-optimalisaties, waaronder contentgeneratie, metatagbeheer, zoekwoordanalyse en real-time on-page SEO-aanpassingen direct binnen webpagina's."
+      },
+      {
+        "question": "Hoe verbetert Boostifai de SEO-prestaties?",
+        "answer": "Boostifai verbetert SEO-prestaties door taken te automatiseren die de zichtbaarheid van websites verbeteren, organische zoekrankings door het creëren van blogs, backlinks en on-page SEO. Boostifai onderscheidt zich van conventionele SEO-tools die op oppervlakteniveau werken, door on-page SEO-verbeteringen direct binnen websitepagina's te faciliteren, waardoor onmiddellijke optimalisatie van content, metatags en andere essentiële elementen op de site van de klant wordt gegarandeerd. Deze real-time mogelijkheid biedt geïntegreerde optimalisaties naadloos om snelle resultaten te behalen en klanttevredenheid te verbeteren.\n\nBlogfuncties:\n- Efficiënte contentproductie: Automatisch gegenereerde niche-relevante artikelen op maat van de industrieën van uw klanten.\n- Verbeterde klantbetrokkenheid: Thematisch relevante content die het publiek van uw klanten betrokken en geïnformeerd houdt.\n- Professionele beelden: Gebruik niche-relevante uitgelichte en in-artikel afbeeldingen om de visuele aantrekkingskracht van de blogs van uw klanten te verbeteren.\n- Geoptimaliseerde structuur: Zorg ervoor dat alle artikelen goed gestructureerde koppen hebben voor betere leesbaarheid en SEO-prestaties.\n- Aangepaste call-to-actions: Stuur verkeer naar de bedrijven van uw klanten met strategisch geplaatste externe links en aangepaste CTA's.\n- Naadloze automatisering: Automatiseer het hele proces van contentgeneratie en publicatie, zodat uw team zich kan concentreren op meer strategische taken."
+      },
+      {
+        "question": "Hoe gaat Boostifai om met algoritmewijzigingen van zoekmachines?",
+        "answer": "Boostifai werkt zijn engine bij op basis van zoekmachine-algoritmen. Onze functies worden regelmatig bijgewerkt om zich aan te passen aan algoritmewijzigingen van zoekmachines en best practices in de sector."
+      },
+      {
+        "question": "Is Boostifai compatibel met meerdere talen?",
+        "answer": "Ja, Boostifai ondersteunt veel talen. Op dit moment ondersteunen we echter GEEN domeinen met tekens uit niet-Romeinse alfabetten. Dat betekent geen TLD's zoals .рф, .中国, .みんな en anderen. Als u ondersteuning voor deze domeinen nodig heeft, stuur ons dan een bericht. We kunnen ze in de toekomst toevoegen."
+      },
+      {
+        "question": "Biedt Boostifai rapportage?",
+        "answer": "Ja, Boostifai genereert gedetailleerde analyses en prestatierapporten om SEO-voortgang bij te houden en verbeterpunten te identificeren. Lever merkgebonden SEO-rapporten aan uw klanten. We genereren en beoordelen SEO-prestatierapporten om voortgang bij te houden en verbeterpunten te identificeren."
+      },
+      {
+        "question": "Welke soorten bedrijven profiteren het meest van Boostifai?",
+        "answer": "Boostifai is voordelig voor bureaus, bedrijven en e-commercesites die hun online aanwezigheid willen optimaliseren en groei willen stimuleren door verbeterde SEO-praktijken."
+      },
+      {
+        "question": "Hoe helpt Boostifai bureaus?",
+        "answer": "Boostifai automatiseert tijdrovende SEO-taken zoals zoekwoordonderzoek, contentgeneratie en metatagoptimalisatie. Door deze taken automatisch af te handelen, kan uw team zich concentreren op strategische initiatieven op hoger niveau en creatieve projecten, waardoor de algehele efficiëntie wordt verbeterd. Om te ontdekken hoe we uw bureau kunnen helpen, plan een strategiegesprek op https://www.boostifai.com/demo-strategy/"
+      }
+    ]
+  },
+  "FAQPage": {
+    "badge": "FAQ",
+    "title": "Veelgestelde vragen",
+    "description": "Vind antwoorden op de meest gestelde vragen over Boostifai's AI-aangedreven SEO-automatisering.",
+    "tabs": {
+      "business": "Bedrijven",
+      "agencies": "Bureaus"
+    },
+    "contact": {
+      "badge": "Contact",
+      "title": "Heeft u nog vragen?",
+      "description": "Als uw vraag hier niet vermeld staat, neem dan gerust contact met ons op of start een livechat met ons team. We helpen u graag!",
+      "form": {
+        "fullName": "Volledige naam",
+        "fullNamePlaceholder": "Voer uw naam in",
+        "email": "E-mailadres",
+        "emailPlaceholder": "Voer uw e-mailadres in",
+        "message": "Berichten",
+        "messagePlaceholder": "Voer uw bericht in",
+        "terms": "Ik ga akkoord met de",
+        "termsLink": "algemene voorwaarden",
+        "submit": "Verzenden"
+      }
+    }
+  },
+  "BlogPage": {
+    "heading": {
+      "title": "Ons recente nieuws & inzichten",
+      "titleHighlight": "nieuws & inzichten",
+      "description": "Ons recente nieuws en inzichten benadrukken de nieuwste ontwikkelingen, prestaties en thought leadership die onze reis vooruit vormgeven. Van productinnovaties en strategische partnerschappen tot branchetrends"
+    },
+    "search": {
+      "placeholder": "Zoek artikelen",
+      "submitLabel": "Zoeken"
+    },
+    "categories": {
+      "title": "Categorieën",
+      "all": "Alle"
+    },
+    "recentArticles": {
+      "title": "Recente artikelen"
+    },
+    "blogCard": {
+      "readMore": "Lees meer",
+      "minRead": "min lezen"
+    },
+    "filters": {
+      "category": "Categorie",
+      "showingResults": "Resultaten voor",
+      "result": "resultaat",
+      "results": "resultaten",
+      "post": "bericht",
+      "posts": "berichten",
+      "viewAllPosts": "Bekijk alle berichten",
+      "clearSearch": "Zoekopdracht wissen"
+    },
+    "noResults": {
+      "title": "Geen blogs gevonden",
+      "searchMessage": "Geen resultaten gevonden voor \"{query}\". Probeer een andere zoekterm.",
+      "filterMessage": "Probeer uw zoek- of filtercriteria aan te passen"
+    },
+    "pagination": {
+      "previous": "Vorige",
+      "next": "Volgende",
+      "page": "Pagina",
+      "of": "van"
+    }
+  },
+  "AffiliatesPage": {
+    "hero": {
+      "title": "Welkom bij het Boostifai Affiliate Programma!",
+      "description": "Ben je gepassioneerd over het helpen van bedrijven groeien en commissies verdienen door een krachtige SEO-tool te promoten?",
+      "ctaButton": "Start in slechts 60 seconden"
+    },
+    "whatIsBoostifai": {
+      "title": "Wat is Boostifai?",
+      "description": "Boostifai is een bedrijf dat zich richt op het helpen van bedrijfseigenaren en bureaus met hun marketinguitdagingen:",
+      "card1Title": "Kunstmatig intelligente oplossingen",
+      "card1Description": "Een onderbuikgevoel is goed, maar data liegt nooit. We bieden datagestuurde oplossingen die onze klanten helpen weloverwogen zakelijke beslissingen te nemen.",
+      "card2Title": "Automatisering",
+      "card2Description": "Wij geloven dat ondernemers en bedrijven zich moeten kunnen concentreren op hun kernactiviteiten. Automatisering creëert stabiliteit en continuïteit terwijl het tijd bespaart.",
+      "card3Title": "Ambitie",
+      "card3Description": "Onze klanten zijn ambitieus en wij ook. We blijven onszelf pushen om onze producten te verfijnen en nieuwe te creëren. Het leven van onze klanten gemakkelijker maken is wat ons elke dag drijft."
+    },
+    "benefits": {
+      "badge": "Hoe het werkt",
+      "title": "Voordelen van ons affiliate programma",
+      "benefit1Title": "Royale commissies",
+      "benefit1Description": "Verdien substantiële commissies op elke verkoop die je doorverwijst. Hoe meer je promoot, hoe meer je verdient!",
+      "benefit2Title": "Hoge conversiepercentages",
+      "benefit2Description": "Boostifai's gebruiksvriendelijke ontwerp en krachtige functies maken het een gemakkelijke verkoop. Zie je verwijzingen moeiteloos converteren.",
+      "benefit3Title": "Marketingondersteuning",
+      "benefit3Description": "Toegang tot een schat aan marketingmiddelen, waaronder banners, e-mailsjablonen en gedetailleerde handleidingen, om je te helpen slagen.",
+      "benefit4Title": "Real-time tracking",
+      "benefit4Description": "Houd je verwijzingen en commissies bij met ons transparante, real-time trackingsysteem."
+    },
+    "services": {
+      "title": "Onze beste diensten om te promoten",
+      "service1": "Boostifai Professional abonnement - Upgrade naar Boostifai Professional voor geavanceerde SEO-automatisering en verbeterde functies. Ontgrendel premium tools om het verkeer en de winstgevendheid van je website te maximaliseren",
+      "service2": "1 jaar SEO Boost voor je website - Krijg een 1-jarige SEO-boost voor je website met Boostifai. Ervaar duurzame groei en verbeterde zoekrankings het hele jaar door."
+    },
+    "testimonial": {
+      "title": "Klantbeoordelingen",
+      "text": "Boostifai heeft onze online aanwezigheid in een mum van tijd getransformeerd! De geautomatiseerde SEO-functies zijn ongelooflijk gebruiksvriendelijk en we hebben een aanzienlijke toename in verkeer en verkopen gezien. Zeer aan te bevelen!",
+      "author": "Ashley",
+      "company": "SEOmatic"
+    },
+    "faq": {
+      "title": "Veelgestelde vragen",
+      "question1": "Hoe werkt het affiliate programma?",
+      "answer1": "Als Boostifai affiliate verdien je commissies door onze SEO-tool te promoten. Deel je unieke affiliate link en verdien een commissie voor elke verkoop via jouw link.",
+      "question2": "Welke middelen zijn beschikbaar voor affiliates?",
+      "answer2": "Affiliates hebben toegang tot verschillende marketingmiddelen, waaronder banners, e-mailsjablonen en promotiehandleidingen om je te helpen slagen.",
+      "question3": "Wat is Boostifai?",
+      "answer3": "Boostifai is een geautomatiseerde SEO-tool ontworpen om bedrijven te helpen meer klanten aan te trekken en hun winst te verhogen met minimale inspanning. Het vereist geen codering en elimineert de noodzaak voor complexe checklists.",
+      "question4": "Hoe word ik betaald?",
+      "answer4": "Commissies worden maandelijks uitbetaald via je gekozen betaalmethode, zodra je de minimale uitbetalingsdrempel bereikt."
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "AI-aangedreven SEO-oplossing voor bedrijven en bureaus",
+      "description": "Leer meer over onze missie, verhaal en team. We zijn toegewijd aan het revolutioneren van SEO voor bedrijfseigenaren en bureaus door innovatieve AI-technologie."
+    },
+    "mission": {
+      "title": "Onze missie",
+      "paragraph1": "Bij Boostifai is onze missie om bedrijfseigenaren en bureaus te empoweren met innovatieve AI-gestuurde SEO om hun digitale marketing te revolutioneren. Onze oplossing verhoogt online zichtbaarheid en stimuleert duurzame groei door SEO-processen te automatiseren. Boostifai maakt gebruik van geavanceerde AI-technologie om SEO te automatiseren en websiteprestaties moeiteloos te verbeteren.",
+      "paragraph2": "We stellen bedrijfseigenaren in staat om zich te concentreren op strategische groei en creatieve bezigheden door de technische aspecten van SEO te automatiseren. Boostifai verbetert uw online aanwezigheid moeiteloos, zorgt voor verbeterde zichtbaarheid en trekt meer bezoekers aan zonder technische vaardigheden te vereisen.",
+      "paragraph3": "We stellen bureaus in staat om zich te concentreren op strategische initiatieven en creatieve inspanningen, waardoor klanttevredenheid wordt verbeterd en langdurige partnerschappen worden bevorderd. Ons doel is om de vertrouwde partner te zijn waarop bureaus vertrouwen om uitzonderlijke resultaten te leveren, marketingdoelen te bereiken en voorop te blijven lopen in het competitieve landschap van digitale marketing."
+    },
+    "story": {
+      "title": "Ons verhaal",
+      "ceo": "Bert Vissers - CEO",
+      "intro": "Bert Vissers, eigenaar van Webshopcompany sinds 2008:",
+      "paragraph1": "20 jaar geleden studeerde ik af als applicatie-ingenieur met een passie voor e-commerce. Door de jaren heen heb ik veel websites, webshops en apps gebouwd. Ik realiseerde me dat veel klanten worstelden met online zichtbaarheid en websiteverkeer.",
+      "paragraph2": "Gedreven door een passie voor innovatie en een diep begrip van de online wereld, werkte ik aan een transformatie van SEO-praktijken. Mijn visie is om een geautomatiseerde AI-oplossing te ontwikkelen die bedrijfseigenaren helpt zich te concentreren op hun ware passie en die bureaus helpt zich meer te concentreren op strategie, creativiteit en klantrelaties.",
+      "paragraph3": "Als AI-bedrijfsarchitect werk ik met een toegewijd team van AI-experts om een krachtige AI-gestuurde oplossing te ontwikkelen. In tegenstelling tot traditionele SEO-tools die alleen checklists bieden, onderscheidt Boostifai zich door directe wijzigingen binnen webpagina's mogelijk te maken. Onze oplossing maakt onmiddellijke optimalisatie van content, metatags en andere belangrijke elementen direct op de website mogelijk.",
+      "paragraph4": "Deze real-time mogelijkheid toont onze toewijding aan het leveren van snellere resultaten en hogere klanttevredenheid, in tegenstelling tot concurrenten die vertrouwen op handmatige aanpassingen, uren onderzoek en implementatie van wijzigingen gegeven door externe checklists.",
+      "paragraph5": "Boostifai kan worden geactiveerd met één regel code en vereist geen technische expertise. Het vereenvoudigt operaties door automatisering, vermindert advertentie-uitgaven door organische SEO-groei te stimuleren en biedt gedetailleerde rapportage met bruikbare inzichten van de voortgang. Ervaar de transformerende kracht van Boostifai."
+    },
+    "share": {
+      "title": "Deel deze pagina"
+    },
+    "testimonial": {
+      "title": "Wat onze gebruikers zeggen"
+    }
+  },
+  "CaseStudyPage": {
+    "pageTitle": "Casestudy",
+    "featured": {
+      "title": "Succesverhaal: Enjoy Andalusia",
+      "description": "Ontdek hoe Boostifai Dirk hielp zijn bedrijf te laten groeien terwijl hij zijn droom in Spanje leefde. Echte resultaten, echte impact en een betere werk-privébalans.",
+      "sectionTitle": "Uitgelichte casestudy",
+      "client": "Klant",
+      "industry": "Branche",
+      "founder": "Oprichter",
+      "subtitle": "Bedrijf laten groeien, de droom leven in Spanje!",
+      "ctaButton": "Bekijk volledig rapport"
+    },
+    "allCaseStudies": {
+      "title": "Alle casestudies",
+      "description": "Ontdek hoe bedrijven en bureaus opmerkelijke resultaten behalen met Boostifai. Echte verhalen, echte groei en meetbare impact door AI-aangedreven SEO-automatisering.",
+      "results": "Resultaten",
+      "readMore": "Lees meer"
+    },
+    "stats": {
+      "organicSearch": "Toename in organisch zoekverkeer",
+      "aiSuggestions": "A.I. suggesties goedgekeurd",
+      "rankingKeywords": "Rankende keywords in 12 maanden"
+    },
+    "details": {
+      "beforeDate": "Voor: Juni 2023",
+      "afterDate": "Na: Januari 2024",
+      "beforeCaption": "06/2023: 100 maandelijkse kliks",
+      "afterCaption": "01/2024: 3.500+ maandelijkse kliks",
+      "resultsTitle": "De resultaten",
+      "metric": "Metriek",
+      "monthlyClicks": "Maandelijkse kliks",
+      "seoWorkflow": "SEO workflow",
+      "rankingKeywords": "Rankende keywords",
+      "scalability": "Schaalbaarheid",
+      "before": "Voor",
+      "after": "Na",
+      "keyFeatures": "Gebruikte Belangrijkste Functies"
+    }
+  },
+  "NewsletterPage": {
+    "hero": {
+      "title": "Blijf voorop met SEO-inzichten",
+      "description": "Abonneer u op onze nieuwsbrief en ontvang de nieuwste SEO-tips, AI-aangedreven strategieën en exclusieve inzichten rechtstreeks in uw inbox."
+    },
+    "benefits": {
+      "title": "Wat u krijgt",
+      "description": "Sluit u aan bij duizenden bedrijfseigenaren en marketeers die onze nieuwsbrief vertrouwen voor bruikbaar SEO-advies.",
+      "benefit1Title": "Wekelijkse SEO-tips",
+      "benefit1Description": "Krijg praktische, bruikbare SEO-strategieën die u direct kunt implementeren om uw rankings te verhogen.",
+      "benefit2Title": "Branche-inzichten",
+      "benefit2Description": "Blijf op de hoogte van de nieuwste wijzigingen in zoekmachine-algoritmen en digitale marketingtrends.",
+      "benefit3Title": "Exclusieve content",
+      "benefit3Description": "Toegang tot casestudies, handleidingen en bronnen die alleen beschikbaar zijn voor onze nieuwsbriefabonnees.",
+      "benefit4Title": "Productupdates",
+      "benefit4Description": "Wees de eerste die op de hoogte is van nieuwe Boostifai-functies en speciale aanbiedingen voor abonnees."
+    },
+    "form": {
+      "title": "Abonneer nu",
+      "subtitle": "Sluit u aan bij onze community en mis nooit een update",
+      "nameLabel": "Volledige naam",
+      "namePlaceholder": "Voer uw naam in",
+      "emailLabel": "E-mailadres",
+      "emailPlaceholder": "Voer uw e-mailadres in",
+      "submitButton": "Abonneer op nieuwsbrief",
+      "successMessage": "Succesvol geabonneerd!",
+      "privacyNote": "We respecteren uw privacy. U kunt zich op elk moment afmelden."
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "title": "Hulp nodig met Boostifai?",
+      "description": "Welkom bij het Boostifai Support Center! We staan klaar om u te helpen als u een probleem of vraag heeft."
+    },
+    "form": {
+      "badge": "Ticket",
+      "title": "Contactgegevens",
+      "description": "Heeft u een vraag, feedback of functieverzoek? We horen graag van u! Vul het onderstaande formulier in en ons supportteam neemt zo snel mogelijk contact met u op.",
+      "nameLabel": "Uw naam",
+      "namePlaceholder": "Voer uw naam in",
+      "emailLabel": "E-mailadres",
+      "emailPlaceholder": "Voer uw e-mailadres in",
+      "commentLabel": "Opmerking",
+      "commentPlaceholder": "Voer uw opmerking in",
+      "termsText": "Ik ga akkoord met de",
+      "termsLink": "algemene voorwaarden",
+      "submitButton": "Verzenden"
+    },
+    "info": {
+      "title": "Contactinformatie",
+      "addressLabel": "Adres",
+      "emailLabel": "E-mail",
+      "vatLabel": "BTW-nummer",
+      "bookMeetingButton": "Boek een afspraak"
+    }
+  },
+  "BookMeetingPage": {
+    "hero": {
+      "title": "Boek uw gratis strategiegesprek",
+      "description": "Plan een persoonlijk consult met onze SEO-experts. Ontdek hoe Boostifai uw online aanwezigheid kan transformeren en echte resultaten voor uw bedrijf kan behalen."
+    },
+    "benefits": {
+      "benefit1Title": "Persoonlijke SEO-audit",
+      "benefit1Description": "Krijg een snelle beoordeling van uw huidige SEO-prestaties en identificeer belangrijke verbeterkansen.",
+      "benefit2Title": "Aangepaste strategie",
+      "benefit2Description": "Ontvang op maat gemaakte aanbevelingen op basis van uw bedrijfsdoelen, branche en doelgroep.",
+      "benefit3Title": "Platform demo",
+      "benefit3Description": "Zie Boostifai in actie en leer hoe onze AI-aangedreven tools uw SEO-workflow kunnen automatiseren."
+    }
   }
 }

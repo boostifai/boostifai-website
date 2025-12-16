@@ -2,6 +2,7 @@
 
 import { IBlogPost } from '@/interface';
 import { WPCategory } from '@/types/wordpress';
+import { useTranslations } from 'next-intl';
 import { useRouter, useSearchParams } from 'next/navigation';
 import RevealAnimation from '../animation/RevealAnimation';
 import BlogCard from './BlogCard';
@@ -19,6 +20,7 @@ interface BlogListProps {
 }
 
 const BlogList = ({ blogs: allBlogs, wpCategories, recentBlogs, currentPage, totalPages, totalPosts, categoryName }: BlogListProps) => {
+  const t = useTranslations('BlogPage');
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -73,8 +75,8 @@ const BlogList = ({ blogs: allBlogs, wpCategories, recentBlogs, currentPage, tot
             {categoryName && (
               <div className="mb-8 -mt-4">
                 <p className="text-tagline-1 text-secondary dark:text-accent">
-                  Category: <span className="font-semibold">{categoryName}</span>
-                  {totalPosts > 0 && <span className="text-secondary/60 dark:text-accent/60"> ({totalPosts} {totalPosts === 1 ? 'post' : 'posts'})</span>}
+                  {t('filters.category')}: <span className="font-semibold">{categoryName}</span>
+                  {totalPosts > 0 && <span className="text-secondary/60 dark:text-accent/60"> ({totalPosts} {totalPosts === 1 ? t('filters.post') : t('filters.posts')})</span>}
                 </p>
                 <button
                   onClick={() => router.push('/blog')}
@@ -88,7 +90,7 @@ const BlogList = ({ blogs: allBlogs, wpCategories, recentBlogs, currentPage, tot
                       strokeLinejoin="round"
                     />
                   </svg>
-                  View all posts
+                  {t('filters.viewAllPosts')}
                 </button>
               </div>
             )}
@@ -97,8 +99,8 @@ const BlogList = ({ blogs: allBlogs, wpCategories, recentBlogs, currentPage, tot
             {searchParams.get('search') && (
               <div className="mb-8 -mt-4">
                 <p className="text-tagline-1 text-secondary dark:text-accent">
-                  Showing results for <span className="font-semibold">&quot;{searchParams.get('search')}&quot;</span>
-                  {totalPosts > 0 && <span className="text-secondary/60 dark:text-accent/60"> ({totalPosts} {totalPosts === 1 ? 'result' : 'results'})</span>}
+                  {t('filters.showingResults')} <span className="font-semibold">&quot;{searchParams.get('search')}&quot;</span>
+                  {totalPosts > 0 && <span className="text-secondary/60 dark:text-accent/60"> ({totalPosts} {totalPosts === 1 ? t('filters.result') : t('filters.results')})</span>}
                 </p>
                 <button
                   onClick={() => router.push('/blog')}
@@ -112,7 +114,7 @@ const BlogList = ({ blogs: allBlogs, wpCategories, recentBlogs, currentPage, tot
                       strokeLinejoin="round"
                     />
                   </svg>
-                  Clear search
+                  {t('filters.clearSearch')}
                 </button>
               </div>
             )}
@@ -127,11 +129,11 @@ const BlogList = ({ blogs: allBlogs, wpCategories, recentBlogs, currentPage, tot
               ))
             ) : (
               <div className="text-center py-20">
-                <h3 className="text-heading-4 mb-4">No blogs found</h3>
+                <h3 className="text-heading-4 mb-4">{t('noResults.title')}</h3>
                 <p className="text-tagline-1 text-secondary/60 dark:text-accent/60">
                   {searchParams.get('search') 
-                    ? `No results found for "${searchParams.get('search')}". Try a different search term.`
-                    : 'Try adjusting your search or filter criteria'}
+                    ? t('noResults.searchMessage', { query: searchParams.get('search') || '' })
+                    : t('noResults.filterMessage')}
                 </p>
               </div>
             )}
@@ -159,12 +161,12 @@ const BlogList = ({ blogs: allBlogs, wpCategories, recentBlogs, currentPage, tot
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="text-tagline-2 font-medium">Previous</span>
+                <span className="text-tagline-2 font-medium">{t('pagination.previous')}</span>
               </button>
 
               {/* Page Info */}
               <span className="text-tagline-2 font-medium text-secondary dark:text-accent">
-                Page {currentPage} of {totalPages}
+                {t('pagination.page')} {currentPage} {t('pagination.of')} {totalPages}
               </span>
 
               {/* Next Button */}
@@ -172,7 +174,7 @@ const BlogList = ({ blogs: allBlogs, wpCategories, recentBlogs, currentPage, tot
                 onClick={() => handlePageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
                 className="flex items-center gap-2 px-6 py-3 border border-stroke-3 dark:border-stroke-7 rounded-full hover:bg-primary-500 hover:text-white hover:border-primary-500 duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-secondary dark:disabled:hover:text-accent">
-                <span className="text-tagline-2 font-medium">Next</span>
+                <span className="text-tagline-2 font-medium">{t('pagination.next')}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
                   <path
                     d="M1.5 6H12.5M12.5 6L8 1.5M12.5 6L8 10.5"

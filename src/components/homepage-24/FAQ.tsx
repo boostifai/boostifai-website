@@ -32,7 +32,7 @@ const FAQ = () => {
             <div className="mt-10">
           <RevealAnimation delay={0.6}>
             <LinkButton
-              href="/our-services-02"
+              href="/faq"
               className="btn hover:btn-secondary dark:hover:btn-accent btn-primary btn-md">
               <span>{t('ctaButton')}</span>
             </LinkButton>

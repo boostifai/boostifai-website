@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState, useTransition } from 'react';
 
 interface SearchBarProps {
@@ -7,6 +8,7 @@ interface SearchBarProps {
 }
 
 const SearchBar = ({ onSearch }: SearchBarProps) => {
+  const t = useTranslations('BlogPage.search');
   const [searchQuery, setSearchQuery] = useState('');
   const [isPending, startTransition] = useTransition();
 
@@ -37,17 +39,17 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
         type="text"
         name="search"
         id="searchArticles"
-        placeholder="Search articles"
+        placeholder={t('placeholder')}
         value={searchQuery}
         onChange={handleInputChange}
-        aria-label="Search articles"
+        aria-label={t('placeholder')}
         className="px-[18px] h-11 py-3 placeholder:text-secondary/60 rounded-[360px] focus:outline-1 focus:outline-primary-500 font-normal border placeholder:font-normal border-stroke-3 dark:border-stroke-7 dark:placeholder:text-accent/60 bg-background-1 dark:bg-background-6 shadow-1 max-md:max-w-full w-full dark:text-accent pr-12"
       />
       <button
         type="button"
         onClick={handleSearchClick}
         disabled={isPending}
-        aria-label="Submit search"
+        aria-label={t('submitLabel')}
         className="absolute right-4 top-1/2 cursor-pointer -translate-y-1/2 hover:opacity-70 transition-opacity disabled:cursor-not-allowed">
         {isPending ? (
           <svg

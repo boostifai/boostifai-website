@@ -4,9 +4,11 @@ import gradient4 from '@public/images/gradient/gradient-4.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
 
 const Pricing = () => {
+  const t = useTranslations('AgencyPricing');
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'quarterly' | 'yearly'>('monthly');
 
   const pricing = {
@@ -33,15 +35,15 @@ const Pricing = () => {
   );
 
   const features = [
-    'Client websites',
-    'SEO automation pages',
-    'AI Blogs monthly per site',
-    'User logins',
-    'Monthly performance reports',
-    'White-label reports',
-    'Priority email support',
-    'CRO scan & tips',
-    'On Demand Course: Future of SEO',
+    t('features.clientWebsites'),
+    t('features.seoPages'),
+    t('features.aiBlogs'),
+    t('features.userLogins'),
+    t('features.monthlyReports'),
+    t('features.whiteLabelReports'),
+    t('features.prioritySupport'),
+    t('features.croScan'),
+    t('features.seoCourse'),
   ];
 
   return (
@@ -50,10 +52,10 @@ const Pricing = () => {
         <div className="max-w-[1440px] w-full mx-auto rounded-2xl space-y-[70px] bg-background-1 dark:bg-black py-[100px] px-5 md:px-6 lg:px-10 xl:px-16">
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <RevealAnimation delay={0.2}>
-              <span className="badge badge-primary">Agency pricing</span>
+              <span className="badge badge-primary">{t('badge')}</span>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <h2>Scale your agency with flexible pricing</h2>
+              <h2>{t('title')}</h2>
             </RevealAnimation>
 
             {/* Billing Cycle Tabs */}
@@ -66,7 +68,7 @@ const Pricing = () => {
                       ? 'bg-primary-500 text-white'
                       : 'bg-background-3 dark:bg-background-8 text-secondary dark:text-accent hover:bg-primary/10'
                   }`}>
-                  Monthly
+                  {t('monthly')}
                 </button>
                 <button
                   onClick={() => setBillingCycle('quarterly')}
@@ -75,7 +77,7 @@ const Pricing = () => {
                       ? 'bg-primary-500 text-white'
                       : 'bg-background-3 dark:bg-background-8 text-secondary dark:text-accent hover:bg-primary/10'
                   }`}>
-                  Quarterly
+                  {t('quarterly')}
                   <span
                     className={`text-xs px-2 py-0.5 rounded-full ${
                       billingCycle === 'quarterly' ? 'bg-white/20 text-white' : 'bg-green-500 text-white'
@@ -90,7 +92,7 @@ const Pricing = () => {
                       ? 'bg-primary-500 text-white'
                       : 'bg-background-3 dark:bg-background-8 text-secondary dark:text-accent hover:bg-primary/10'
                   }`}>
-                  Yearly
+                  {t('yearly')}
                   <span
                     className={`text-xs px-2 py-0.5 rounded-full ${
                       billingCycle === 'yearly' ? 'bg-white/20 text-white' : 'bg-green-500 text-white'
@@ -109,7 +111,7 @@ const Pricing = () => {
                 <div>
                   <div className="h-[225px] w-[290px] hidden md:block" />
                   <div className="space-y-[10px]">
-                    <h3 className="text-heading-6">What&apos;s included</h3>
+                    <h3 className="text-heading-6">{t('whatsIncluded')}</h3>
                     <ul>
                       {features.map((feature, index) => (
                         <li key={index} className="h-14 px-0 py-4 border-b border-b-stroke-4 dark:border-stroke-7">
@@ -129,31 +131,31 @@ const Pricing = () => {
                   <div className="px-4">
                     <div className="rounded-[20px] py-8 px-6 bg-background-3 dark:bg-background-8 space-y-8">
                       <div>
-                        <p className="text-tagline-1 text-secondary/60 dark:text-accent/60 font-medium mb-3">Starter</p>
+                        <p className="text-tagline-1 text-secondary/60 dark:text-accent/60 font-medium mb-3">{t('plans.starter.name')}</p>
                         <h3 className="text-heading-5 font-normal text-secondary dark:text-accent">
                           €{currentPricing.starter}
                         </h3>
-                        <p className="text-secondary/60 dark:text-accent/60">Manage up to 4 client websites</p>
+                        <p className="text-secondary/60 dark:text-accent/60">{t('plans.starter.description')}</p>
                       </div>
                       <Link
                         href="/contact-us"
                         className="btn btn-white hover:btn-primary dark:btn-white-dark btn-md w-full">
-                        Get started
+                        {t('getStarted')}
                       </Link>
                     </div>
                   </div>
                   <ul>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">1 to 4</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.starter.websites')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Up to 500</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.starter.pages')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">5</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.starter.blogs')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">1</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.starter.users')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7 flex items-center justify-center">
                       {checkIcon(true)}
@@ -183,32 +185,32 @@ const Pricing = () => {
                     <div className="rounded-[20px] py-8 px-6 bg-background-3 dark:bg-background-8 space-y-8">
                       <div>
                         <p className="text-tagline-1 text-secondary/60 dark:text-accent/60 font-medium mb-3">
-                          Professional
+                          {t('plans.professional.name')}
                         </p>
                         <h3 className="text-heading-5 font-normal text-secondary dark:text-accent">
                           €{currentPricing.professional}
                         </h3>
-                        <p className="text-secondary/60 dark:text-accent/60">Manage up to 10 client websites</p>
+                        <p className="text-secondary/60 dark:text-accent/60">{t('plans.professional.description')}</p>
                       </div>
                       <Link
                         href="/contact-us"
                         className="btn btn-white hover:btn-primary dark:btn-white-dark btn-md w-full">
-                        Get started
+                        {t('getStarted')}
                       </Link>
                     </div>
                   </div>
                   <ul>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Up to 10</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.professional.websites')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Up to 2000</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.professional.pages')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">6</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.professional.blogs')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Up to 10</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.professional.users')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7 flex items-center justify-center">
                       {checkIcon(true)}
@@ -242,30 +244,30 @@ const Pricing = () => {
                       <div className="relative z-30 space-y-8">
                         <div>
                           {/* <span className="badge badge-primary mb-3">Most Popular</span> */}
-                          <p className="text-tagline-1 text-accent/60 font-medium mb-3">Premium</p>
+                          <p className="text-tagline-1 text-accent/60 font-medium mb-3">{t('plans.premium.name')}</p>
                           <h3 className="text-heading-5 font-normal text-accent">€{currentPricing.premium}</h3>
-                          <p className="text-accent/60">Manage up to 25 client websites</p>
+                          <p className="text-accent/60">{t('plans.premium.description')}</p>
                         </div>
                         <Link
                           href="/contact-us"
                           className="btn btn-primary hover:btn-white dark:hover:btn-accent btn-md w-full">
-                          Get started
+                          {t('getStarted')}
                         </Link>
                       </div>
                     </div>
                   </div>
                   <ul>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Up to 25</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.premium.websites')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Up to 5000</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.premium.pages')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">7</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.premium.blogs')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Up to 25</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.premium.users')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7 flex items-center justify-center">
                       {checkIcon(true)}
@@ -295,30 +297,30 @@ const Pricing = () => {
                     <div className="rounded-[20px] py-8 px-6 bg-background-3 dark:bg-background-8 space-y-8">
                       <div>
                         <p className="text-tagline-1 text-secondary/60 dark:text-accent/60 font-medium mb-3">
-                          Enterprise
+                          {t('plans.enterprise.name')}
                         </p>
-                        <h3 className="text-heading-6 font-normal text-secondary dark:text-accent">Contact us</h3>
-                        <p className="text-secondary/60 dark:text-accent/60">Manage unlimited client websites</p>
+                        <h3 className="text-heading-6 font-normal text-secondary dark:text-accent">{t('plans.enterprise.price')}</h3>
+                        <p className="text-secondary/60 dark:text-accent/60">{t('plans.enterprise.description')}</p>
                       </div>
                       <Link
                         href="/contact-us"
                         className="btn btn-white hover:btn-primary dark:btn-white-dark btn-md w-full">
-                        Contact us
+                        {t('contactUs')}
                       </Link>
                     </div>
                   </div>
                   <ul>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Unlimited</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.enterprise.unlimited')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Unlimited</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.enterprise.unlimited')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Unlimited</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.enterprise.unlimited')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7">
-                      <p className="font-medium text-secondary/60 dark:text-accent/60">Unlimited</p>
+                      <p className="font-medium text-secondary/60 dark:text-accent/60">{t('plans.enterprise.unlimited')}</p>
                     </li>
                     <li className="h-14 px-6 py-4 text-center border-b border-b-stroke-4 dark:border-stroke-7 flex items-center justify-center">
                       {checkIcon(true)}

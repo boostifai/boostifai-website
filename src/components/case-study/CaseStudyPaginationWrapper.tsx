@@ -1,6 +1,7 @@
 'use client';
 
 import { ICaseStudy } from '@/interface';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -13,6 +14,7 @@ interface CaseStudyPaginationWrapperProps {
 }
 
 const CaseStudyPaginationWrapper = ({ caseStudies }: CaseStudyPaginationWrapperProps) => {
+  const t = useTranslations('CaseStudyPage.allCaseStudies');
   const [currentPage, setCurrentPage] = useState(1);
   const caseStudiesPerPage = 3;
 
@@ -61,7 +63,7 @@ const CaseStudyPaginationWrapper = ({ caseStudies }: CaseStudyPaginationWrapperP
                           {caseStudy.description}
                         </p>
                         <p>
-                          <span className="text-secondary dark:text-accent font-medium">Results: </span>
+                          <span className="text-secondary dark:text-accent font-medium">{t('results')}: </span>
                           {caseStudy.result}
                         </p>
                       </div>
@@ -74,7 +76,7 @@ const CaseStudyPaginationWrapper = ({ caseStudies }: CaseStudyPaginationWrapperP
                       className="btn btn-md btn-white dark:btn-transparent hover:btn-primary"
                       aria-label={`Read more about ${caseStudy.title} case study`}
                       itemProp="url">
-                      Read more
+                      {t('readMore')}
                     </LinkButton>
                   </div>
                 </div>

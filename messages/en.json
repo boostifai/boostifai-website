@@ -124,5 +124,447 @@
   },
   "BlogCard": {
     "readMore": "Read more"
+  },
+  "AgencyPricing": {
+    "badge": "Agency pricing",
+    "title": "Scale your agency with flexible pricing",
+    "monthly": "Monthly",
+    "quarterly": "Quarterly",
+    "yearly": "Yearly",
+    "whatsIncluded": "What's included",
+    "features": {
+      "clientWebsites": "Client websites",
+      "seoPages": "SEO automation pages",
+      "aiBlogs": "AI Blogs monthly per site",
+      "userLogins": "User logins",
+      "monthlyReports": "Monthly performance reports",
+      "whiteLabelReports": "White-label reports",
+      "prioritySupport": "Priority email support",
+      "croScan": "CRO scan & tips",
+      "seoC ourse": "On Demand Course: Future of SEO"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Manage up to 4 client websites",
+        "websites": "1 to 4",
+        "pages": "Up to 500",
+        "blogs": "5",
+        "users": "1"
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Manage up to 10 client websites",
+        "websites": "Up to 10",
+        "pages": "Up to 2000",
+        "blogs": "6",
+        "users": "Up to 10"
+      },
+      "premium": {
+        "name": "Premium",
+        "description": "Manage up to 25 client websites",
+        "websites": "Up to 25",
+        "pages": "Up to 5000",
+        "blogs": "7",
+        "users": "Up to 25"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Contact us",
+        "description": "Manage unlimited client websites",
+        "unlimited": "Unlimited"
+      }
+    },
+    "getStarted": "Get started",
+    "contactUs": "Contact us",
+    "faqTitle": "Frequently Asked Questions",
+    "faqDescription": "Find answers to common questions about our agency pricing"
+  },
+  "BusinessPricing": {
+    "badge": "Our pricing",
+    "title": "Select the pricing plan that best suits your business",
+    "monthly": "Monthly",
+    "quarterly": "Quarterly",
+    "yearly": "Yearly",
+    "whatsIncluded": "What's included",
+    "features": {
+      "websites": "Websites",
+      "seoPages": "SEO automation pages",
+      "aiBlogs": "AI Blogs per month",
+      "rankAnalyzer": "Rank Analyzer",
+      "onPageSeo": "On-page SEO improvements",
+      "linkBuilding": "Link Building",
+      "monthlyReports": "Monthly performance reports",
+      "monthlyCall": "Monthly video call",
+      "croScan": "CRO scan & tips",
+      "seoCourse": "On Demand Course: Future of SEO"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Ideal for a small website or blog",
+        "websites": "1",
+        "pages": "Up to 100",
+        "blogs": "1"
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Perfect for a professional website",
+        "websites": "1 to 4",
+        "pages": "Up to 500",
+        "blogs": "5 per site"
+      },
+      "corporate": {
+        "name": "Corporate",
+        "description": "The best for high traffic websites",
+        "websites": "1 to 10",
+        "pages": "Up to 2000",
+        "blogs": "6 per site"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Contact us",
+        "description": "Perfect for large companies",
+        "unlimited": "Unlimited"
+      }
+    },
+    "getStarted": "Get started",
+    "contactUs": "Contact us",
+    "faqTitle": "Frequently Asked Questions",
+    "faqDescription": "Find answers to common questions about our business pricing"
+  },
+  "PricingFAQ": {
+    "agencies": [
+      {
+        "question": "How does Boostifai stand out from other SEO tools? What are the differences?",
+        "answer": "Unlike traditional SEO tools that provide checklists and recommendations, Boostifai performs real-time adjustments directly on your website. This means faster implementation of SEO strategies, immediate optimization of content, and a significant reduction in manual work. Including content generation, meta tag management, keyword analysis, link building, adding blogs, and real-time on-page SEO adjustments directly within webpages."
+      },
+      {
+        "question": "How does Boostifai integrate with our existing CMS platforms?",
+        "answer": "Boostifai is designed to seamlessly integrate with a wide range of CMS platforms. Our automated solutions can be activated with a single line of code, ensuring that optimizations are applied directly to your client's website. Check out this page for the easy set up process: https://www.boostifai.com/how-it-works/"
+      },
+      {
+        "question": "What are the main features of Boostifai?",
+        "answer": "Boostifai offers automated SEO optimizations, including content generation, meta tag management, keyword analysis, and real-time on-page SEO adjustments directly within webpages."
+      },
+      {
+        "question": "How does Boostifai improve SEO performance?",
+        "answer": "Boostifai enhances SEO performance by automating tasks that improve website visibility, organic search rankings by creating blogs, backlinks and on-page SEO. Boostifai distinguishes itself from conventional SEO tools that operate at surface level, by facilitating on-page SEO improvements directly within website pages, ensuring immediate optimization of content, meta tags, and other essential elements on the client's site. This real-time capability provides integrated optimizations seamlessly to drive rapid results and enhance client satisfaction.\n\nBlog features:\n- Efficient content production: Automatically generated niche-relevant articles tailored to your clients' industries.\n- Enhanced client engagement: Topically relevant content that keeps your clients' audiences engaged and informed.\n- Professional imagery: Utilize niche-relevant featured and in-article images to enhance the visual appeal of your clients' blogs.\n- Optimized structure: Ensure all articles have well-structured headings for better readability and SEO performance.\n- Custom call-to-actions: Drive traffic to your clients' businesses with strategically placed external links and custom CTAs.\n- Seamless automation: Automate the entire content generation and posting process, freeing up your team to focus on more strategic tasks."
+      },
+      {
+        "question": "How does Boostifai handle algorithm changes from search engines?",
+        "answer": "Boostifai updates its engine based on search engine algorithm. Our features are regularly updated to adapt to search engine algorithm changes and industry best practices."
+      },
+      {
+        "question": "Is Boostifai compatible with multiple languages?",
+        "answer": "Yes, Boostifai supports many languages. However, at this time, we do NOT support domains with characters from non-Roman alphabets. That means no TLDs such as .рф, .中国, .みんな and others. If you need support for these domains, please message us. We might add them in the future."
+      },
+      {
+        "question": "Does Boostifai provide reporting?",
+        "answer": "Yes, Boostifai generates detailed analytics and performance reports to track SEO progress and identify areas for improvement. Deliver branded SEO reports to your clients. We generate and review SEO performance reports to track progress and identify areas for improvement."
+      },
+      {
+        "question": "What types of businesses benefit most from Boostifai?",
+        "answer": "Boostifai is beneficial for agencies, businesses, and e-commerce sites looking to optimize their online presence and drive growth through improved SEO practices."
+      },
+      {
+        "question": "How does Boostifai help agencies?",
+        "answer": "Boostifai automates time-consuming SEO tasks such as keyword research, content generation, and meta tag optimization. By handling these tasks automatically, your team can focus on higher-level strategic initiatives and creative projects, enhancing overall efficiency. To discover how we can help your agency, plan a strategy call at https://www.boostifai.com/demo-strategy/"
+      }
+    ],
+    "business": [
+      {
+        "question": "How does Boostifai stand out from other SEO tools? What are the differences?",
+        "answer": "Unlike traditional SEO tools that provide checklists and recommendations, Boostifai performs real-time adjustments directly on your website. This means faster implementation of SEO strategies, immediate optimization of content, and a significant reduction in manual work. Including content generation, meta tag management, keyword analysis, link building, adding blogs, and real-time on-page SEO adjustments directly within webpages."
+      },
+      {
+        "question": "How does Boostifai integrate with our existing CMS platforms?",
+        "answer": "Boostifai is designed to seamlessly integrate with a wide range of CMS platforms. Our automated solutions can be activated with a single line of code, ensuring that optimizations are applied directly to your client's website. Check out this page for the easy set up process: https://www.boostifai.com/how-it-works/"
+      },
+      {
+        "question": "What are the main features of Boostifai?",
+        "answer": "Boostifai offers automated SEO optimizations, including content generation, meta tag management, keyword analysis, and real-time on-page SEO adjustments directly within webpages."
+      },
+      {
+        "question": "How does Boostifai improve SEO performance?",
+        "answer": "Boostifai enhances SEO performance by automating tasks that improve website visibility, organic search rankings by creating blogs, backlinks and on-page SEO. Boostifai distinguishes itself from conventional SEO tools that operate at surface level, by facilitating on-page SEO improvements directly within website pages, ensuring immediate optimization of content, meta tags, and other essential elements on the client's site. This real-time capability provides integrated optimizations seamlessly to drive rapid results and enhance client satisfaction.\n\nBlog features:\n- Efficient content production: Automatically generated niche-relevant articles tailored to your clients' industries.\n- Enhanced client engagement: Topically relevant content that keeps your clients' audiences engaged and informed.\n- Professional imagery: Utilize niche-relevant featured and in-article images to enhance the visual appeal of your clients' blogs.\n- Optimized structure: Ensure all articles have well-structured headings for better readability and SEO performance.\n- Custom call-to-actions: Drive traffic to your clients' businesses with strategically placed external links and custom CTAs.\n- Seamless automation: Automate the entire content generation and posting process, freeing up your team to focus on more strategic tasks."
+      },
+      {
+        "question": "How does Boostifai handle algorithm changes from search engines?",
+        "answer": "Boostifai updates its engine based on search engine algorithm. Our features are regularly updated to adapt to search engine algorithm changes and industry best practices."
+      },
+      {
+        "question": "Is Boostifai compatible with multiple languages?",
+        "answer": "Yes, Boostifai supports many languages. However, at this time, we do NOT support domains with characters from non-Roman alphabets. That means no TLDs such as .рф, .中国, .みんな and others. If you need support for these domains, please message us. We might add them in the future."
+      },
+      {
+        "question": "Does Boostifai provide reporting?",
+        "answer": "Yes, Boostifai generates detailed analytics and performance reports to track SEO progress and identify areas for improvement. Deliver branded SEO reports to your clients. We generate and review SEO performance reports to track progress and identify areas for improvement."
+      },
+      {
+        "question": "What types of businesses benefit most from Boostifai?",
+        "answer": "Boostifai is beneficial for agencies, businesses, and e-commerce sites looking to optimize their online presence and drive growth through improved SEO practices."
+      },
+      {
+        "question": "How does Boostifai help agencies?",
+        "answer": "Boostifai automates time-consuming SEO tasks such as keyword research, content generation, and meta tag optimization. By handling these tasks automatically, your team can focus on higher-level strategic initiatives and creative projects, enhancing overall efficiency. To discover how we can help your agency, plan a strategy call at https://www.boostifai.com/demo-strategy/"
+      }
+    ]
+  },
+  "FAQPage": {
+    "badge": "FAQ",
+    "title": "Commonly asked questions",
+    "description": "Find answers to the most frequently asked questions about Boostifai's AI-powered SEO automation.",
+    "tabs": {
+      "business": "Business",
+      "agencies": "Agencies"
+    },
+    "contact": {
+      "badge": "Contact",
+      "title": "Still have questions?",
+      "description": "If your question isn't listed here, feel free to contact us or start a live chat with our team. We're happy to help!",
+      "form": {
+        "fullName": "Full name",
+        "fullNamePlaceholder": "Enter your name",
+        "email": "Email address",
+        "emailPlaceholder": "Enter your email",
+        "message": "Messages",
+        "messagePlaceholder": "Enter your messages",
+        "terms": "I agree with the",
+        "termsLink": "terms and conditions",
+        "submit": "Submit"
+      }
+    }
+  },
+  "BlogPage": {
+    "heading": {
+      "title": "Our recent news & insights",
+      "titleHighlight": "news & insights",
+      "description": "Our recent news and insights highlight the latest developments, achievements, and thought leadership shaping our journey forward. From product innovations and strategic partnerships to industry trends"
+    },
+    "search": {
+      "placeholder": "Search articles",
+      "submitLabel": "Submit search"
+    },
+    "categories": {
+      "title": "Categories",
+      "all": "All"
+    },
+    "recentArticles": {
+      "title": "Recent articles"
+    },
+    "blogCard": {
+      "readMore": "Read more",
+      "minRead": "min read"
+    },
+    "filters": {
+      "category": "Category",
+      "showingResults": "Showing results for",
+      "result": "result",
+      "results": "results",
+      "post": "post",
+      "posts": "posts",
+      "viewAllPosts": "View all posts",
+      "clearSearch": "Clear search"
+    },
+    "noResults": {
+      "title": "No blogs found",
+      "searchMessage": "No results found for \"{query}\". Try a different search term.",
+      "filterMessage": "Try adjusting your search or filter criteria"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page",
+      "of": "of"
+    }
+  },
+  "AffiliatesPage": {
+    "hero": {
+      "title": "Welcome to the Boostifai Affiliate Program!",
+      "description": "Are you passionate about helping businesses grow and earn commissions promoting a powerful SEO tool?",
+      "ctaButton": "Start in just 60 seconds"
+    },
+    "whatIsBoostifai": {
+      "title": "What is Boostifai?",
+      "description": "Boostifai is a company with focus on helping business owners and agencies with their marketing challenges:",
+      "card1Title": "Artificial intelligent solutions",
+      "card1Description": "A gut feeling is good, but data never lies. We offer data-driven solutions that help our customers make well-founded business decisions.",
+      "card2Title": "Automation",
+      "card2Description": "We believe entrepreneurs and companies should be able to focus on their core business. Automation creates stability and continuity while saving time.",
+      "card3Title": "Ambition",
+      "card3Description": "Our customers are ambitious and so are we. We keep pushing ourselves to finetune our products and create new ones. Making the lives of our customers easier is what drives us every day."
+    },
+    "benefits": {
+      "badge": "How it works",
+      "title": "Benefits of our affiliate program",
+      "benefit1Title": "Generous commissions",
+      "benefit1Description": "Earn substantial commissions on every sale you refer. The more you promote, the more you earn!",
+      "benefit2Title": "High conversion rates",
+      "benefit2Description": "Boostifai's user-friendly design and powerful features make it an easy sell. Watch your referrals convert effortlessly.",
+      "benefit3Title": "Marketing support",
+      "benefit3Description": "Access a wealth of marketing resources, including banners, email templates, and detailed guides, to help you succeed.",
+      "benefit4Title": "Real-Time tracking",
+      "benefit4Description": "Keep track of your referrals and commissions with our transparent, real-time tracking system."
+    },
+    "services": {
+      "title": "Our best services to promote",
+      "service1": "Boostifai Professional subscription - Upgrade to Boostifai Professional for advanced SEO automation and enhanced features. Unlock premium tools to maximize your website's traffic and profitability",
+      "service2": "1 year SEO Boost for your website - Get a 1-year SEO boost for your website with Boostifai. Experience sustained growth and improved search rankings all year long."
+    },
+    "testimonial": {
+      "title": "Customer reviews",
+      "text": "Boostifai transformed our online presence in no time! The automated SEO features are incredibly user-friendly, and we've seen a significant boost in traffic and sales. Highly recommend!",
+      "author": "Ashley",
+      "company": "SEOmatic"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "question1": "How does the affiliate program work?",
+      "answer1": "As a Boostifai affiliate, you'll earn commissions by promoting our SEO tool. Share your unique affiliate link, and earn a commission for every sale made through your link.",
+      "question2": "What resources are available to affiliates?",
+      "answer2": "Affiliates have access to a variety of marketing resources, including banners, email templates, and promotional guides to help you succeed.",
+      "question3": "What is Boostifai?",
+      "answer3": "Boostifai is an automated SEO tool designed to help businesses attract more customers and increase their profits with minimal effort. It requires no coding and eliminates the need for complex checklists.",
+      "question4": "How do I get paid?",
+      "answer4": "Commissions are paid out monthly via your chosen payment method, once you reach the minimum payout threshold."
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "AI-powered SEO solution for businesses and agencies",
+      "description": "Learn about our mission, story, and team. We are committed to revolutionizing SEO for business owners and agencies through innovative AI technology."
+    },
+    "mission": {
+      "title": "Our mission",
+      "paragraph1": "At Boostifai, our mission is to empower business owners and agencies with innovative AI-driven SEO to revolutionize their digital marketing. Our solution elevates online visibility and drives sustainable growth by automating SEO processes. Boostifai leverages advanced AI technology to automate SEO and enhance website performance effortlessly.",
+      "paragraph2": "We empower business owners to focus on strategic growth and creative pursuits by automating the technical aspects of SEO. Boostifai enhances your online presence effortlessly, ensuring improved visibility and attracting more visitors without requiring technical skills.",
+      "paragraph3": "We enable agencies to focus on strategic initiatives and creative endeavors, enhancing client satisfaction and fostering long-term partnerships. Our goal is to be the trusted partner that agencies rely on to deliver exceptional results, achieve marketing goals, and stay ahead in the competitive landscape of digital marketing."
+    },
+    "story": {
+      "title": "Our story",
+      "ceo": "Bert Vissers - CEO",
+      "intro": "Bert Vissers, owner of Webshopcompany since 2008:",
+      "paragraph1": "20 years ago I graduated as an application engineer with a passion for e-commerce. Over the years, I have built many websites, webshops and apps. I realized many clients struggled with online visibility and website traffic.",
+      "paragraph2": "Driven by a passion for innovation and a deep understanding of the online world, I worked towards a transformation of SEO practices. My vision is to develop an automated AI solution that helps business owners to focus on their true passion and that helps agencies to concentrate more on strategy, creativity and client relationships.",
+      "paragraph3": "As an AI business architect, I work with a dedicated team of AI experts to develop a powerful AI-driven solution. Unlike traditional SEO tools that only provide checklists, Boostifai stands out by allowing direct changes within webpages. Our solution enables immediate optimization of content, meta tags, and other important elements directly on the website.",
+      "paragraph4": "This real-time capability shows our commitment to delivering faster results and higher client satisfaction, contrasting with competitors who rely on manual adjustments, hours of investigation and implementation of changes given by external checklists.",
+      "paragraph5": "Boostifai can be activated with one line of code and requires no technical expertise. It simplifies operations through automation, reduces ad spend by boosting organic SEO growth, and provides detailed reporting with actionable insights of the progression. Experience the transformative power of Boostifai."
+    },
+    "share": {
+      "title": "Share this page"
+    },
+    "testimonial": {
+      "title": "What our users say"
+    }
+  },
+  "CaseStudyPage": {
+    "pageTitle": "Case Study",
+    "featured": {
+      "title": "Success story: Enjoy Andalusia",
+      "description": "Discover how Boostifai helped Dirk scale his business while living his dream in Spain. Real results, real impact, and a better work-life balance.",
+      "sectionTitle": "Featured case study",
+      "client": "Client",
+      "industry": "Industry",
+      "founder": "Founder",
+      "subtitle": "Boosting business, living the dream in Spain!",
+      "ctaButton": "See Full Report"
+    },
+    "allCaseStudies": {
+      "title": "All case studies",
+      "description": "Discover how businesses and agencies are achieving remarkable results with Boostifai. Real stories, real growth, and measurable impact through AI-powered SEO automation.",
+      "results": "Results",
+      "readMore": "Read more"
+    },
+    "stats": {
+      "organicSearch": "Increase in organic search",
+      "aiSuggestions": "A.I. suggestions approved",
+      "rankingKeywords": "Ranking keywords in 12 months"
+    },
+    "details": {
+      "beforeDate": "Before: June 2023",
+      "afterDate": "After: January 2024",
+      "beforeCaption": "06/2023: 100 monthly clicks",
+      "afterCaption": "01/2024: 3,500+ monthly clicks",
+      "resultsTitle": "The results",
+      "metric": "Metric",
+      "monthlyClicks": "Monthly clicks",
+      "seoWorkflow": "SEO workflow",
+      "rankingKeywords": "Ranking keywords",
+      "scalability": "Scalability",
+      "before": "Before",
+      "after": "After",
+      "keyFeatures": "Key Features Used"
+    }
+  },
+  "NewsletterPage": {
+    "hero": {
+      "title": "Stay Ahead with SEO Insights",
+      "description": "Subscribe to our newsletter and get the latest SEO tips, AI-powered strategies, and exclusive insights delivered straight to your inbox."
+    },
+    "benefits": {
+      "title": "What You'll Get",
+      "description": "Join thousands of business owners and marketers who trust our newsletter for actionable SEO advice.",
+      "benefit1Title": "Weekly SEO Tips",
+      "benefit1Description": "Get practical, actionable SEO strategies you can implement right away to boost your rankings.",
+      "benefit2Title": "Industry Insights",
+      "benefit2Description": "Stay updated with the latest search engine algorithm changes and digital marketing trends.",
+      "benefit3Title": "Exclusive Content",
+      "benefit3Description": "Access case studies, guides, and resources available only to our newsletter subscribers.",
+      "benefit4Title": "Product Updates",
+      "benefit4Description": "Be the first to know about new Boostifai features and special offers for subscribers."
+    },
+    "form": {
+      "title": "Subscribe Now",
+      "subtitle": "Join our community and never miss an update",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "submitButton": "Subscribe to Newsletter",
+      "successMessage": "Successfully subscribed!",
+      "privacyNote": "We respect your privacy. Unsubscribe at any time."
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "title": "Need help with Boostifai?",
+      "description": "Welcome to the boostifai Support Center! We're ready to assist you if you have an issue or a question."
+    },
+    "form": {
+      "badge": "Ticket",
+      "title": "Contact Information",
+      "description": "Have a question, feedback, or feature request? We'd love to hear from you! Please fill out the form below, and our support team will get back to you as soon as possible.",
+      "nameLabel": "Your name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "Enter your email address",
+      "commentLabel": "Comment",
+      "commentPlaceholder": "Enter your comment",
+      "termsText": "I agree with the",
+      "termsLink": "terms and conditions",
+      "submitButton": "Submit"
+    },
+    "info": {
+      "title": "Contact Information",
+      "addressLabel": "Address",
+      "emailLabel": "Email",
+      "vatLabel": "VAT Number",
+      "bookMeetingButton": "Book a meeting"
+    }
+  },
+  "BookMeetingPage": {
+    "hero": {
+      "title": "Book Your Free Strategy Call",
+      "description": "Schedule a personalized consultation with our SEO experts. Discover how Boostifai can transform your online presence and drive real results for your business."
+    },
+    "benefits": {
+      "benefit1Title": "Personalized SEO Audit",
+      "benefit1Description": "Get a quick assessment of your current SEO performance and identify key opportunities for improvement.",
+      "benefit2Title": "Custom Strategy",
+      "benefit2Description": "Receive tailored recommendations based on your business goals, industry, and target audience.",
+      "benefit3Title": "Platform Demo",
+      "benefit3Description": "See Boostifai in action and learn how our AI-powered tools can automate your SEO workflow."
+    }
   }
 }

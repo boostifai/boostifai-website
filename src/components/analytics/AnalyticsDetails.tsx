@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import analytics1 from '@public/images/analytics/analytics-1.png';
 import analytics2 from '@public/images/analytics/analytics-2.png';
 import analytics3 from '@public/images/analytics/analytics-3.png';
@@ -6,42 +9,30 @@ import Image from 'next/image';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
 
-{
-  /* =========================
-Analytics Details section
-===========================*/
-}
-
 const AnalyticsDetails = () => {
+  const t = useTranslations('AboutPage');
+  
   return (
     <section className="pt-[70px] pb-[100px] analytics">
       <div className="max-w-[950px] w-[95%] mx-auto flex flex-col space-y-18">
         <div className="space-y-6">
           <div className="space-y-1">
             <RevealAnimation delay={0.1}>
-              <h3>Our mission</h3>
+              <h3>{t('mission.title')}</h3>
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p>
-                At Boostifai, our mission is to empower business owners and agencies with innovative AI-driven SEO to
-                revolutionize their digital marketing. Our solution elevates online visibility and drives sustainable
-                growth by automating SEO processes. Boostifai leverages advanced AI technology to automate SEO and
-                enhance website performance effortlessly.
+                {t('mission.paragraph1')}
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p>
-                We empower business owners to focus on strategic growth and creative pursuits by automating the
-                technical aspects of SEO. Boostifai enhances your online presence effortlessly, ensuring improved
-                visibility and attracting more visitors without requiring technical skills.
+                {t('mission.paragraph2')}
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p>
-                We enable agencies to focus on strategic initiatives and creative endeavors, enhancing client
-                satisfaction and fostering long-term partnerships. Our goal is to be the trusted partner that agencies
-                rely on to deliver exceptional results, achieve marketing goals, and stay ahead in the competitive
-                landscape of digital marketing.
+                {t('mission.paragraph3')}
               </p>
             </RevealAnimation>
           </div>
@@ -50,10 +41,10 @@ const AnalyticsDetails = () => {
         <div className="space-y-6">
           <div className="space-y-1">
             <RevealAnimation delay={0.2}>
-              <h3>Our story</h3>
+              <h3>{t('story.title')}</h3>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <h6 className="text-secondary dark:text-accent font-semibold mt-3">Bert Vissers - CEO</h6>
+              <h6 className="text-secondary dark:text-accent font-semibold mt-3">{t('story.ceo')}</h6>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <div className="flex flex-col gap-6 mb-6 mt-10">
@@ -61,45 +52,33 @@ const AnalyticsDetails = () => {
                   <Image src={bertImage} alt="Bert Vissers - CEO" className="w-full h-full object-cover" />
                 </figure>
                 <div>
-                  <p>Bert Vissers, owner of Webshopcompany since 2008:</p>
+                  <p>{t('story.intro')}</p>
                 </div>
               </div>
             </RevealAnimation>
             <RevealAnimation delay={0.5}>
               <p>
-                20 years ago I graduated as an application engineer with a passion for e-commerce. Over the years, I
-                have built many websites, webshops and apps. I realized many clients struggled with online visibility
-                and website traffic.
+                {t('story.paragraph1')}
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.6}>
               <p>
-                Driven by a passion for innovation and a deep understanding of the online world, I worked towards a
-                transformation of SEO practices. My vision is to develop an automated AI solution that helps business
-                owners to focus on their true passion and that helps agencies to concentrate more on strategy,
-                creativity and client relationships.
+                {t('story.paragraph2')}
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.7}>
               <p>
-                As an AI business architect, I work with a dedicated team of AI experts to develop a powerful AI-driven
-                solution. Unlike traditional SEO tools that only provide checklists, Boostifai stands out by allowing
-                direct changes within webpages. Our solution enables immediate optimization of content, meta tags, and
-                other important elements directly on the website.
+                {t('story.paragraph3')}
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.8}>
               <p>
-                This real-time capability shows our commitment to delivering faster results and higher client
-                satisfaction, contrasting with competitors who rely on manual adjustments, hours of investigation and
-                implementation of changes given by external checklists.
+                {t('story.paragraph4')}
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.9}>
               <p>
-                Boostifai can be activated with one line of code and requires no technical expertise. It simplifies
-                operations through automation, reduces ad spend by boosting organic SEO growth, and provides detailed
-                reporting with actionable insights of the progression. Experience the transformative power of Boostifai.
+                {t('story.paragraph5')}
               </p>
             </RevealAnimation>
           </div>
@@ -129,7 +108,7 @@ const AnalyticsDetails = () => {
 
         <div className="space-y-4">
           <RevealAnimation delay={0.2}>
-            <h5>Share this page</h5>
+            <h5>{t('share.title')}</h5>
           </RevealAnimation>
           {/*Social links*/}
           <RevealAnimation delay={0.2}>

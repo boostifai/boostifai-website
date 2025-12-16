@@ -61,7 +61,7 @@ const HowItWork = () => {
       <div className="flex items-center justify-center mt-10">
           <RevealAnimation delay={0.6}>
             <LinkButton
-              href="/our-services-02"
+              href="#"
               className="btn hover:btn-secondary dark:hover:btn-accent btn-primary btn-md">
               <span>{t('ctaButton')}</span>
             </LinkButton>
