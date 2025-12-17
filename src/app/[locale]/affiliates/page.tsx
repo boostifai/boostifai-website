@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Affiliates - NextSaaS',
+  title: 'Affiliates | Boostifai',
 };
 
 const AffiliatePolicy = () => {

@@ -32,7 +32,7 @@ const CostSavingCalculator: FC = () => {
               <label htmlFor="sites-slider" className="text-base font-medium text-accent md:text-lg">
                 {t('numberOfSites')}
               </label>
-              <span className="text-lg font-bold text-accent md:text-xl">{sites} {t('sitesLabel')}</span>
+              <span className="text-lg font-medium text-accent">{sites} {t('sitesLabel')}</span>
             </div>
             <div className="relative flex items-center">
               <div className="absolute inset-0 h-2 rounded-lg bg-accent/20" />
@@ -57,7 +57,7 @@ const CostSavingCalculator: FC = () => {
               <label htmlFor="pages-slider" className="text-base font-medium text-accent md:text-lg">
                 {t('numberOfPages')}
               </label>
-              <span className="text-lg font-bold text-accent md:text-xl">{pagesPerSite} {t('pagesLabel')}</span>
+              <span className="text-lg font-medium text-accent">{pagesPerSite} {t('pagesLabel')}</span>
             </div>
             <div className="relative flex items-center">
               <div className="absolute inset-0 h-2 rounded-lg bg-accent/20" />
@@ -77,9 +77,9 @@ const CostSavingCalculator: FC = () => {
           </div>
 
           {/* Total Savings Display */}
-          <div className="mt-10 rounded-2xl bg-[#deffa3] p-6 text-center md:p-8">
-            <p className="mb-2 text-sm font-medium uppercase tracking-wider text-[#252525]">{t('totalSavings')}</p>
-            <p className="text-4xl text-[#252525] font-bold md:text-5xl lg:text-6xl">
+          <div className="mt-10 rounded-2xl bg-white p-6 text-center md:p-8">
+            <p className="mb-2 text-sm font-medium uppercase tracking-wider text-[#151515]">{t('totalSavings')}</p>
+            <p className="text-4xl text-[#151515] font-bold md:text-5xl lg:text-6xl">
               ${totalSavings.toLocaleString()}
             </p>
           </div>

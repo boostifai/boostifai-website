@@ -10,8 +10,8 @@ import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Case Study - NextSaaS',
-  description: 'Case Study - NextSaaS',
+  title: 'Case Study | Boostifai',
+  description: 'Case Study for boostifai',
 };
 
 interface CaseStudyPageProps {

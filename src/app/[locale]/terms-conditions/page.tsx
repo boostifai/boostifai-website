@@ -1,36 +1,39 @@
-import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import PageHero from '@/components/shared/PageHero';
-import TermsConditionContent from '@/components/terms-conditions/TermsConditionContent';
+import TermsConditionContentEN from '@/components/terms-conditions/TermsConditionContentEN';
+import TermsConditionContentNL from '@/components/terms-conditions/TermsConditionContentNL';
+import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions - NextSaaS',
+  title: 'Terms & Conditions | Boostifai',
 };
 
-const TermsConditions = () => {
+interface TermsConditionsProps {
+  params: Promise<{
+    locale: 'en' | 'nl';
+  }>;
+}
+
+const TermsConditions = async ({ params }: TermsConditionsProps) => {
+  const { locale } = await params;
+  const TermsContent = locale === 'nl' ? TermsConditionContentNL : TermsConditionContentEN;
+  const pageTitle = locale === 'nl' ? 'Algemene Voorwaarden' : 'Terms & Conditions';
+
   return (
     <Fragment>
       <NavbarOne
-        className="border border-stroke-2 bg-accent/60 dark:border-stroke-6 dark:bg-background-9 backdrop-blur-[25px]"
+        className="border border-white backdrop-blur-[25px]"
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
       />
       <main className="bg-background-3 dark:bg-background-7">
-        <PageHero title="Terms & Conditions" heading="Terms & Conditions" link="/terms-conditions" />
-        <TermsConditionContent />
-        <CTAV1
-          className="dark:bg-background-5 bg-white"
-          badgeClass="badge-yellow-v2"
-          badgeText="Get Started"
-          ctaHeading="Ready to start earning with NextSaaS?"
-          description="If you have any questions, feel free to reach out to our team."
-          btnClass="hover:btn-secondary dark:hover:btn-accent"
-          ctaBtnText="Get started"
-        />
+        <PageHero title={pageTitle} heading={pageTitle} link="/terms-conditions" />
+        <TermsContent />
+        <CTA2 />
       </main>
-      <FooterThree />
+      <FooterThree className="relative border-t border-stroke-1 dark:border-0" />
     </Fragment>
   );
 };

@@ -9,7 +9,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Pricing 03 - NextSaaS',
+  title: 'Business Pricing | Boostifai',
 };
 
 const Pricing03 = async () => {

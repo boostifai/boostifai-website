@@ -107,6 +107,10 @@
       "title": "Klaar om de eerste stap te zetten?",
       "description": "Krijg een offerte op maat, controleer uw geschiktheid, of praat met een echte expert—vandaag nog.",
       "button": "Start gratis proefperiode"
+    },
+    "heroAvatar": {
+      "trustedBy": "Vertrouwd door 400+",
+      "customers": "Klanten over de hele wereld"
     }
   },
   "Navigation": {
@@ -565,6 +569,100 @@
       "benefit2Description": "Ontvang op maat gemaakte aanbevelingen op basis van uw bedrijfsdoelen, branche en doelgroep.",
       "benefit3Title": "Platform demo",
       "benefit3Description": "Zie Boostifai in actie en leer hoe onze AI-aangedreven tools uw SEO-workflow kunnen automatiseren."
+    }
+  },
+  "EbookPage": {
+    "hero": {
+      "badge": "E-book GRATIS DOWNLOAD",
+      "title": "Gratis e-book: Ultieme SEO-gids",
+      "description": "Wilt u meer verkeer, hoger ranken in Google en massa's gratis bezoekers naar uw website krijgen? Dit e-book is de ultieme SEO-gids. Praktische tips en praktijken helpen u de zichtbaarheid van uw website in Google te verbeteren.",
+      "subtitle": "Deze stapsgewijze gids laat u een onverslaanbare autoriteit en thought leader worden in uw marktniche. Ontdek hoe u uw website bovenaan de zoekresultaten krijgt en daar houdt!"
+    },
+    "benefits": {
+      "title": "Wat u zult ontdekken",
+      "benefit1Title": "Conversie-optimalisatietips",
+      "benefit1Description": "Ontdek de beste conversie-optimalisatietips en -trucs om uw bezoekers in klanten om te zetten.",
+      "benefit2Title": "Google Rank Brain-inzichten",
+      "benefit2Description": "Krijg inzicht in Google's RankBrain-algoritme om uw verkeer en rankings te verhogen.",
+      "benefit3Title": "Zoekwoordvoorstellen",
+      "benefit3Description": "Ontvang nuttige zoekwoordvoorstellen en leer hoe u de juiste zoektermen kunt targeten.",
+      "benefit4Title": "AI-gegenereerde content",
+      "benefit4Description": "Leer hoe u effectieve AI-gegenereerde content maakt die goed scoort in zoekmachines.",
+      "benefit5Title": "Leadgeneratie",
+      "benefit5Description": "Haal meer leads uit uw gratis bezoekers met bewezen conversiestrategieën.",
+      "benefit6Title": "SEO-fundamenten",
+      "benefit6Description": "Leer \"wat is SEO?\" op de juiste manier en pas het moeiteloos toe op uw website."
+    },
+    "testimonial": {
+      "title": "Succesverhaal",
+      "quote": "Van pagina 88 naar pagina 1 in 2 weken? Het is mogelijk!",
+      "author": "Jan Taylor"
+    },
+    "download": {
+      "title": "Download uw gratis e-book",
+      "subtitle": "Voer hieronder uw gegevens in om direct toegang te krijgen tot de Ultieme SEO-gids",
+      "nameLabel": "Volledige naam",
+      "namePlaceholder": "Voer uw naam in",
+      "emailLabel": "E-mailadres",
+      "emailPlaceholder": "Voer uw e-mailadres in",
+      "submitButton": "Download gratis e-book",
+      "successMessage": "Controleer uw e-mail!",
+      "privacyNote": "We respecteren uw privacy. Uw informatie wordt nooit gedeeld."
+    }
+  },
+  "TutorialsPage": {
+    "tabs": {
+      "all": "Alle",
+      "dashboard": "Dashboard",
+      "integration": "Integratie"
+    },
+    "tutorials": {
+      "tutorial1Title": "Aan de slag gids",
+      "tutorial1Subtitle": "Een stapsgewijze uitleg over hoe u uw werkruimte instelt en uw eerste resultaten behaalt.",
+      "tutorial1ReadTime": "25 uur",
+      "tutorial2Title": "Productrondleiding",
+      "tutorial2Subtitle": "Een visueel overzicht van alles wat u kunt doen binnen Boostifai.",
+      "tutorial2ReadTime": "25 uur",
+      "tutorial3Title": "Uw dashboard instellen",
+      "tutorial3Subtitle": "Pas uw ervaring aan en creëer een systeem dat voor u werkt.",
+      "tutorial3ReadTime": "25 uur",
+      "readMore": "Lees meer"
+    },
+    "features": {
+      "title": "Beheers het Boostifai Dashboard",
+      "description": "Uitgebreide handleidingen en tutorials om het maximale uit uw Boostifai dashboard te halen.",
+      "feature1Title": "Dashboard overzicht",
+      "feature1Description": "Leer hoe u door het Boostifai dashboard navigeert en toegang krijgt tot alle belangrijke functies voor het beheren van uw SEO-automatisering.",
+      "feature2Title": "Functie tutorials",
+      "feature2Description": "Stapsgewijze handleidingen voor het gebruik van AI-aanbevelingen, geautomatiseerde blogging, rank tracking en linkbuilding functies.",
+      "feature3Title": "Best practices",
+      "feature3Description": "Ontdek bewezen strategieën en tips om uw resultaten te maximaliseren met Boostifai's AI-aangedreven SEO-tools."
+    }
+  },
+  "ProcessPage": {
+    "hero": {
+      "title": "Ons Proces",
+      "heading": "Ons Proces"
+    },
+    "steps": {
+      "badge": "Snel en eenvoudig instellen",
+      "title": "Eenvoudige 3-stappen setup om uw website onmiddellijk te boosten",
+      "step1Title": "Installeer de Boostifai Pixel",
+      "step1Description": "Abonneer u nu en ontvang het codefragment. Maak u geen zorgen, u hoeft geen technische wizard te zijn om de software te installeren, een simpele kopieer-plak actie volstaat!",
+      "step2Title": "Controleer suggesties",
+      "step2Description": "Bekijk de verbeterde suggesties en keur ze goed met één simpele klik. Wilt u aanpassingen maken aan de suggesties? Geen probleem, u kunt ze eenvoudig verwerpen of wijzigen. Boostifai implementeert de goedgekeurde suggesties automatisch, dus leun achterover en ontspan.",
+      "step3Title": "Word geboost!",
+      "step3Description": "Met al deze geautomatiseerde suggesties wilt u niet blijven wachten. U wilt onmiddellijk resultaten. Volg in realtime hoe onze AI-tool uw paginaranking in Google verbetert. Laten we gaan! Nu bent u klaar om te ervaren wat Boostifai voor uw bedrijf kan doen!"
+    },
+    "benefits": {
+      "title": "Nu bent u klaar om te ervaren wat Boostifai voor uw bedrijf kan doen!",
+      "description": "Met Boostifai's AI-aangedreven SEO-automatisering ziet u echte resultaten in uw Google-rankings. Ons intelligente systeem optimaliseert uw website continu, zodat u zich kunt concentreren op het laten groeien van uw bedrijf terwijl wij het technische SEO-werk afhandelen.",
+      "benefit1Title": "AI-aangedreven optimalisatie",
+      "benefit1Description": "Onze geavanceerde AI analyseert uw website en genereert slimme SEO-aanbevelingen op maat van uw content, waardoor u automatisch hoger scoort in zoekresultaten.",
+      "benefit2Title": "Realtime tracking",
+      "benefit2Description": "Monitor de prestaties van uw website met ons intuïtieve dashboard. Volg keyword rankings, verkeersgroei en SEO-verbeteringen in realtime.",
+      "benefit3Title": "Continue verbetering",
+      "benefit3Description": "Boostifai werkt 24/7 om uw SEO geoptimaliseerd te houden. Naarmate zoekalgoritmes evolueren, past onze AI uw strategie aan om uw rankings te behouden en te verbeteren."
     }
   }
 }

@@ -1,27 +1,25 @@
-import avatar1Img from '@public/images/avatar/avatar-1.png';
-import avatar2Img from '@public/images/avatar/avatar-2.png';
-import avatar3Img from '@public/images/avatar/avatar-3.png';
+'use client';
+import avatar1 from '@public/images/home-page-24/avatar-1.webp';
+import avatar2 from '@public/images/home-page-24/avatar-2.webp';
+import avatar3 from '@public/images/home-page-24/avatar-3.webp';
 import gradient6Img from '@public/images/gradient/gradient-6.png';
-import clientLogo10Dark from '@public/images/icons/client-logo-10-dark.svg';
-import clientLogo10 from '@public/images/icons/client-logo-10.svg';
-import clientLogo6Dark from '@public/images/icons/client-logo-6-dark.svg';
-import clientLogo6 from '@public/images/icons/client-logo-6.svg';
-import clientLogo7Dark from '@public/images/icons/client-logo-7-dark.svg';
-import clientLogo7 from '@public/images/icons/client-logo-7.svg';
-import clientLogo8Dark from '@public/images/icons/client-logo-8-dark.svg';
-import clientLogo8 from '@public/images/icons/client-logo-8.svg';
-import clientLogo9Dark from '@public/images/icons/client-logo-9-dark.svg';
-import clientLogo9 from '@public/images/icons/client-logo-9.svg';
+import clientLogo1 from '@public/images/logo/01.webp';
+import clientLogo2 from '@public/images/logo/02.png';
+import clientLogo3 from '@public/images/logo/03.png';
+import clientLogo4 from '@public/images/logo/04.webp';
+import clientLogo5 from '@public/images/logo/05.png';
+import clientLogo6 from '@public/images/logo/06.webp';
+import clientLogo7 from '@public/images/logo/07.png';
+import clientLogo8 from '@public/images/logo/08.avif';
+import clientLogo9 from '@public/images/logo/09.avif';
+import clientLogo10 from '@public/images/logo/10.avif';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import RevealAnimation from '../animation/RevealAnimation';
+import { useTranslations } from 'next-intl';
 
-{
-  /* =========================
-Client Feedback section
-===========================*/
-}
 const Client = () => {
+  const t = useTranslations('HomePage.heroAvatar');
   return (
     <section>
       <RevealAnimation delay={0.2}>
@@ -37,21 +35,21 @@ const Client = () => {
             <div className="flex justify-center -space-x-2.5 cursor-pointer" role="group" aria-label="Customer avatars">
               <Image
                 className="inline-block size-[38px] rounded-full ring-2 ring-accent dark:ring-black bg-ns-yellow"
-                src={avatar1Img}
+                src={avatar1}
                 alt="Customer avatar 1"
                 width={38}
                 height={38}
               />
               <Image
                 className="inline-block size-[38px] rounded-full ring-2 ring-accent dark:ring-black bg-ns-red"
-                src={avatar2Img}
+                src={avatar2}
                 alt="Customer avatar 2"
                 width={38}
                 height={38}
               />
               <Image
                 className="inline-block size-[38px] rounded-full relative z-0 ring-2 ring-accent dark:ring-black bg-ns-green"
-                src={avatar3Img}
+                src={avatar3}
                 alt="Customer avatar 3"
                 width={38}
                 height={38}
@@ -62,8 +60,8 @@ const Client = () => {
             </div>
             {/* Trust Metrics */}
             <div>
-              <p className="text-tagline-2 text-secondary dark:text-accent font-medium">Tushed by 20k+</p>
-              <p className="text-tagline-3">Customers Across the Globe</p>
+              <p className="text-tagline-2 text-secondary dark:text-accent font-medium">{t('trustedBy')}</p>
+              <p className="text-tagline-3">{t('customers')}</p>
             </div>
           </article>
           {/* Client Logos */}
@@ -76,14 +74,14 @@ const Client = () => {
                 role="group">
                 <figure className="min-w-[140px] md:min-w-[201px] ml-8">
                   <Image
-                    src={clientLogo6}
+                    src={clientLogo1}
                     alt="Client company logo 1"
                     className="lg:w-auto inline-block dark:hidden"
                     width={120}
                     height={40}
                   />
                   <Image
-                    src={clientLogo6Dark}
+                    src={clientLogo1}
                     alt="Client company logo 1"
                     className="lg:w-auto hidden dark:block"
                     width={120}
@@ -91,54 +89,135 @@ const Client = () => {
                   />
                 </figure>
                 <figure className="min-w-[140px] md:min-w-[201px]">
+                  <Image
+                    src={clientLogo2}
+                    alt="Client company logo 2"
+                    className="lg:w-auto inline-block dark:hidden"
+                    width={120}
+                    height={40}
+                  />
+                  <Image
+                    src={clientLogo2}
+                    alt="Client company logo 2"
+                    className="lg:w-auto hidden dark:block"
+                    width={120}
+                    height={40}
+                  />
+                </figure>
+                                       <figure className="min-w-[140px] md:min-w-[201px]">
                   <Image
                     src={clientLogo7}
-                    alt="Client company logo 2"
+                    alt="Client company logo 5"
                     className="lg:w-auto inline-block dark:hidden"
                     width={120}
                     height={40}
                   />
                   <Image
-                    src={clientLogo7Dark}
-                    alt="Client company logo 2"
+                    src={clientLogo7}
+                    alt="Client company logo 5"
                     className="lg:w-auto hidden dark:block"
                     width={120}
                     height={40}
                   />
                 </figure>
                 <figure className="min-w-[140px] md:min-w-[201px]">
+                  <Image
+                    src={clientLogo3}
+                    alt="Client company logo 3"
+                    className="lg:w-auto inline-block dark:hidden"
+                    width={120}
+                    height={40}
+                  />
+                  <Image
+                    src={clientLogo3}
+                    alt="Client company logo 3"
+                    className="lg:w-auto hidden dark:block"
+                    width={120}
+                    height={40}
+                  />
+                </figure>
+                <figure className="min-w-[140px] md:min-w-[201px]">
+                  <Image
+                    src={clientLogo4}
+                    alt="Client company logo 4"
+                    className="lg:w-auto inline-block dark:hidden"
+                    width={120}
+                    height={40}
+                  />
+                  <Image
+                    src={clientLogo4}
+                    alt="Client company logo 4"
+                    className="lg:w-auto hidden dark:block"
+                    width={120}
+                    height={40}
+                  />
+                </figure>
+                <figure className="min-w-[140px] md:min-w-[201px]">
+                  <Image
+                    src={clientLogo5}
+                    alt="Client company logo 5"
+                    className="lg:w-auto inline-block dark:hidden"
+                    width={120}
+                    height={40}
+                  />
+                  <Image
+                    src={clientLogo5}
+                    alt="Client company logo 5"
+                    className="lg:w-auto hidden dark:block"
+                    width={120}
+                    height={40}
+                  />
+                </figure>
+                                {/* <figure className="min-w-[140px] md:min-w-[201px]">
+                  <Image
+                    src={clientLogo6}
+                    alt="Client company logo 5"
+                    className="lg:w-auto inline-block dark:hidden"
+                    width={120}
+                    height={40}
+                  />
+                  <Image
+                    src={clientLogo6}
+                    alt="Client company logo 5"
+                    className="lg:w-auto hidden dark:block"
+                    width={120}
+                    height={40}
+                  />
+                </figure> */}
+         
+                                 {/* <figure className="min-w-[140px] md:min-w-[201px]">
                   <Image
                     src={clientLogo8}
-                    alt="Client company logo 3"
+                    alt="Client company logo 5"
                     className="lg:w-auto inline-block dark:hidden"
                     width={120}
                     height={40}
                   />
                   <Image
-                    src={clientLogo8Dark}
-                    alt="Client company logo 3"
+                    src={clientLogo8}
+                    alt="Client company logo 5"
                     className="lg:w-auto hidden dark:block"
                     width={120}
                     height={40}
                   />
                 </figure>
-                <figure className="min-w-[140px] md:min-w-[201px]">
+                                 <figure className="min-w-[140px] md:min-w-[201px]">
                   <Image
                     src={clientLogo9}
-                    alt="Client company logo 4"
+                    alt="Client company logo 5"
                     className="lg:w-auto inline-block dark:hidden"
                     width={120}
                     height={40}
                   />
                   <Image
-                    src={clientLogo9Dark}
-                    alt="Client company logo 4"
+                    src={clientLogo9}
+                    alt="Client company logo 5"
                     className="lg:w-auto hidden dark:block"
                     width={120}
                     height={40}
                   />
-                </figure>
-                <figure className="min-w-[140px] md:min-w-[201px]">
+                </figure> */}
+                                 <figure className="min-w-[140px] md:min-w-[201px]">
                   <Image
                     src={clientLogo10}
                     alt="Client company logo 5"
@@ -147,7 +226,7 @@ const Client = () => {
                     height={40}
                   />
                   <Image
-                    src={clientLogo10Dark}
+                    src={clientLogo10}
                     alt="Client company logo 5"
                     className="lg:w-auto hidden dark:block"
                     width={120}

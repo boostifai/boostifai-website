@@ -1,10 +1,13 @@
+'use client';
 import avatar1 from '@public/images/home-page-24/avatar-1.webp';
 import avatar2 from '@public/images/home-page-24/avatar-2.webp';
 import avatar3 from '@public/images/home-page-24/avatar-3.webp';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
+import { useTranslations } from 'next-intl';
 
 const HeroAvatar = () => {
+  const t = useTranslations('HomePage.heroAvatar');
   return (
     <div className="relative z-[20]">
       <div className="flex items-center justify-center gap-4 md:mb-[75px] mb-[50px] max-[400px]:flex-col flex-row">
@@ -44,8 +47,8 @@ const HeroAvatar = () => {
         </div>
         <RevealAnimation delay={0.7} direction="left" offset={50}>
           <div className="max-[400px]:text-center text-left">
-            <p className="text-tagline-2 font-medium text-[#151515]">Trusted by 400+</p>
-            <p className="text-tagline-3 font-normal text-[#454545]">Customers across the globe</p>
+            <p className="text-tagline-2 font-medium text-[#151515]">{t('trustedBy')}</p>
+            <p className="text-tagline-3 font-normal text-[#454545]">{t('customers')}</p>
           </div>
         </RevealAnimation>
       </div>

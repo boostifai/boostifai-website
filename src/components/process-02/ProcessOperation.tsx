@@ -1,30 +1,21 @@
-{
-  /* =========================
-Process Steps v2 section
-===========================*/
-}
-import ProcessDarkImage from '@public/images/home-page-4/process-dark.png';
-import ProcessImage from '@public/images/home-page-4/process.png';
+'use client';
+import ProcessImage from '@public/images/home-page-24/frame_safari_dark.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
+import { useTranslations } from 'next-intl';
 
 const ProcessOperation = () => {
+  const t = useTranslations('ProcessPage.benefits');
   return (
     <section className="py-[100px] bg-background-1 dark:bg-background-6 space-y-[70px]">
       <div className="main-container space-y-[70px]">
         <div className="space-y-5 max-w-[804px] mx-auto text-center">
-          <RevealAnimation delay={0.1}>
-            <span className="badge badge-cyan-v2">Process</span>
-          </RevealAnimation>
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.2}>
-              <h2 className="max-w-[624px] mx-auto">What are the steps involved in its operation?</h2>
+              <h2 className="max-w-[624px] mx-auto">{t('title')}</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p className="max-w-[802px] mx-auto">
-                The operation of instantaneous data insights and analytics involves several key steps. It begins with
-                data collection, where information is gathered in real-time from various sources such as sensors
-              </p>
+              <p className="max-w-[802px] mx-auto">{t('description')}</p>
             </RevealAnimation>
           </div>
         </div>
@@ -35,7 +26,7 @@ const ProcessOperation = () => {
                 <figure className="max-w-[478px] max-h-[547px] lg:mx-0 mx-auto">
                   <Image src={ProcessImage} alt="process" className="h-full w-full object-cover dark:hidden block" />
                   <Image
-                    src={ProcessDarkImage}
+                    src={ProcessImage}
                     alt="process"
                     className="h-full w-full object-cover hidden dark:block"
                   />
@@ -54,12 +45,9 @@ const ProcessOperation = () => {
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-medium leading-[27px] text-secondary dark:text-accent">
-                      Choose domain
+                      {t('benefit1Title')}
                     </h3>
-                    <p>
-                      Choose a domain name that reflects your website&apos;s purpose, content, or the nature of your
-                      business.
-                    </p>
+                    <p>{t('benefit1Description')}</p>
                   </div>
                 </div>
               </RevealAnimation>
@@ -70,12 +58,9 @@ const ProcessOperation = () => {
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-medium leading-[27px] text-secondary dark:text-accent">
-                      Login/register
+                      {t('benefit2Title')}
                     </h3>
-                    <p>
-                      Take the first step towards creating your website and reaching a wider audience by registering
-                      today.
-                    </p>
+                    <p>{t('benefit2Description')}</p>
                   </div>
                 </div>
               </RevealAnimation>
@@ -85,11 +70,8 @@ const ProcessOperation = () => {
                     3
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-lg font-medium leading-[27px] text-secondary dark:text-accent">Make payment</h3>
-                    <p>
-                      We offer a variety of secure payment methods to make your payment process convenient and
-                      hassle-free.
-                    </p>
+                    <h3 className="text-lg font-medium leading-[27px] text-secondary dark:text-accent">{t('benefit3Title')}</h3>
+                    <p>{t('benefit3Description')}</p>
                   </div>
                 </div>
               </RevealAnimation>

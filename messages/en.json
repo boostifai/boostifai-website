@@ -107,6 +107,10 @@
       "title": "Ready to take the first step?",
       "description": "Get a custom quote, check your eligibility, or talk to a real expert—today.",
       "button": "Start Free Trial"
+    },
+    "heroAvatar": {
+      "trustedBy": "Trusted by 400+",
+      "customers": "Customers across the globe"
     }
   },
   "Navigation": {
@@ -565,6 +569,100 @@
       "benefit2Description": "Receive tailored recommendations based on your business goals, industry, and target audience.",
       "benefit3Title": "Platform Demo",
       "benefit3Description": "See Boostifai in action and learn how our AI-powered tools can automate your SEO workflow."
+    }
+  },
+  "EbookPage": {
+    "hero": {
+      "badge": "E-book FREE DOWNLOAD",
+      "title": "Free e-book: Ultimate SEO guide",
+      "description": "Do you want more traffic, rank higher in Google and get loads of free visitors to your website? This e-book is the ultimate SEO guide. Hands-on tips and practices help you improve your website visibility in Google.",
+      "subtitle": "This step-by-step guide lets you become an unbeatable authority and thought leader in your market niche. Discover how to get website on top of the search results and keep it there!"
+    },
+    "benefits": {
+      "title": "What You'll Discover",
+      "benefit1Title": "Conversion Optimization Tips",
+      "benefit1Description": "Discover the best conversion optimization tips and tricks to turn your visitors into customers.",
+      "benefit2Title": "Google Rank Brain Insights",
+      "benefit2Description": "Get insights into Google's RankBrain algorithm to boost your traffic and rankings.",
+      "benefit3Title": "Keyword Proposals",
+      "benefit3Description": "Retrieve useful keyword proposals and learn how to target the right search terms.",
+      "benefit4Title": "AI Generated Content",
+      "benefit4Description": "Learn how to create effective AI-generated content that ranks well in search engines.",
+      "benefit5Title": "Lead Generation",
+      "benefit5Description": "Get more leads out of your free visitors with proven conversion strategies.",
+      "benefit6Title": "SEO Fundamentals",
+      "benefit6Description": "Learn \"what is SEO?\" the right way and apply it without effort to your website."
+    },
+    "testimonial": {
+      "title": "Success Story",
+      "quote": "From page 88 to page 1 in 2 weeks? It is possible!",
+      "author": "Jan Taylor"
+    },
+    "download": {
+      "title": "Download Your Free E-book",
+      "subtitle": "Enter your details below to get instant access to the Ultimate SEO Guide",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "submitButton": "Download Free E-book",
+      "successMessage": "Check your email!",
+      "privacyNote": "We respect your privacy. Your information will never be shared."
+    }
+  },
+  "TutorialsPage": {
+    "tabs": {
+      "all": "All",
+      "dashboard": "Dashboard",
+      "integration": "Integration"
+    },
+    "tutorials": {
+      "tutorial1Title": "Getting started guide",
+      "tutorial1Subtitle": "A step-by-step walkthrough of how to set up your workspace and get your first results.",
+      "tutorial1ReadTime": "25 Hours",
+      "tutorial2Title": "Product tour",
+      "tutorial2Subtitle": "A visual overview of everything you can do inside Boostifai.",
+      "tutorial2ReadTime": "25 Hours",
+      "tutorial3Title": "Setting up your dashboard",
+      "tutorial3Subtitle": "Customize your experience and create a system that works for you.",
+      "tutorial3ReadTime": "25 Hours",
+      "readMore": "Read more"
+    },
+    "features": {
+      "title": "Master the Boostifai Dashboard",
+      "description": "Comprehensive guides and tutorials to help you get the most out of your Boostifai dashboard.",
+      "feature1Title": "Dashboard Overview",
+      "feature1Description": "Learn how to navigate the Boostifai dashboard and access all key features for managing your SEO automation.",
+      "feature2Title": "Feature Tutorials",
+      "feature2Description": "Step-by-step guides on using AI recommendations, automated blogging, rank tracking, and link building features.",
+      "feature3Title": "Best Practices",
+      "feature3Description": "Discover proven strategies and tips to maximize your results with Boostifai's AI-powered SEO tools."
+    }
+  },
+  "ProcessPage": {
+    "hero": {
+      "title": "Our Process",
+      "heading": "Our Process"
+    },
+    "steps": {
+      "badge": "Quick and easy setup",
+      "title": "Simple 3-step setup to start boosting your website immediately",
+      "step1Title": "Install the Boostifai Pixel",
+      "step1Description": "Subscribe now and receive the code snippet. Don't worry, you don't need to be a tech wizard to install the software, a simple copy-paste will do!",
+      "step2Title": "Check suggestions",
+      "step2Description": "Review the improved suggestions and approve them with one simple click. Want to make adjustments to the suggestions? No problem, you can simply discard or change them. Boostifai will implement the approved suggestions automatically, so sit back and relax.",
+      "step3Title": "Get boosted!",
+      "step3Description": "With all these automated suggestions, you don't want to sit around and wait. You want results immediately. Track real-time how our AI tool improves your page ranking in Google. Let's go! Now, you are ready to experience what Boostifai can do for your business!"
+    },
+    "benefits": {
+      "title": "Now, you are ready to experience what Boostifai can do for your business!",
+      "description": "With Boostifai's AI-powered SEO automation, you'll see real results in your Google rankings. Our intelligent system continuously optimizes your website, so you can focus on growing your business while we handle the technical SEO work.",
+      "benefit1Title": "AI-Powered Optimization",
+      "benefit1Description": "Our advanced AI analyzes your website and generates smart SEO recommendations tailored to your content, helping you rank higher in search results automatically.",
+      "benefit2Title": "Real-Time Tracking",
+      "benefit2Description": "Monitor your website's performance with our intuitive dashboard. Track keyword rankings, traffic growth, and SEO improvements in real-time.",
+      "benefit3Title": "Continuous Improvement",
+      "benefit3Description": "Boostifai works 24/7 to keep your SEO optimized. As search algorithms evolve, our AI adapts your strategy to maintain and improve your rankings."
     }
   }
 }

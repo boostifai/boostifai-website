@@ -33,6 +33,7 @@ import { Fragment } from 'react';
 import HowItWork from '@/components/homepage-24/HowItWorks';
 import Services from '@/components/homepage-35/Services';
 import Features from '@/components/homepage-35/Features';
+// import Clients from '@/components/pricing-02/Client';
 
 export const metadata: Metadata = {
   title: 'Insurance - NextSaaS',
@@ -61,7 +62,7 @@ const Homepage24 = async () => {
                         <Feature4 />
           {/* <Process /> */}
 
-          <HowItWork />
+          {/* <HowItWork /> */}
           {/* <Features /> */}
                 {/* <Integration2 /> */}
         {/* <WhyUs /> */}
@@ -87,6 +88,7 @@ const Homepage24 = async () => {
 
      
         <Testimonial2 badgeText="Reviews" />
+        
            {/* <Audit /> */}
         {/* <Testimonial /> */}
         <FAQ />

@@ -9,7 +9,7 @@ import { Fragment } from 'react';
 import CTA2 from '@/components/homepage-14/CTA';
 
 export const metadata: Metadata = {
-  title: 'FAQ - NextSaaS',
+  title: 'FAQ | Boostifai',
 };
 
 const FAQ = () => {

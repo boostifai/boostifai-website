@@ -5,7 +5,7 @@ import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog page 03 - NextSaaS',
+  title: 'Blog | Boostifai',
 };
 
 // Enable dynamic rendering for blog list page

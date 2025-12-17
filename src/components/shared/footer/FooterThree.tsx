@@ -173,13 +173,13 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                       </Link>
                     </li>
                     <li>
-                      <Link href="/documentation" className="footer-link-v2">
-                        Documentation
+                      <Link href="/tutorials" className="footer-link-v2">
+                        Tutorials
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog" className="footer-link-v2">
-                        Blog
+                      <Link href="/ebooks/ultimate-seo-guide" className="footer-link-v2">
+                        Free Ebook
                       </Link>
                     </li>
                     <li>
@@ -208,7 +208,7 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                         Privacy Policy
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/refund-policy" className="footer-link-v2">
                         Refund Policy
                       </Link>
@@ -217,7 +217,7 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                       <Link href="/gdpr" className="footer-link-v2">
                         GDPR Compliance
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </RevealAnimation>

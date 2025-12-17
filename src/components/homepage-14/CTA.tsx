@@ -34,7 +34,7 @@ const CTA = () => {
             <RevealAnimation delay={0.4}>
               <div>
                 <LinkButton
-                  href="/login-01"
+                  href="/business-pricing"
                   className="btn btn-primary border-0 btn-lg hover:btn-white dark:hover:btn-secondary w-[90%] md:w-auto mx-auto md:mx-0">
                   {t('button')}
                 </LinkButton>

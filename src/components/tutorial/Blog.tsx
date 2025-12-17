@@ -13,13 +13,6 @@ const Blog = () => {
             <BlogTabList />
             <BlogTabContent />
           </TabProvider>
-          <RevealAnimation delay={0.2}>
-            <div className="text-center mt-14">
-              <LinkButton href="/blog-01" className="btn btn-secondary dark:btn-transparent hover:btn-primary btn-md">
-                Explore the blog
-              </LinkButton>
-            </div>
-          </RevealAnimation>
         </div>
       </section>
     </RevealAnimation>

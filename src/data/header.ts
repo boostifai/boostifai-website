@@ -25,13 +25,13 @@ export const navigationItems: NavigationItem[] = [
     hasDropdown: false,
     megaMenuComponent: 'HomeMegaMenu',
   },
-  // {
-  //   id: 'about',
-  //   label: 'About',
-  //   href: '/about',
-  //   hasDropdown: false,
-  //   megaMenuComponent: 'PageMegaMenu',
-  // },
+  {
+    id: 'our-process',
+    label: 'Our Process',
+    href: '/our-process',
+    hasDropdown: false,
+    megaMenuComponent: 'PageMegaMenu',
+  },
   {
     id: 'features',
     label: 'Features',

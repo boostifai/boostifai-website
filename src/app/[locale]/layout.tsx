@@ -36,7 +36,7 @@ export default async function LocaleLayout({
       <body className={`${interTight.variable} antialiased`}>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div></div>}>
               <SmoothScrollProvider>{children}</SmoothScrollProvider>
             </Suspense>
           </ThemeProvider>
