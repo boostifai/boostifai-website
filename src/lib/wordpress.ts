@@ -1,7 +1,7 @@
 import { IBlogPost } from '@/interface';
 import { WPAPIResponse, WPCategory, WPPost } from '@/types/wordpress';
 
-const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'https://boostifai-blogs.com/wp-json/wp/v2';
+const WP_API_URL = process.env.NEXT_PUBLIC_WP_API_URL || 'https://wp.boostifai.com/wp-json/wp/v2';
 
 // Calculate read time from content
 function calculateReadTime(content: string): string {
@@ -102,8 +102,9 @@ export async function fetchPosts(params?: {
   search?: string;
   categoryId?: number; // Category ID for filtering
   excludeEmbed?: boolean; // Option to exclude embed for lighter requests
+  lang?: string; // Language code for Polylang (e.g., 'en', 'nl')
 }): Promise<WPAPIResponse<IBlogPost[]>> {
-  const { page = 1, perPage = 10, search, categoryId, excludeEmbed = false } = params || {};
+  const { page = 1, perPage = 10, search, categoryId, excludeEmbed = false, lang } = params || {};
   
   const queryParams = new URLSearchParams({
     page: page.toString(),
@@ -124,12 +125,29 @@ export async function fetchPosts(params?: {
     queryParams.append('categories', categoryId.toString());
   }
 
+  // Filter by language (Polylang support)
+  if (lang) {
+    queryParams.append('lang', lang);
+  }
+
   const url = `${WP_API_URL}/posts?${queryParams.toString()}`;
 
+  console.log('🔍 Fetching WordPress posts:', url);
+  console.log('📝 Query params:', Object.fromEntries(queryParams));
+  
+  // NOTE: For Polylang language filtering to work, you need one of the following on WordPress:
+  // 1. Polylang Pro (paid version with REST API support)
+  // 2. "Polylang REST API" plugin (free)
+  // 3. Custom code in functions.php to register language taxonomy with REST API
+
   try {
-    const response = await fetch(url, {
+    // In development, we might need to handle SSL certificate issues
+    // For production, ensure wp.boostifai.com has a valid SSL certificate
+    const fetchOptions: RequestInit = {
       next: { revalidate: 300 }, // ISR: Revalidate every 5 minutes to reduce API calls
-    });
+    };
+
+    const response = await fetch(url, fetchOptions);
 
     if (!response.ok) {
       if (response.status === 429) {
@@ -179,17 +197,17 @@ export async function fetchPosts(params?: {
 }
 
 // Fetch all posts (paginated internally to avoid cache issues)
-export async function fetchAllPosts(): Promise<IBlogPost[]> {
+export async function fetchAllPosts(lang?: string): Promise<IBlogPost[]> {
   const allPosts: IBlogPost[] = [];
   let page = 1;
   let hasMore = true;
   const maxPages = 10; // Increased to 10 pages * 100 = 1000 posts max
 
-  console.log('Starting to fetch all posts...');
+  console.log('Starting to fetch all posts...', lang ? `Language: ${lang}` : '');
 
   while (hasMore && page <= maxPages) {
     try {
-      const { data, totalPages, total } = await fetchPosts({ page, perPage: 100 });
+      const { data, totalPages, total } = await fetchPosts({ page, perPage: 100, lang });
       
       console.log(`Fetched page ${page}/${totalPages}, got ${data.length} posts, total: ${total}`);
       
@@ -386,24 +404,25 @@ export async function getCategoryIdByName(categoryName: string): Promise<number 
 }
 
 // Helper function to get recent posts (for homepage sections)
-export async function getRecentPosts(limit: number = 3, offset: number = 0): Promise<IBlogPost[]> {
-  const { data } = await fetchPosts({ perPage: limit + offset });
+export async function getRecentPosts(limit: number = 3, offset: number = 0, lang?: string): Promise<IBlogPost[]> {
+  const { data } = await fetchPosts({ perPage: limit + offset, lang });
   return data.slice(offset, offset + limit);
 }
 
 // Cached function to get recent posts for sidebar (called once per build/revalidation)
-let cachedRecentPosts: IBlogPost[] | null = null;
-let cacheTime = 0;
+const cachedRecentPostsByLang: Map<string, { posts: IBlogPost[]; time: number }> = new Map();
 const CACHE_DURATION = 300000; // 5 minutes
 
-export async function getCachedRecentPosts(): Promise<IBlogPost[]> {
+export async function getCachedRecentPosts(lang?: string): Promise<IBlogPost[]> {
+  const cacheKey = lang || 'default';
   const now = Date.now();
-  if (cachedRecentPosts && (now - cacheTime) < CACHE_DURATION) {
-    return cachedRecentPosts;
+  const cached = cachedRecentPostsByLang.get(cacheKey);
+  
+  if (cached && (now - cached.time) < CACHE_DURATION) {
+    return cached.posts;
   }
   
-  const { data } = await fetchPosts({ page: 1, perPage: 5 });
-  cachedRecentPosts = data;
-  cacheTime = now;
+  const { data } = await fetchPosts({ page: 1, perPage: 5, lang });
+  cachedRecentPostsByLang.set(cacheKey, { posts: data, time: now });
   return data;
 }

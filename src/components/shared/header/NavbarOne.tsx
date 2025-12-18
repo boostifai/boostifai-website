@@ -2,7 +2,7 @@
 
 // Header v1
 import { MobileMenuProvider } from '@/context/MobileMenuContext';
-import { navigationItems } from '@/data/header';
+import { headerConfig, navigationItems } from '@/data/header';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
 import { cn } from '@/utils/cn';
 import { FC } from 'react';
@@ -10,6 +10,7 @@ import MobileMenu from '../MobileMenu';
 import AboutMenu from '../mega-menu/AboutMenu';
 import BlogMenu from '../mega-menu/BlogMenu';
 import PricingMenu from '../mega-menu/PricingMenu';
+import FreeToolsMenu from '../mega-menu/FreeToolsMenu';
 import HomeMegaMenu from '../mega-menu/HomeMegaMenu';
 import PageMegaMenu from '../mega-menu/PageMegaMenu';
 import ServicesMenu from '../mega-menu/ServicesMenu';
@@ -56,6 +57,8 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
                       return <BlogMenu className={megaMenuColor} />;
                     case 'PricingMenu':
                       return <PricingMenu className={megaMenuColor} />;
+                    case 'FreeToolsMenu':
+                      return <FreeToolsMenu className={megaMenuColor} />;
                     default:
                       return null;
                   }
@@ -76,7 +79,7 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
             <div className="hidden xl:block">
               <LanguageSwitcher />
             </div>
-            <NavCTAButton href="/business-pricing" btnClassName={btnClassName} label="Get started" />
+            <NavCTAButton href={headerConfig.cta.href} btnClassName={btnClassName} label={headerConfig.cta.label} />
           </div>
           {/* mobile menu btn */}
           <MobileMenuButton />

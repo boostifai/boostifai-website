@@ -168,6 +168,11 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                   </p>
                   <ul className="space-y-5">
                     <li>
+                      <Link href="/tour" className="footer-link-v2">
+                        Dashboard Tour
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/faq" className="footer-link-v2">
                         FAQ
                       </Link>
@@ -182,11 +187,6 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                         Free Ebook
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/contact-us" className="footer-link-v2">
-                        Contact Us
-                      </Link>
-                    </li>
                   </ul>
                 </div>
               </RevealAnimation>
@@ -198,6 +198,11 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                     Legal Policies
                   </p>
                   <ul className="space-y-5">
+                   <li>
+                      <Link href="/contact-us" className="footer-link-v2">
+                        Contact Us
+                      </Link>
+                    </li>
                     <li>
                       <Link href="/terms-conditions" className="footer-link-v2">
                         Terms & Conditions
@@ -208,16 +213,11 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                         Privacy Policy
                       </Link>
                     </li>
-                    {/* <li>
+                    <li>
                       <Link href="/refund-policy" className="footer-link-v2">
                         Refund Policy
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/gdpr" className="footer-link-v2">
-                        GDPR Compliance
-                      </Link>
-                    </li> */}
                   </ul>
                 </div>
               </RevealAnimation>

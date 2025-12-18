@@ -20,53 +20,60 @@ export interface MegaMenuColumn {
 export const navigationItems: NavigationItem[] = [
   {
     id: 'home',
-    label: 'Home',
+    label: 'home',
     href: '/',
     hasDropdown: false,
     megaMenuComponent: 'HomeMegaMenu',
   },
   {
     id: 'our-process',
-    label: 'Our Process',
+    label: 'ourProcess',
     href: '/our-process',
     hasDropdown: false,
     megaMenuComponent: 'PageMegaMenu',
   },
   {
     id: 'features',
-    label: 'Features',
+    label: 'features',
     href: '#',
     hasDropdown: true,
     megaMenuComponent: 'HomeMegaMenu',
   },
   {
+    id: 'free-tools',
+    label: 'freeTools',
+    href: '#',
+    hasDropdown: true,
+    megaMenuComponent: 'FreeToolsMenu',
+  },
+  {
     id: 'case-studies',
-    label: 'Case Studies',
+    label: 'caseStudies',
     href: '/case-study',
     hasDropdown: false,
   },
   {
     id: 'pricing',
-    label: 'Pricing',
+    label: 'pricing',
     href: '#',
     hasDropdown: true,
     megaMenuComponent: 'PricingMenu',
   },
   {
     id: 'blog',
-    label: 'Blog',
+    label: 'blog',
     href: '/blog',
     hasDropdown: false,
   },
   {
     id: 'faq',
-    label: 'FAQ',
+    label: 'faq',
     href: '/faq',
     hasDropdown: false,
   },
   {
     id: 'contact',
-    label: 'Contact Us',
+    label: 'contact',
     href: '/contact-us',
     hasDropdown: false,
   },
@@ -91,8 +98,13 @@ export const blogMenuItems: MegaMenuItem[] = [
 ];
 
 export const pricingMenuItems: MegaMenuItem[] = [
-  { id: 'business', label: 'Business', href: '/business-pricing' },
-  { id: 'agency', label: 'Agency', href: '/agency-pricing' },
+  { id: 'business', label: 'business', href: '/business-pricing' },
+  { id: 'agency', label: 'agency', href: '/agency-pricing' },
+];
+
+export const freeToolsMenuItems: MegaMenuItem[] = [
+  { id: 'seo-audit', label: 'seoAudit', href: '#' },
+  { id: 'geo-audit', label: 'geoAudit', href: '#' },
 ];
 
 // Services Menu Data
@@ -108,25 +120,25 @@ export const homeMegaMenuColumns: MegaMenuColumn[] = [
   {
     id: 'column-1',
     items: [
-      { id: 'home-1', label: 'AI Articles', href: '#' },
-      { id: 'home-2', label: 'Internal Linking', href: '#' },
-      { id: 'home-3', label: 'Email Reports', href: '#' },
+      { id: 'home-1', label: 'aiArticles', href: '#' },
+      { id: 'home-2', label: 'internalLinking', href: '#' },
+      { id: 'home-3', label: 'emailReports', href: '#' },
     ],
   },
   {
     id: 'column-2',
     items: [
-      { id: 'home-4', label: 'AI Recommendations', href: '#' },
-      { id: 'home-5', label: 'AI Insight', href: '#' },
-      { id: 'home-6', label: 'On Page SEO', href: '#' },
+      { id: 'home-4', label: 'aiRecommendations', href: '#' },
+      { id: 'home-5', label: 'aiInsight', href: '#' },
+      { id: 'home-6', label: 'onPageSeo', href: '#' },
     ],
   },
   {
     id: 'column-3',
     items: [
-      { id: 'home-7', label: 'Rank Analyzer', href: '#' },
-      { id: 'home-8', label: 'Backlink Marketplace', href: '#' },
-      { id: 'home-9', label: 'Free SEO Tools', href: '#' },
+      { id: 'home-7', label: 'rankAnalyzer', href: '#' },
+      { id: 'home-8', label: 'backlinkMarketplace', href: '#' },
+      { id: 'home-9', label: 'freeSeoTools', href: '#' },
     ],
   },
 ];
@@ -207,7 +219,7 @@ export const headerConfig = {
     logoDarkPath: '@public/images/shared/logo-dark.svg',
   },
   cta: {
-    label: 'Get started',
+    label: 'getStarted',
     href: '/signup-01',
   },
 };

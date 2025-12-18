@@ -5,6 +5,6 @@ export const metadata: Metadata = {
   title: 'Boostifai - AI Powered SEO Automation',
 };
 
-export default function HomePage() {
-  return <Homepage24 />;
+export default function HomePage({ params }: { params: Promise<{ locale: 'en' | 'nl' }> }) {
+  return <Homepage24 params={params} />;
 }

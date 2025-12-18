@@ -1,6 +1,8 @@
+'use client';
 import { NavigationItem } from '@/data/header';
 import { cn } from '@/utils/cn';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export type NavItemVariant = 'default' | 'border' | 'white' | 'light';
 
@@ -25,9 +27,11 @@ const getVariantClasses = (variant: NavItemVariant = 'default'): string => {
 };
 
 const NavItemLink = ({ item, variant = 'default' }: NavItemLinkProps) => {
+  const t = useTranslations('Navigation');
+
   return (
     <Link href={item.href ?? '#'} className={cn(getVariantClasses(variant))}>
-      <span className='font-semibold'>{item?.label}</span>
+      <span className='font-semibold'>{t(item?.label)}</span>
       {item?.hasDropdown && (
         <span className="block origin-center translate-y-px transition-all duration-300 group-hover/nav:rotate-180">
           <svg

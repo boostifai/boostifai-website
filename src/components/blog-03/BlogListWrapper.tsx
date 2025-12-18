@@ -8,9 +8,10 @@ interface BlogListWrapperProps {
     category?: string;
     search?: string;
   };
+  locale: 'en' | 'nl';
 }
 
-const BlogListWrapper = async ({ searchParams }: BlogListWrapperProps) => {
+const BlogListWrapper = async ({ searchParams, locale }: BlogListWrapperProps) => {
   const page = parseInt(searchParams?.page || '1');
   const category = searchParams?.category || '';
   const search = searchParams?.search || '';
@@ -23,16 +24,17 @@ const BlogListWrapper = async ({ searchParams }: BlogListWrapperProps) => {
     categoryId = await getCategoryIdByName(category);
   }
 
-  // Fetch posts with category filter (WordPress API handles it server-side)
+  // Fetch posts with category filter and language (WordPress API handles it server-side)
   const { data: blogs, total, totalPages } = await fetchPosts({
     page,
     perPage: postsPerPage,
     search: search || undefined,
     categoryId: categoryId || undefined,
+    lang: locale,
   });
 
-  // Get cached recent posts
-  const recentBlogs = await getCachedRecentPosts();
+  // Get cached recent posts for the current language
+  const recentBlogs = await getCachedRecentPosts(locale);
 
   const categories = blogCategories.map((cat, index) => ({
     id: index + 1,

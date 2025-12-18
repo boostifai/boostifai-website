@@ -115,12 +115,28 @@
   },
   "Navigation": {
     "home": "Home",
-    "about": "About",
+    "ourProcess": "Our Process",
     "features": "Features",
+    "freeTools": "Free Tools",
+    "caseStudies": "Case Studies",
     "pricing": "Pricing",
     "blog": "Blog",
-    "contact": "Contact",
-    "getStarted": "Get Started"
+    "faq": "FAQ",
+    "contact": "Contact Us",
+    "getStarted": "Get Started",
+    "business": "Business",
+    "agency": "Agency",
+    "aiArticles": "AI Articles",
+    "internalLinking": "Internal Linking",
+    "emailReports": "Email Reports",
+    "aiRecommendations": "AI Recommendations",
+    "aiInsight": "AI Insight",
+    "onPageSeo": "On Page SEO",
+    "rankAnalyzer": "Rank Analyzer",
+    "backlinkMarketplace": "Backlink Marketplace",
+    "freeSeoTools": "Free SEO Tools",
+    "seoAudit": "SEO Audit",
+    "geoAudit": "GEO Audit"
   },
   "LanguageSwitcher": {
     "english": "English",
@@ -637,6 +653,30 @@
       "feature2Description": "Step-by-step guides on using AI recommendations, automated blogging, rank tracking, and link building features.",
       "feature3Title": "Best Practices",
       "feature3Description": "Discover proven strategies and tips to maximize your results with Boostifai's AI-powered SEO tools."
+    }
+  },
+  "TourPage": {
+    "hero": {
+      "badge": "Interactive Tour",
+      "title": "Boostifai Dashboard Tour",
+      "description": "Explore Boostifai's intuitive dashboard with our interactive tour. Discover powerful SEO automation features designed to boost your website's traffic effortlessly!"
+    },
+    "widget": {
+      "title": "Experience the Dashboard",
+      "subtitle": "Click through our interactive demo to see how easy it is to automate your SEO",
+      "placeholder": "Interactive demo will be embedded here"
+    },
+    "benefits": {
+      "title": "What You'll Discover",
+      "description": "Get hands-on experience with the features that make Boostifai the ultimate SEO automation platform",
+      "benefit1Title": "AI-Powered Recommendations",
+      "benefit1Description": "See how our AI analyzes your site and generates smart SEO suggestions you can approve with one click.",
+      "benefit2Title": "Automated Content Creation",
+      "benefit2Description": "Explore how Boostifai creates and publishes SEO-optimized blog posts automatically to your CMS.",
+      "benefit3Title": "Keyword Analytics",
+      "benefit3Description": "Navigate through our intuitive dashboard to track rankings, traffic, and SEO improvements in real-time.",
+      "benefit4Title": "Easy Integration",
+      "benefit4Description": "Learn how simple it is to install the Boostifai pixel and start optimizing your website immediately."
     }
   },
   "ProcessPage": {

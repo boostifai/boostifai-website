@@ -39,9 +39,10 @@ export const metadata: Metadata = {
   title: 'Insurance - NextSaaS',
 };
 
-const Homepage24 = async () => {
-  // Fetch latest 3 blog posts from WordPress
-  const blogs = await getRecentPosts(3);
+const Homepage24 = async ({ params }: { params: Promise<{ locale: 'en' | 'nl' }> }) => {
+  const { locale } = await params;
+  // Fetch latest 3 blog posts from WordPress filtered by language
+  const blogs = await getRecentPosts(3, 0, locale);
   return (
     <Fragment>
       {/* <NavbarOne

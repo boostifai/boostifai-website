@@ -115,12 +115,28 @@
   },
   "Navigation": {
     "home": "Home",
-    "about": "Over",
+    "ourProcess": "Ons Proces",
     "features": "Functies",
+    "freeTools": "Gratis Tools",
+    "caseStudies": "Case Studies",
     "pricing": "Prijzen",
     "blog": "Blog",
+    "faq": "FAQ",
     "contact": "Contact",
-    "getStarted": "Aan de slag"
+    "getStarted": "Aan de slag",
+    "business": "Bedrijf",
+    "agency": "Bureau",
+    "aiArticles": "AI Artikelen",
+    "internalLinking": "Interne Linkbuilding",
+    "emailReports": "E-mailrapporten",
+    "aiRecommendations": "AI Aanbevelingen",
+    "aiInsight": "AI Inzicht",
+    "onPageSeo": "On-Page SEO",
+    "rankAnalyzer": "Rank Analyzer",
+    "backlinkMarketplace": "Backlink Marktplaats",
+    "freeSeoTools": "Gratis SEO Tools",
+    "seoAudit": "SEO Audit",
+    "geoAudit": "GEO Audit"
   },
   "LanguageSwitcher": {
     "english": "Engels",
@@ -637,6 +653,30 @@
       "feature2Description": "Stapsgewijze handleidingen voor het gebruik van AI-aanbevelingen, geautomatiseerde blogging, rank tracking en linkbuilding functies.",
       "feature3Title": "Best practices",
       "feature3Description": "Ontdek bewezen strategieën en tips om uw resultaten te maximaliseren met Boostifai's AI-aangedreven SEO-tools."
+    }
+  },
+  "TourPage": {
+    "hero": {
+      "badge": "Interactieve rondleiding",
+      "title": "Boostifai Dashboard Rondleiding",
+      "description": "Verken Boostifai's intuïtieve dashboard met onze interactieve rondleiding. Ontdek krachtige SEO-automatiseringsfuncties die zijn ontworpen om het verkeer naar uw website moeiteloos te verhogen!"
+    },
+    "widget": {
+      "title": "Ervaar het Dashboard",
+      "subtitle": "Klik door onze interactieve demo om te zien hoe eenvoudig het is om uw SEO te automatiseren",
+      "placeholder": "Interactieve demo wordt hier ingesloten"
+    },
+    "benefits": {
+      "title": "Wat u zult ontdekken",
+      "description": "Krijg praktijkervaring met de functies die Boostifai het ultieme SEO-automatiseringsplatform maken",
+      "benefit1Title": "AI-aangedreven aanbevelingen",
+      "benefit1Description": "Zie hoe onze AI uw site analyseert en slimme SEO-suggesties genereert die u met één klik kunt goedkeuren.",
+      "benefit2Title": "Geautomatiseerde contentcreatie",
+      "benefit2Description": "Ontdek hoe Boostifai automatisch SEO-geoptimaliseerde blogposts creëert en publiceert naar uw CMS.",
+      "benefit3Title": "Keyword analyses",
+      "benefit3Description": "Navigeer door ons intuïtieve dashboard om rankings, verkeer en SEO-verbeteringen in realtime te volgen.",
+      "benefit4Title": "Eenvoudige integratie",
+      "benefit4Description": "Leer hoe eenvoudig het is om de Boostifai pixel te installeren en onmiddellijk uw website te optimaliseren."
     }
   },
   "ProcessPage": {

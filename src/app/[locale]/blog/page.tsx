@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 
 interface BlogPageProps {
+  params: Promise<{ locale: 'en' | 'nl' }>;
   searchParams: Promise<{
     page?: string;
     category?: string;
@@ -19,8 +20,9 @@ interface BlogPageProps {
   }>;
 }
 
-const BlogPage03 = async ({ searchParams }: BlogPageProps) => {
-  const params = await searchParams;
+const BlogPage03 = async ({ params, searchParams }: BlogPageProps) => {
+  const { locale } = await params;
+  const searchParamsResolved = await searchParams;
 
   return (
     <>
@@ -29,7 +31,7 @@ const BlogPage03 = async ({ searchParams }: BlogPageProps) => {
         btnClassName="btn-primary hover:btn-secondary dark:hover:btn-accent"
       />
       <main className="bg-background-3 dark:bg-background-5">
-        <BlogListWrapper searchParams={params} />
+        <BlogListWrapper searchParams={searchParamsResolved} locale={locale} />
         <CTA2 />
       </main>
       <FooterThree className="relative border-t border-stroke-1 dark:border-0" />
