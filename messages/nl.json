@@ -8,8 +8,6 @@
       "bookMeeting": "Boek een afspraak"
     },
     "features": {
-      "badge": "Functies",
-      "title": "AI-aangedreven SEO die op de automatische piloot draait",
       "description": "Slimme aanbevelingen, geautomatiseerde blogs en continue optimalisatie—alles in één platform. Automatiseer SEO-taken met Boostifai en focus op uw bedrijf.",
       "feature1Title": "AI-aanbevelingen die alles optimaliseren",
       "feature1Description": "Boostifai scant uw pagina's continu en levert slimme SEO-suggesties—metatags, koppen, afbeeldingen en interne links—klaar voor goedkeuring met één klik.",
@@ -716,10 +714,11 @@
       "urlPlaceholder": "Website-URL",
       "emailPlaceholder": "Typ uw e-mailadres",
       "submitButton": "Ontvang een gratis artikel",
+      "stampFree": "GRATIS",
+      "stampArticle": "ARTIKEL",
       "linkText": "Voor een blogpost in het Engels",
       "linkUrl": "https://www.boostifai.com/ai-articles/",
-      "linkCta": "klik hier",
-      "description": "Contentcreatie is de ruggengraat van effectieve SEO, maar het schrijven van hoogwaardige blogposts kan voor veel bedrijven een uitdaging zijn. Met onze AI-aangedreven bloggenerator kunt u moeiteloos boeiende, SEO-geoptimaliseerde posts produceren die verkeer genereren en de zoekresultaten van uw site verbeteren. Of u nu weinig tijd of middelen hebt, onze tool doet het zware werk, zodat u zich kunt richten op de groei van uw bedrijf."
+      "linkCta": "klik hier"
     },
     "features": {
       "badge": "Wat u krijgt",
@@ -811,6 +810,60 @@
     "cta": {
       "title": "Klaar om uw rankings te volgen?",
       "description": "Begin vandaag nog met het monitoren van uw SEO-prestaties en ontdek kansen om uw organisch verkeer te laten groeien.",
+      "button": "Begin voor 1 €",
+      "demoButton": "Boek een demo"
+    }
+  },
+  "AiRecommendationPage": {
+    "hero": {
+      "title": "AI-aangedreven SEO-aanbevelingen die op de automatische piloot werken",
+      "description": "Ontvang slimme, geautomatiseerde SEO-suggesties voor uw website. Keur met één klik goed en zie uw rankings verbeteren—geen technische vaardigheden vereist.",
+      "ctaButton": "Begin nu",
+      "demoButton": "Boek een demo"
+    },
+    "features": {
+      "badge": "Belangrijkste functies",
+      "title": "Uitgebreide on-page SEO-optimalisatie",
+      "feature1Badge": "Meta-tags",
+      "feature1Title": "Slimme meta-tag optimalisatie",
+      "feature1Description": "AI analyseert uw pagina's en genereert geoptimaliseerde metatitels en -beschrijvingen die de klikfrequentie en zoekzichtbaarheid verbeteren.",
+      "feature1Point1": "Automatisch gegenereerde meta-omschrijvingen voor ontbrekende pagina's",
+      "feature1Point2": "Geoptimaliseerde titeltags met doelzoekwoorden",
+      "feature1Point3": "Optimalisatie van het aantal tekens voor zoekresultaten",
+      "feature2Badge": "Afbeeldings-SEO",
+      "feature2Title": "Geautomatiseerde afbeeldingsoptimalisatie",
+      "feature2Description": "Verbeter de toegankelijkheid en afbeeldingszoekrangschikking met door AI gegenereerde alt-tags en afbeeldingstitels voor al uw website-afbeeldingen.",
+      "feature2Point1": "Beschrijvende alt-tags voor elke afbeelding",
+      "feature2Point2": "SEO-vriendelijke afbeeldingstitels",
+      "feature2Point3": "Verbeterde naleving van toegankelijkheid",
+      "feature3Badge": "Inhoudsstructuur",
+      "feature3Title": "Analyse van kopstructuur",
+      "feature3Description": "Zorg voor een juiste kophiërarchie met geautomatiseerde detectie van meerdere H1-tags en suggesties voor optimale inhoudsstructuur.",
+      "feature3Point1": "Identificeer pagina's met meerdere H1-tags",
+      "feature3Point2": "Aanbevelingen voor juiste kophiërarchie",
+      "feature3Point3": "Verbeterde leesbaarheid van inhoud en SEO",
+      "feature4Badge": "Interne links",
+      "feature4Title": "Intelligente interne linkbuilding",
+      "feature4Description": "Versterk uw sitestructuur met door AI aangedreven interne linksuggesties die gerelateerde inhoud verbinden en zoekwoordrangschikkingen verhogen.",
+      "feature4Point1": "Contextuele interne linkaanbevelingen",
+      "feature4Point2": "Verbeterde site-architectuur en crawlbaarheid",
+      "feature4Point3": "Verbeterde zoekwoordrelevantie over pagina's"
+    },
+    "benefits": {
+      "badge": "Voordelen",
+      "title": "Waarom kiezen voor AI-aanbevelingen",
+      "benefit1Title": "Goedkeuring met één klik",
+      "benefit1Description": "Bekijk door AI gegenereerde aanbevelingen en keur ze goed met één klik. Wijzigingen worden automatisch toegepast op uw website zonder enige codering.",
+      "benefit2Title": "Bespaar tijd en middelen",
+      "benefit2Description": "Automatiseer uren handmatig SEO-werk. Onze AI monitort uw site continu en levert 24/7 bruikbare aanbevelingen.",
+      "benefit3Title": "Bewezen resultaten",
+      "benefit3Description": "Zie meetbare verbeteringen in uw zoekrangschikkingen. Onze klanten zien doorgaans een verbetering van 6% in on-page SEO binnen de eerste maand.",
+      "benefit4Title": "Continue monitoring",
+      "benefit4Description": "Uw site wordt voortdurend geanalyseerd op nieuwe optimalisatiemogelijkheden. Ontvang aanbevelingen terwijl uw inhoud groeit en evolueert."
+    },
+    "cta": {
+      "title": "Begin vandaag met het optimaliseren van uw website",
+      "description": "Sluit u aan bij honderden bedrijven die AI-aangedreven aanbevelingen gebruiken om hun SEO te verbeteren en meer organisch verkeer te genereren.",
       "button": "Begin voor 1 €",
       "demoButton": "Boek een demo"
     }

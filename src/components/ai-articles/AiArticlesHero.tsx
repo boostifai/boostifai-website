@@ -7,7 +7,7 @@ const AiArticlesHero = () => {
   const t = useTranslations('AiArticlesPage.hero');
   
   return (
-    <section className="pt-[100px] md:pt-[150px] pb-16 md:pb-20">
+    <section className="pt-[100px] md:pt-[150px] pb-10 md:pb-12">
       <div className="main-container">
         <div className="max-w-[900px] mx-auto text-center space-y-6">
           {/* <RevealAnimation delay={0.1}>

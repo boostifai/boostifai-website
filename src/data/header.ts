@@ -128,7 +128,7 @@ export const homeMegaMenuColumns: MegaMenuColumn[] = [
   {
     id: 'column-2',
     items: [
-      { id: 'home-4', label: 'aiRecommendations', href: '#' },
+      { id: 'home-4', label: 'aiRecommendations', href: '/ai-recommendation' },
       { id: 'home-5', label: 'aiInsight', href: '#' }
       // { id: 'home-6', label: 'onPageSeo', href: '#' },
     ],

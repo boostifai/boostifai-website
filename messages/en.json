@@ -8,8 +8,6 @@
       "bookMeeting": "Book a meeting"
     },
     "features": {
-      "badge": "Features",
-      "title": "AI-powered SEO that runs on autopilot",
       "description": "Smart recommendations, automated blogs, and continuous optimization—all in one platform. Automate SEO tasks with Boostifai and focus on your business.",
       "feature1Title": "AI recommendations that optimize everything",
       "feature1Description": "Boostifai continuously scans your pages and delivers smart SEO suggestions—meta tags, headings, images, and internal links—ready for one-click approval.",
@@ -716,10 +714,11 @@
       "urlPlaceholder": "Website URL",
       "emailPlaceholder": "Type your email",
       "submitButton": "Get a Free Article",
+      "stampFree": "FREE",
+      "stampArticle": "ARTICLE",
       "linkText": "To get a blog post in Dutch language",
       "linkUrl": "https://www.boostifai.be/ai-artikelen/",
-      "linkCta": "click here",
-      "description": "Content creation is the backbone of effective SEO, but writing high-quality blog posts can be a challenge for many businesses. With our AI-powered blog generator, you can effortlessly produce engaging, SEO-optimized posts that drive traffic and improve your site's search rankings. Whether you're short on time or resources, our tool does the heavy lifting, so you can focus on growing your business."
+      "linkCta": "click here"
     },
     "features": {
       "badge": "What You Get",
@@ -811,6 +810,60 @@
     "cta": {
       "title": "Ready to Track Your Rankings?",
       "description": "Start monitoring your SEO performance today and discover opportunities to grow your organic traffic.",
+      "button": "Get Started for 1 €",
+      "demoButton": "Book a Demo"
+    }
+  },
+  "AiRecommendationPage": {
+    "hero": {
+      "title": "AI-Powered SEO Recommendations That Work on Autopilot",
+      "description": "Get smart, automated SEO suggestions for your website. Approve with one click and watch your rankings improve—no technical skills required.",
+      "ctaButton": "Get Started",
+      "demoButton": "Book a Demo"
+    },
+    "features": {
+      "badge": "Key Features",
+      "title": "Comprehensive On-Page SEO Optimization",
+      "feature1Badge": "Meta Tags",
+      "feature1Title": "Smart Meta Tag Optimization",
+      "feature1Description": "AI analyzes your pages and generates optimized meta titles and descriptions that improve click-through rates and search visibility.",
+      "feature1Point1": "Auto-generated meta descriptions for missing pages",
+      "feature1Point2": "Optimized title tags with target keywords",
+      "feature1Point3": "Character count optimization for search results",
+      "feature2Badge": "Image SEO",
+      "feature2Title": "Automated Image Optimization",
+      "feature2Description": "Improve accessibility and image search rankings with AI-generated alt tags and image titles for all your website images.",
+      "feature2Point1": "Descriptive alt tags for every image",
+      "feature2Point2": "SEO-friendly image titles",
+      "feature2Point3": "Improved accessibility compliance",
+      "feature3Badge": "Content Structure",
+      "feature3Title": "Heading Structure Analysis",
+      "feature3Description": "Ensure proper heading hierarchy with automated detection of multiple H1 tags and suggestions for optimal content structure.",
+      "feature3Point1": "Identify pages with multiple H1 tags",
+      "feature3Point2": "Proper heading hierarchy recommendations",
+      "feature3Point3": "Improved content readability and SEO",
+      "feature4Badge": "Internal Links",
+      "feature4Title": "Intelligent Internal Linking",
+      "feature4Description": "Strengthen your site structure with AI-powered internal link suggestions that connect related content and boost keyword rankings.",
+      "feature4Point1": "Contextual internal link recommendations",
+      "feature4Point2": "Improved site architecture and crawlability",
+      "feature4Point3": "Enhanced keyword relevance across pages"
+    },
+    "benefits": {
+      "badge": "Benefits",
+      "title": "Why Choose AI Recommendations",
+      "benefit1Title": "One-Click Approval",
+      "benefit1Description": "Review AI-generated recommendations and approve them with a single click. Changes are automatically applied to your website without any coding.",
+      "benefit2Title": "Save Time & Resources",
+      "benefit2Description": "Automate hours of manual SEO work. Our AI continuously monitors your site and delivers actionable recommendations 24/7.",
+      "benefit3Title": "Proven Results",
+      "benefit3Description": "See measurable improvements in your search rankings. Our customers typically see a 6% improvement in on-page SEO within the first month.",
+      "benefit4Title": "Continuous Monitoring",
+      "benefit4Description": "Your site is constantly analyzed for new optimization opportunities. Get recommendations as your content grows and evolves."
+    },
+    "cta": {
+      "title": "Start Optimizing Your Website Today",
+      "description": "Join hundreds of businesses using AI-powered recommendations to improve their SEO and drive more organic traffic.",
       "button": "Get Started for 1 €",
       "demoButton": "Book a Demo"
     }
