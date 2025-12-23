@@ -704,5 +704,115 @@
       "benefit3Title": "Continue verbetering",
       "benefit3Description": "Boostifai werkt 24/7 om uw SEO geoptimaliseerd te houden. Naarmate zoekalgoritmes evolueren, past onze AI uw strategie aan om uw rankings te behouden en te verbeteren."
     }
+  },
+  "AiArticlesPage": {
+    "hero": {
+      "badge": "Gratis AI-blogposts",
+      "title": "Moeiteloze blogpostcreatie voor uw bedrijf",
+      "description": "Boost uw websiteverkeer en SEO met AI-aangedreven blogposts. Publiceer content direct op uw site met slechts een paar klikken."
+    },
+    "form": {
+      "keywordPlaceholder": "Voer uw zoekwoord in",
+      "urlPlaceholder": "Website-URL",
+      "emailPlaceholder": "Typ uw e-mailadres",
+      "submitButton": "Ontvang een gratis artikel",
+      "linkText": "Voor een blogpost in het Engels",
+      "linkUrl": "https://www.boostifai.com/ai-articles/",
+      "linkCta": "klik hier",
+      "description": "Contentcreatie is de ruggengraat van effectieve SEO, maar het schrijven van hoogwaardige blogposts kan voor veel bedrijven een uitdaging zijn. Met onze AI-aangedreven bloggenerator kunt u moeiteloos boeiende, SEO-geoptimaliseerde posts produceren die verkeer genereren en de zoekresultaten van uw site verbeteren. Of u nu weinig tijd of middelen hebt, onze tool doet het zware werk, zodat u zich kunt richten op de groei van uw bedrijf."
+    },
+    "features": {
+      "badge": "Wat u krijgt",
+      "title": "5 gratis geautomatiseerde artikelen + AI-blogmaker voor onbeperkte artikelen",
+      "subtitle": "Ontvang 5 gratis blogberichten per maand",
+      "description": "Een actieve blog onderhouden is essentieel om verkeer te genereren en uw SEO te verbeteren, maar het kan ook tijdrovend zijn. Daarom bieden we elke maand 5 gratis, volledig geoptimaliseerde blogberichten aan als onderdeel van onze service. Met onze AI-tool hoeft u zich nooit meer zorgen te maken over het maken van content.",
+      "feature1Title": "Op maat gemaakte onderwerpen",
+      "feature1Description": "Kies uw eigen onderwerpen of laat onze AI trending onderwerpen voorstellen op basis van uw branche.",
+      "feature2Title": "SEO-geoptimaliseerde content",
+      "feature2Description": "Elke post is gemaakt met de nieuwste SEO-praktijken, waardoor uw website hoger scoort en meer bezoekers trekt.",
+      "feature3Title": "Snel publiceren",
+      "feature3Description": "Publiceer rechtstreeks naar uw CMS met slechts één klik of sla de berichten op als concepten voor beoordeling.",
+      "unlimitedTitle": "Plus, onbeperkt nieuwe blogposts met onze AI Blog Creator",
+      "unlimitedDescription": "Het schrijven van blogposts hoeft niet tijdrovend te zijn. Met onze AI-aangedreven tool kunt u in seconden nieuwe, SEO-geoptimaliseerde content genereren. Zo werkt het:",
+      "step1": "Kies een blogposttitel uit onze lijst of maak uw eigen.",
+      "step2": "Genereer een complete blogpost met boeiende content die is afgestemd op uw trefwoord.",
+      "step3": "Publiceer of sla het op als concept rechtstreeks in uw CMS met onze naadloze integratie."
+    },
+    "benefits": {
+      "badge": "Belangrijkste voordelen",
+      "title": "Waarom kiezen voor onze AI-bloggenerator",
+      "benefit1Title": "Verbind uw CMS",
+      "benefit1Description": "Koppel eenvoudig uw CMS, of het nu WordPress, Shopify of een ander platform is, aan onze tool. Publiceer of bewaar blogberichten direct zonder dat u handmatig content hoeft te uploaden.",
+      "benefit2Title": "Bespaar tijd",
+      "benefit2Description": "Automatiseer uw contentcreatie- en publicatieproces met onze AI-aangedreven bloggenerator, waardoor u geen uren meer kwijt bent aan het schrijven, bewerken en uploaden van posts. Richt u in plaats daarvan op de groei van uw bedrijf.",
+      "benefit3Title": "Gemakkelijk te gebruiken",
+      "benefit3Description": "Geen technische vaardigheden vereist. Kies gewoon uw blogonderwerp, genereer content en publiceer met één klik: perfect voor drukke bedrijfseigenaren en marketeers.",
+      "benefit4Title": "Kosten verlagen",
+      "benefit4Description": "Bespaar op content outsourcing en copywriterkosten. Met onze AI-gestuurde bloggeneratietool krijgt u hoogwaardige, SEO-geoptimaliseerde berichten voor een fractie van de kosten van traditionele methoden."
+    },
+    "cta": {
+      "title": "Werkt met alle CMS",
+      "description": "Ervaar vandaag nog de kracht van AI-gestuurde bloggeneratie en naadloze CMS-integratie",
+      "button": "Begin voor 1 €"
+    },
+    "thankYou": {
+      "title": "Bedankt voor uw aanvraag!",
+      "description": "We hebben uw aanvraag voor een gratis AI-aangedreven blogpost ontvangen. Ons team zal uw informatie beoordelen en binnenkort contact met u opnemen met uw aangepaste artikel.",
+      "nextStepsTitle": "Wat gebeurt er nu?",
+      "step1Title": "Controleer uw e-mail",
+      "step1Description": "U ontvangt binnen enkele minuten een bevestigingsmail. Controleer uw spammap als u deze niet in uw inbox ziet.",
+      "step2Title": "We maken uw artikel",
+      "step2Description": "Onze AI genereert een hoogwaardige, SEO-geoptimaliseerde blogpost op basis van uw zoekwoord en website-informatie.",
+      "step3Title": "Ontvang uw content",
+      "step3Description": "Binnen 24-48 uur ontvangt u uw gratis blogpost, klaar om op uw website te publiceren.",
+      "ctaButton": "Bekijk onze plannen",
+      "blogButton": "Lees onze blog"
+    }
+  },
+  "RankAnalyzerPage": {
+    "hero": {
+      "title": "Volg uw SEO-rankings en ontdek groeikansen",
+      "description": "Monitor de prestaties van uw website met onze krachtige rank analyzer. Volg zoekwoorden, ontdek kansen en zie uw rankings groeien met bruikbare inzichten van Google Search Console.",
+      "ctaButton": "Aan de slag",
+      "demoButton": "Boek een demo"
+    },
+    "features": {
+      "feature1Badge": "Zoekwoord tracking",
+      "feature1Title": "Monitor elk zoekwoord dat ertoe doet",
+      "feature1Description": "Volg uw zoekwoordrankings op alle posities. Zie welke zoekwoorden verkeer genereren en identificeer verbeterkansen met data van Google Search Console.",
+      "feature1Point1": "Uitgebreide rankingdata voor al uw zoekwoorden",
+      "feature1Point2": "Volg positieveranderingen en voortgang in de tijd",
+      "feature1Point3": "Identificeer goed presterende en ondermaats presterende zoekwoorden",
+      "feature2Badge": "Onderwerp clusters",
+      "feature2Title": "Organiseer content op basis van onderwerpsprestaties",
+      "feature2Description": "Groepeer uw content in onderwerpsclusters en volg prestaties per categorie. Begrijp welke onderwerpen het meeste verkeer en betrokkenheid genereren.",
+      "feature2Point1": "Automatische contentgroepering op onderwerp en thema",
+      "feature2Point2": "Volg klikken en vertoningen per onderwerpcluster",
+      "feature2Point3": "Identificeer groeiende en afnemende contentgebieden",
+      "feature3Badge": "Power zoekwoorden",
+      "feature3Title": "Ontdek uw beste rankingkansen",
+      "feature3Description": "Vind zoekwoorden waar u bijna op pagina één rankt. Richt uw inspanningen op de zoekwoorden die de meeste impact zullen hebben.",
+      "feature3Point1": "Identificeer zoekwoorden die ranken op posities 11-25",
+      "feature3Point2": "Volg voortgang van pagina 2 naar pagina 1",
+      "feature3Point3": "Prioriteer optimalisatie-inspanningen voor maximale ROI"
+    },
+    "benefits": {
+      "badge": "Waarom kiezen voor onze Rank Analyzer",
+      "title": "Neem datagestuurde SEO-beslissingen",
+      "benefit1Title": "Nauwkeurige analytics",
+      "benefit1Description": "Krijg betrouwbare inzichten in uw rankingprestaties aangedreven door Google Search Console data. Volg uw voortgang en begrijp hoe uw pagina's presteren in zoekresultaten.",
+      "benefit2Title": "Volg groei in de tijd",
+      "benefit2Description": "Monitor uw SEO-voortgang met historische data en trendanalyse. Zie hoe uw rankings maand na maand verbeteren en meet de impact van uw optimalisatie-inspanningen.",
+      "benefit3Title": "Geautomatiseerde rapporten",
+      "benefit3Description": "Ontvang regelmatig prestatierapporten rechtstreeks in uw inbox. Blijf op de hoogte van uw rankings zonder in te loggen op het dashboard.",
+      "benefit4Title": "Bruikbare inzichten",
+      "benefit4Description": "Zie niet alleen de data—begrijp wat u ermee moet doen. Onze analyzer biedt duidelijke aanbevelingen over welke pagina's te optimaliseren voor maximale impact."
+    },
+    "cta": {
+      "title": "Klaar om uw rankings te volgen?",
+      "description": "Begin vandaag nog met het monitoren van uw SEO-prestaties en ontdek kansen om uw organisch verkeer te laten groeien.",
+      "button": "Begin voor 1 €",
+      "demoButton": "Boek een demo"
+    }
   }
 }

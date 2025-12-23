@@ -704,5 +704,115 @@
       "benefit3Title": "Continuous Improvement",
       "benefit3Description": "Boostifai works 24/7 to keep your SEO optimized. As search algorithms evolve, our AI adapts your strategy to maintain and improve your rankings."
     }
+  },
+  "AiArticlesPage": {
+    "hero": {
+      "badge": "Free AI Blog Posts",
+      "title": "Effortless Blog Post Creation for Your Business",
+      "description": "Boost your website traffic and SEO with AI-powered blog posts. Publish content directly to your site with just a few clicks."
+    },
+    "form": {
+      "keywordPlaceholder": "Enter your keyword",
+      "urlPlaceholder": "Website URL",
+      "emailPlaceholder": "Type your email",
+      "submitButton": "Get a Free Article",
+      "linkText": "To get a blog post in Dutch language",
+      "linkUrl": "https://www.boostifai.be/ai-artikelen/",
+      "linkCta": "click here",
+      "description": "Content creation is the backbone of effective SEO, but writing high-quality blog posts can be a challenge for many businesses. With our AI-powered blog generator, you can effortlessly produce engaging, SEO-optimized posts that drive traffic and improve your site's search rankings. Whether you're short on time or resources, our tool does the heavy lifting, so you can focus on growing your business."
+    },
+    "features": {
+      "badge": "What You Get",
+      "title": "5 Free Automated Articles + AI Blog Creator for Unlimited Articles",
+      "subtitle": "Get 5 blog posts free per month",
+      "description": "Maintaining an active blog is key to driving traffic and improving your SEO, but it can also be time-consuming. That's why we offer 5 free, fully optimized blog posts every month as part of our service. With our AI-powered tool, you'll never have to worry about content creation again.",
+      "feature1Title": "Tailored Topics",
+      "feature1Description": "Choose your own topics or let our AI suggest trending ones based on your industry.",
+      "feature2Title": "SEO-Optimized Content",
+      "feature2Description": "Every post is crafted with the latest SEO practices, ensuring your website ranks higher and attracts more visitors.",
+      "feature3Title": "Quick Publishing",
+      "feature3Description": "Publish directly to your CMS with just one click or save the posts as drafts for review.",
+      "unlimitedTitle": "Plus, unlimited new blog posts with our AI Blog Creator",
+      "unlimitedDescription": "Writing blog posts doesn't have to be time-consuming. With our AI-powered tool, you can generate fresh, SEO-optimized content in seconds. Here's how it works:",
+      "step1": "Choose a blog post title from our list or create your own.",
+      "step2": "Generate a complete blog post with engaging content tailored to your keyword.",
+      "step3": "Publish or save it as a draft directly in your CMS with our seamless integration."
+    },
+    "benefits": {
+      "badge": "Key Benefits",
+      "title": "Why Choose Our AI Blog Generator",
+      "benefit1Title": "Connect your CMS",
+      "benefit1Description": "Easily link your CMS, whether it's WordPress, Shopify, and many other platforms, to our tool. Publish or save blog posts directly without needing to manually upload content.",
+      "benefit2Title": "Save Time",
+      "benefit2Description": "Automate your content creation and publishing process with our AI-powered blog generator, eliminating the hours spent on writing, editing, and uploading posts. Focus on growing your business instead.",
+      "benefit3Title": "Easy to use",
+      "benefit3Description": "No technical skills required. Simply choose your blog topic, generate content, and publish with one click—perfect for busy business owners and marketers.",
+      "benefit4Title": "Reduce costs",
+      "benefit4Description": "Cut down on content outsourcing and copywriter fees. With our AI-driven blog generation tool, you get high-quality, SEO-optimized posts at a fraction of the cost of traditional methods."
+    },
+    "cta": {
+      "title": "Works with all CMS",
+      "description": "Experience the power of AI-powered blog generation and seamless CMS integration today",
+      "button": "Get started for 1 €"
+    },
+    "thankYou": {
+      "title": "Thank You for Your Request!",
+      "description": "We've received your request for a free AI-powered blog post. Our team will review your information and get back to you shortly with your custom article.",
+      "nextStepsTitle": "What Happens Next?",
+      "step1Title": "Check Your Email",
+      "step1Description": "You'll receive a confirmation email within the next few minutes. Please check your spam folder if you don't see it in your inbox.",
+      "step2Title": "We Create Your Article",
+      "step2Description": "Our AI will generate a high-quality, SEO-optimized blog post based on your keyword and website information.",
+      "step3Title": "Receive Your Content",
+      "step3Description": "Within 24-48 hours, you'll receive your free blog post ready to publish on your website.",
+      "ctaButton": "Explore Our Plans",
+      "blogButton": "Read Our Blog"
+    }
+  },
+  "RankAnalyzerPage": {
+    "hero": {
+      "title": "Track Your SEO Rankings and Discover Growth Opportunities",
+      "description": "Monitor your website's performance with our powerful rank analyzer. Track keywords, discover opportunities, and watch your rankings grow with actionable insights from Google Search Console.",
+      "ctaButton": "Get Started",
+      "demoButton": "Book a Demo"
+    },
+    "features": {
+      "feature1Badge": "Keyword Tracking",
+      "feature1Title": "Monitor Every Keyword That Matters",
+      "feature1Description": "Track your keyword rankings across all positions. See which keywords are driving traffic and identify opportunities for improvement with data from Google Search Console.",
+      "feature1Point1": "Comprehensive ranking data for all your keywords",
+      "feature1Point2": "Track position changes and progress over time",
+      "feature1Point3": "Identify high-performing and underperforming keywords",
+      "feature2Badge": "Topic Clusters",
+      "feature2Title": "Organize Content by Topic Performance",
+      "feature2Description": "Group your content into topic clusters and track performance by category. Understand which topics drive the most traffic and engagement.",
+      "feature2Point1": "Automatic content grouping by topic and theme",
+      "feature2Point2": "Track clicks and impressions per topic cluster",
+      "feature2Point3": "Identify growing and decaying content areas",
+      "feature3Badge": "Power Keywords",
+      "feature3Title": "Discover Your Best Ranking Opportunities",
+      "feature3Description": "Find keywords where you're close to ranking on page one. Focus your efforts on the keywords that will drive the most impact.",
+      "feature3Point1": "Identify keywords ranking in positions 11-25",
+      "feature3Point2": "Track progress from page 2 to page 1",
+      "feature3Point3": "Prioritize optimization efforts for maximum ROI"
+    },
+    "benefits": {
+      "badge": "Why Choose Our Rank Analyzer",
+      "title": "Make Data-Driven SEO Decisions",
+      "benefit1Title": "Accurate Analytics",
+      "benefit1Description": "Get reliable insights into your ranking performance powered by Google Search Console data. Track your progress and understand how your pages perform in search results.",
+      "benefit2Title": "Track Growth Over Time",
+      "benefit2Description": "Monitor your SEO progress with historical data and trend analysis. See how your rankings improve month over month and measure the impact of your optimization efforts.",
+      "benefit3Title": "Automated Reports",
+      "benefit3Description": "Receive regular performance reports delivered straight to your inbox. Stay informed about your rankings without logging into the dashboard.",
+      "benefit4Title": "Actionable Insights",
+      "benefit4Description": "Don't just see the data—understand what to do with it. Our analyzer provides clear recommendations on which pages to optimize for maximum impact."
+    },
+    "cta": {
+      "title": "Ready to Track Your Rankings?",
+      "description": "Start monitoring your SEO performance today and discover opportunities to grow your organic traffic.",
+      "button": "Get Started for 1 €",
+      "demoButton": "Book a Demo"
+    }
   }
 }

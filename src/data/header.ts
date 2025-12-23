@@ -120,8 +120,8 @@ export const homeMegaMenuColumns: MegaMenuColumn[] = [
   {
     id: 'column-1',
     items: [
-      { id: 'home-1', label: 'aiArticles', href: '#' },
-      { id: 'home-2', label: 'internalLinking', href: '#' },
+      { id: 'home-1', label: 'aiArticles', href: '/ai-articles' },
+      // { id: 'home-2', label: 'internalLinking', href: '#' },
       { id: 'home-3', label: 'emailReports', href: '#' },
     ],
   },
@@ -129,16 +129,16 @@ export const homeMegaMenuColumns: MegaMenuColumn[] = [
     id: 'column-2',
     items: [
       { id: 'home-4', label: 'aiRecommendations', href: '#' },
-      { id: 'home-5', label: 'aiInsight', href: '#' },
-      { id: 'home-6', label: 'onPageSeo', href: '#' },
+      { id: 'home-5', label: 'aiInsight', href: '#' }
+      // { id: 'home-6', label: 'onPageSeo', href: '#' },
     ],
   },
   {
     id: 'column-3',
     items: [
-      { id: 'home-7', label: 'rankAnalyzer', href: '#' },
-      { id: 'home-8', label: 'backlinkMarketplace', href: '#' },
-      { id: 'home-9', label: 'freeSeoTools', href: '#' },
+      { id: 'home-7', label: 'rankAnalyzer', href: '/rank-analyzer' },
+      { id: 'home-8', label: 'backlinkMarketplace', href: '#' }
+      // { id: 'home-9', label: 'freeSeoTools', href: '#' },
     ],
   },
 ];
