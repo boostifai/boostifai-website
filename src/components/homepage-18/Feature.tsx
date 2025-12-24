@@ -38,7 +38,7 @@ const Feature = () => {
           <RevealAnimation delay={0.5}>
             <div className="col-span-12 md:col-span-6 lg:col-span-8 p-8 rounded-[20px] bg-background-3 dark:bg-background-7 space-y-6">
               <div className="space-y-2">
-                <h5 className="max-sm:text-heading-6">{t('feature1Title')}</h5>
+                <h3 className="text-heading-5 max-sm:text-heading-6">{t('feature1Title')}</h3>
                 <p className="max-w-[450px]">
                   {t('feature1Description')}
                 </p>
@@ -62,7 +62,7 @@ const Feature = () => {
           <RevealAnimation delay={0.6}>
             <div className="col-span-12 md:col-span-6 lg:col-span-4 p-8 rounded-[20px] bg-background-3 dark:bg-background-7 space-y-6">
               <div className="space-y-2">
-                <h5 className="max-sm:text-heading-6">{t('feature2Title')}</h5>
+                <h3 className="text-heading-5 max-sm:text-heading-6">{t('feature2Title')}</h3>
                 <p className="max-w-[300px]">{t('feature2Description')}</p>
               </div>
               <figure className="w-full">
@@ -84,7 +84,7 @@ const Feature = () => {
           <RevealAnimation delay={0.7}>
             <div className="col-span-12 md:col-span-6 lg:col-span-4 p-8 rounded-[20px] bg-background-3 dark:bg-background-7 space-y-6">
               <div className="space-y-2">
-                <h5 className="max-sm:text-heading-6">{t('feature3Title')}</h5>
+                <h3 className="text-heading-5 max-sm:text-heading-6">{t('feature3Title')}</h3>
                 <p className="">{t('feature3Description')}</p>
               </div>
               <figure className="w-full">
@@ -106,7 +106,7 @@ const Feature = () => {
           <RevealAnimation delay={0.8}>
             <div className="col-span-12 md:col-span-6 lg:col-span-8 p-8 rounded-[20px] bg-background-3 dark:bg-background-7 space-y-6">
               <div className="space-y-2 max-w-[485px]">
-                <h5 className="max-sm:text-heading-6">{t('feature4Title')}</h5>
+                <h3 className="text-heading-5 max-sm:text-heading-6">{t('feature4Title')}</h3>
                 <p className="max-w-[485px]">
                   {t('feature4Description')}
                 </p>

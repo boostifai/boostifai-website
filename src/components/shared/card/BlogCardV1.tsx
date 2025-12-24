@@ -46,7 +46,7 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
           </div>
           <div>
             <h3 className="sm:text-heading-5 text-heading-6 mb-2 font-normal">
-              <Link href={`/${locale}/blog/${blog.slug}`} aria-label="Read more about electronic prescription in finance sector">
+              <Link href={`/${locale}/blog/${blog.slug}`} aria-label={`Read article: ${blog?.title}`}>
                 {blog?.title}
               </Link>
             </h3>
@@ -58,7 +58,7 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
             <LinkButton
               href={`/${locale}/blog/${blog.slug}`}
               className="btn btn-md btn-white hover:btn-secondary dark:btn-transparent dark:hover:btn-accent dark:hover:text-secondary w-full sm:w-auto"
-              aria-label="Read full article about electronic prescription">
+              aria-label={`Read article: ${blog?.title}`}>
               {t('readMore')}
             </LinkButton>
           </div>

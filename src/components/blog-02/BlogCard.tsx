@@ -65,7 +65,7 @@ export const BlogCard = ({ blog }: { blog: IBlogPost }) => {
           <h3 className="font-normal sm:text-heading-5 text-tagline-1 line-clamp-1">
             <Link
               href={`/blog/${blog.slug}`}
-              aria-label="Read full article about electronic prescription in finance sector">
+              aria-label={`Read article: ${blog.title}`}>
               {blog.title}
             </Link>
           </h3>
@@ -73,7 +73,7 @@ export const BlogCard = ({ blog }: { blog: IBlogPost }) => {
             <LinkButton
               href={`/blog/${blog.slug}`}
               className="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block"
-              aria-label="Read full article about electronic prescription in finance sector">
+              aria-label={`Read article: ${blog.title}`}>
               <span>Read more</span>
             </LinkButton>
           </div>

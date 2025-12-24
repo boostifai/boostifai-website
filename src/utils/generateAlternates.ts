@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 
-const baseUrl = 'https://boostifai.com';
+// Use environment variable for base URL, fallback to production domain
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://boostifai.com';
 
 export function generateAlternates(locale: string, path: string = ''): Metadata['alternates'] {
   // Remove leading slash if present

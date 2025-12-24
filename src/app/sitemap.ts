@@ -3,7 +3,7 @@ import getMarkDownData from '@/utils/getMarkDownData';
 import path from 'path';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://boostifai.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://boostifai.com';
   const locales = ['en', 'nl'] as const;
 
   // Static routes that exist in both languages
