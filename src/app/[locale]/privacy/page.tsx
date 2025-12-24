@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: PrivacyProps): Promise<Metada
   
   return {
     title: 'Privacy Policy | Boostifai',
+    description: 'Read Boostifai\'s privacy policy. Learn how we collect, use, and protect your personal information and data.',
     alternates: generateAlternates(locale, '/privacy'),
   };
 }

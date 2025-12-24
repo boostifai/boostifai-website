@@ -10,6 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'Blog | Boostifai',
+    description: 'Read the latest SEO tips, insights, and industry trends. Learn how to improve your website\'s search rankings and drive organic traffic.',
     alternates: generateAlternates(locale, '/blog'),
   };
 }

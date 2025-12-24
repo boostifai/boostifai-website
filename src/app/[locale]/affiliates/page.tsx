@@ -13,6 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'Affiliates | Boostifai',
+    description: 'Join the Boostifai Affiliate Program. Earn generous commissions promoting our AI-powered SEO automation tool with high conversion rates.',
     alternates: generateAlternates(locale, '/affiliates'),
   };
 }

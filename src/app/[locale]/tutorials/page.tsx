@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'Tutorial | Boostifai',
+    description: 'Learn how to use Boostifai with our comprehensive tutorials. Master SEO automation and get the most out of our AI-powered platform.',
     alternates: generateAlternates(locale, '/tutorials'),
   };
 }

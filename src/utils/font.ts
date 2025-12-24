@@ -5,6 +5,9 @@ const interTight = Inter_Tight({
   variable: '--font-interTight',
   display: 'swap',
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  preload: true,
+  fallback: ['system-ui', 'arial'],
+  adjustFontFallback: true,
 });
 
 export { interTight };

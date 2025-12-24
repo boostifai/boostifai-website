@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'Agency Pricing | Boostifai',
+    description: 'Scale your agency with flexible SEO automation pricing. Manage multiple client websites with white-label reports and priority support.',
     alternates: generateAlternates(locale, '/agency-pricing'),
   };
 }

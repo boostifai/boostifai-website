@@ -13,6 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'Contact Us | Boostifai',
+    description: 'Get in touch with Boostifai. Contact our SEO experts for questions, support, or to discuss how we can help grow your business.',
     alternates: generateAlternates(locale, '/contact-us'),
   };
 }

@@ -33,6 +33,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Performance optimizations
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
   turbopack: {
     resolveAlias: {
       '@': './src',

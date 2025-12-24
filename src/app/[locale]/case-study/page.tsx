@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: CaseStudyPageProps): Promise<
   
   return {
     title: 'Case Study | Boostifai',
-    description: 'Case Study for boostifai',
+    description: 'Read real success stories from businesses using Boostifai. See how our AI-powered SEO automation drives measurable results and growth.',
     alternates: generateAlternates(locale, '/case-study'),
   };
 }

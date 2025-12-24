@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'FAQ | Boostifai',
+    description: 'Find answers to frequently asked questions about Boostifai\'s AI-powered SEO automation, pricing, features, and how it works.',
     alternates: generateAlternates(locale, '/faq'),
   };
 }

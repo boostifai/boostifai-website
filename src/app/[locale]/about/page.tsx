@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'About Us | Boostifai',
+    description: 'Learn about Boostifai\'s mission to revolutionize SEO for businesses and agencies through innovative AI technology. Discover our story and team.',
     alternates: generateAlternates(locale, '/about'),
   };
 }

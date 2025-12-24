@@ -41,6 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'Boostifai - AI-Powered SEO Automation',
+    description: 'Automate your website growth with AI-powered SEO. Boostifai helps businesses boost rankings, create optimized content, and save time without technical hassle.',
     alternates: generateAlternates(locale),
   };
 }

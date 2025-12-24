@@ -70,7 +70,7 @@
     "faq": {
       "title": "Frequently Asked Questions",
       "description": "Have questions? just ask",
-      "ctaButton": "Read More",
+      "ctaButton": "View all FAQs",
       "questions": [
         {
           "question": "Do I need technical skills to use Boostifai?",
@@ -143,7 +143,7 @@
     "dutch": "Dutch"
   },
   "BlogCard": {
-    "readMore": "Read more"
+    "readMore": "Read article"
   },
   "AgencyPricing": {
     "badge": "Agency pricing",

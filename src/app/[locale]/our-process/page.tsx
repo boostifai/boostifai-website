@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: ProcessPageProps): Promise<Me
   
   return {
     title: 'Our Process | Boostifai',
+    description: 'Discover how Boostifai works. From installation to traffic boost in 3 simple steps. Learn our proven SEO automation process.',
     alternates: generateAlternates(locale, '/our-process'),
   };
 }

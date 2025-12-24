@@ -14,6 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'Business Pricing | Boostifai',
+    description: 'Choose the perfect SEO automation plan for your business. From starter to enterprise, get AI-powered SEO, automated blogs, and performance reports.',
     alternates: generateAlternates(locale, '/business-pricing'),
   };
 }

@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   return {
     title: 'Ebooks | Boostifai',
+    description: 'Download free SEO ebooks and guides. Learn proven strategies to improve your website\'s search rankings and drive organic traffic.',
     alternates: generateAlternates(locale, '/ebooks'),
   };
 }

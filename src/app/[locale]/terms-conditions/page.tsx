@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: TermsConditionsProps): Promis
   
   return {
     title: 'Terms & Conditions | Boostifai',
+    description: 'Read Boostifai\'s terms and conditions. Understand the rules and guidelines for using our AI-powered SEO automation platform.',
     alternates: generateAlternates(locale, '/terms-conditions'),
   };
 }
