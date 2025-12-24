@@ -3,10 +3,16 @@ import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Blog | Boostifai',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Blog | Boostifai',
+    alternates: generateAlternates(locale, '/blog'),
+  };
+}
 
 // Enable dynamic rendering for blog list page
 export const dynamic = 'force-dynamic';

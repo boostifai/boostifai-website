@@ -7,10 +7,16 @@ import CTA2 from '@/components/homepage-14/CTA';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Agency Pricing | Boostifai',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Agency Pricing | Boostifai',
+    alternates: generateAlternates(locale, '/agency-pricing'),
+  };
+}
 
 const Pricing03 = async () => {
   const t = await getTranslations('AgencyPricing');

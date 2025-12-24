@@ -13,10 +13,16 @@ import CTA2 from '@/components/homepage-14/CTA';
 import FooterThree from '@/components/shared/footer/FooterThree';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Ebooks | Boostifai',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Ebooks | Boostifai',
+    alternates: generateAlternates(locale, '/ebooks'),
+  };
+}
 
 const Tutorial = () => {
   return (

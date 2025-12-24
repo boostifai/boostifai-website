@@ -1,24 +1,71 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useState } from 'react';
 import RevealAnimation from '../animation/RevealAnimation';
 
 const NewsletterForm = () => {
   const t = useTranslations('NewsletterPage.form');
+  const locale = useLocale();
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
+    setIsSubmitting(true);
+    setStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          name,
+          locale,
+        }),
+      });
+
+      // Check if response is JSON
+      const contentType = response.headers.get('content-type');
+      if (!contentType || !contentType.includes('application/json')) {
+        console.error('Non-JSON response received:', await response.text());
+        throw new Error('Server returned an invalid response. Please try again.');
+      }
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe');
+      }
+
+      setStatus('success');
       setEmail('');
       setName('');
-    }, 3000);
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setStatus('idle');
+      }, 5000);
+    } catch (error) {
+      console.error('Newsletter subscription error:', error);
+      setStatus('error');
+      setErrorMessage(error instanceof Error ? error.message : 'An error occurred');
+
+      // Reset error message after 5 seconds
+      setTimeout(() => {
+        setStatus('idle');
+        setErrorMessage('');
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -45,7 +92,8 @@ const NewsletterForm = () => {
                       onChange={(e) => setName(e.target.value)}
                       placeholder={t('namePlaceholder')}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-stroke-1 dark:border-stroke-2 bg-white dark:bg-background-7 focus:outline-none focus:ring-2 focus:ring-primary"
+                      disabled={isSubmitting}
+                      className="w-full px-4 py-3 rounded-lg border border-stroke-1 dark:border-stroke-2 bg-white dark:bg-background-7 focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                   </div>
 
@@ -60,15 +108,32 @@ const NewsletterForm = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder={t('emailPlaceholder')}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-stroke-1 dark:border-stroke-2 bg-white dark:bg-background-7 focus:outline-none focus:ring-2 focus:ring-primary"
+                      disabled={isSubmitting}
+                      className="w-full px-4 py-3 rounded-lg border border-stroke-1 dark:border-stroke-2 bg-white dark:bg-background-7 focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
                     />
                   </div>
 
+                  {status === 'success' && (
+                    <div className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
+                      <p className="text-green-800 dark:text-green-200 text-sm text-center">
+                        {t('successMessage')}
+                      </p>
+                    </div>
+                  )}
+
+                  {status === 'error' && (
+                    <div className="p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                      <p className="text-red-800 dark:text-red-200 text-sm text-center">
+                        {t('errorMessage')}: {errorMessage}
+                      </p>
+                    </div>
+                  )}
+
                   <button
                     type="submit"
-                    disabled={submitted}
-                    className="w-full btn btn-primary hover:btn-secondary dark:hover:btn-accent btn-md">
-                    {submitted ? t('successMessage') : t('submitButton')}
+                    disabled={isSubmitting || status === 'success'}
+                    className="w-full btn btn-primary hover:btn-secondary dark:hover:btn-accent btn-md disabled:opacity-50 disabled:cursor-not-allowed">
+                    {isSubmitting ? t('submitting') : t('submitButton')}
                   </button>
                 </form>
 

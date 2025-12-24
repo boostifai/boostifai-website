@@ -1,5 +1,5 @@
 import { fetchPosts, getCachedRecentPosts, getCategoryIdByName } from '@/lib/wordpress';
-import blogCategories from '@/data/blogCategories.json';
+import { getBlogCategories } from '@/data/blogCategories';
 import BlogList from './BlogList';
 
 interface BlogListWrapperProps {
@@ -36,6 +36,8 @@ const BlogListWrapper = async ({ searchParams, locale }: BlogListWrapperProps) =
   // Get cached recent posts for the current language
   const recentBlogs = await getCachedRecentPosts(locale);
 
+  // Get language-specific categories
+  const blogCategories = getBlogCategories(locale);
   const categories = blogCategories.map((cat, index) => ({
     id: index + 1,
     name: cat.label,

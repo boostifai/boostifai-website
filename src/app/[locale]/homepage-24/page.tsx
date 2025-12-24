@@ -33,11 +33,17 @@ import { Fragment } from 'react';
 import HowItWork from '@/components/homepage-24/HowItWorks';
 import Services from '@/components/homepage-35/Services';
 import Features from '@/components/homepage-35/Features';
+import { generateAlternates } from '@/utils/generateAlternates';
 // import Clients from '@/components/pricing-02/Client';
 
-export const metadata: Metadata = {
-  title: 'Insurance - NextSaaS',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Boostifai - AI-Powered SEO Automation',
+    alternates: generateAlternates(locale),
+  };
+}
 
 const Homepage24 = async ({ params }: { params: Promise<{ locale: 'en' | 'nl' }> }) => {
   const { locale } = await params;
@@ -88,7 +94,7 @@ const Homepage24 = async ({ params }: { params: Promise<{ locale: 'en' | 'nl' }>
         {/* <Pricing2 /> */}
 
      
-        <Testimonial2 badgeText="Reviews" />
+        <Testimonial2 />
         
            {/* <Audit /> */}
         {/* <Testimonial /> */}

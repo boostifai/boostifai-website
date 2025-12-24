@@ -14,9 +14,21 @@ export default function LanguageSwitcher() {
 
   const switchLocale = (newLocale: string) => {
     startTransition(() => {
-      // Remove current locale from pathname and add new one
+      // Remove current locale from pathname
       const pathWithoutLocale = pathname.replace(`/${locale}`, '');
-      router.push(`/${newLocale}${pathWithoutLocale}`);
+      
+      // Check if we're on a blog post page
+      const blogPostMatch = pathWithoutLocale.match(/^\/blog\/(.+)/);
+      
+      if (blogPostMatch) {
+        // For blog posts, redirect to blog list page in the new language
+        // since posts may not exist in both languages
+        router.push(`/${newLocale}/blog`);
+      } else {
+        // For other pages, just switch the locale
+        router.push(`/${newLocale}${pathWithoutLocale}`);
+      }
+      
       setIsOpen(false);
     });
   };

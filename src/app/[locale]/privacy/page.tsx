@@ -6,15 +6,21 @@ import PrivacyContentNL from '@/components/privacy/PrivacyContentNL';
 import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-
-export const metadata: Metadata = {
-  title: 'Privacy Policy | Boostifai',
-};
+import { generateAlternates } from '@/utils/generateAlternates';
 
 interface PrivacyProps {
   params: Promise<{
     locale: 'en' | 'nl';
   }>;
+}
+
+export async function generateMetadata({ params }: PrivacyProps): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Privacy Policy | Boostifai',
+    alternates: generateAlternates(locale, '/privacy'),
+  };
 }
 
 const Privacy = async ({ params }: PrivacyProps) => {

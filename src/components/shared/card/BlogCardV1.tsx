@@ -1,6 +1,6 @@
 import { IBlogPost } from '@/interface';
 import { cn } from '@/utils/cn';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import LinkButton from '../../ui/button/LinkButton';
@@ -12,6 +12,8 @@ interface BlogCardV1Props {
 
 const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
   const t = useTranslations('BlogCard');
+  const locale = useLocale();
+  
   return (
     <article>
       <div
@@ -32,7 +34,7 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
         <div className="space-y-6 p-6">
           <div className="flex items-center gap-2">
             {/* <span className="badge badge-primary mr-1">
-              <Link href={blog?.categoryUrl || `/blog/category/${blog?.tag.toLowerCase()}`}>{blog?.tag}</Link>
+              <Link href={blog?.categoryUrl || `/${locale}/blog/category/${blog?.tag.toLowerCase()}`}>{blog?.tag}</Link>
             </span> */}
             <span rel="author" className="text-tagline-3 text-secondary/60 dark:text-accent/60 font-normal">
               {blog?.author}
@@ -44,7 +46,7 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
           </div>
           <div>
             <h3 className="sm:text-heading-5 text-heading-6 mb-2 font-normal">
-              <Link href={`/blog/${blog.slug}`} aria-label="Read more about electronic prescription in finance sector">
+              <Link href={`/${locale}/blog/${blog.slug}`} aria-label="Read more about electronic prescription in finance sector">
                 {blog?.title}
               </Link>
             </h3>
@@ -54,7 +56,7 @@ const BlogCardV1 = ({ blog, className }: BlogCardV1Props) => {
           </div>
           <div className="flex justify-start md:block">
             <LinkButton
-              href={`/blog/${blog.slug}`}
+              href={`/${locale}/blog/${blog.slug}`}
               className="btn btn-md btn-white hover:btn-secondary dark:btn-transparent dark:hover:btn-accent dark:hover:text-secondary w-full sm:w-auto"
               aria-label="Read full article about electronic prescription">
               {t('readMore')}

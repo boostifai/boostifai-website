@@ -542,7 +542,9 @@
       "emailLabel": "Email Address",
       "emailPlaceholder": "Enter your email",
       "submitButton": "Subscribe to Newsletter",
-      "successMessage": "Successfully subscribed!",
+      "submitting": "Subscribing...",
+      "successMessage": "Successfully subscribed! Check your email for confirmation.",
+      "errorMessage": "Failed to subscribe",
       "privacyNote": "We respect your privacy. Unsubscribe at any time."
     }
   },
@@ -563,7 +565,10 @@
       "commentPlaceholder": "Enter your comment",
       "termsText": "I agree with the",
       "termsLink": "terms and conditions",
-      "submitButton": "Submit"
+      "submitButton": "Submit",
+      "submitting": "Sending...",
+      "successMessage": "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+      "errorMessage": "Failed to send message"
     },
     "info": {
       "title": "Contact Information",
@@ -621,8 +626,12 @@
       "namePlaceholder": "Enter your name",
       "emailLabel": "Email Address",
       "emailPlaceholder": "Enter your email",
+      "websiteLabel": "Website URL",
+      "websitePlaceholder": "https://yourwebsite.com",
       "submitButton": "Download Free E-book",
-      "successMessage": "Check your email!",
+      "submitting": "Processing...",
+      "successMessage": "Check your email for the download link!",
+      "errorMessage": "Failed to process request",
       "privacyNote": "We respect your privacy. Your information will never be shared."
     }
   },
@@ -869,5 +878,41 @@
       "button": "Get Started for 1 €",
       "demoButton": "Book a Demo"
     }
+  },
+  "ContactEmail": {
+    "userSubject": "Thank you for contacting Boostifai",
+    "userGreeting": "Hi {name},",
+    "userThankYou": "Thank you for reaching out to Boostifai. We've received your message and our team will get back to you as soon as possible.",
+    "userMessageTitle": "Your Message:",
+    "userClosing": "In the meantime, feel free to explore our <a href=\"https://boostifai.com\" style=\"color: #4F46E5; text-decoration: none;\">website</a> to learn more about our AI-powered SEO solutions.",
+    "userSignature": "Best regards,",
+    "userTeam": "The Boostifai Team",
+    "userCopyright": "© {year} Boostifai. All rights reserved.",
+    "adminSubject": "New Contact Form Submission from {name}",
+    "adminTitle": "New Contact Form Submission",
+    "adminName": "Name:",
+    "adminEmail": "Email:",
+    "adminMessageTitle": "Message:",
+    "adminFooter": "This email was sent from the Boostifai contact form.",
+    "adminTimestamp": "Submitted at: {timestamp}"
+  },
+  "Footer": {
+    "tagline": "Focus on your passion, leave website ranking to us.",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "newsletter": "Newsletter",
+    "affiliates": "Affiliates",
+    "bookMeeting": "Book Meeting",
+    "support": "Support",
+    "dashboardTour": "Dashboard Tour",
+    "contactUs": "Contact Us",
+    "tutorials": "Tutorials",
+    "freeEbook": "Free Ebook",
+    "legal": "Legal",
+    "faq": "FAQ",
+    "termsConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "refundPolicy": "Refund Policy",
+    "copyright": "Copyright ©Boostifai – smart solutions for modern business"
   }
 }

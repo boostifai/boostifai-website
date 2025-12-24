@@ -5,11 +5,17 @@ import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Newsletter | Boostifai',
-  description: 'Subscribe to our newsletter for the latest SEO tips, insights, and updates.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Newsletter | Boostifai',
+    description: 'Subscribe to our newsletter for the latest SEO tips, insights, and updates.',
+    alternates: generateAlternates(locale, '/newsletter'),
+  };
+}
 
 const Newsletter = () => {
   return (

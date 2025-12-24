@@ -542,7 +542,9 @@
       "emailLabel": "E-mailadres",
       "emailPlaceholder": "Voer uw e-mailadres in",
       "submitButton": "Abonneer op nieuwsbrief",
-      "successMessage": "Succesvol geabonneerd!",
+      "submitting": "Abonneren...",
+      "successMessage": "Succesvol geabonneerd! Controleer uw e-mail voor bevestiging.",
+      "errorMessage": "Abonneren mislukt",
       "privacyNote": "We respecteren uw privacy. U kunt zich op elk moment afmelden."
     }
   },
@@ -563,7 +565,10 @@
       "commentPlaceholder": "Voer uw opmerking in",
       "termsText": "Ik ga akkoord met de",
       "termsLink": "algemene voorwaarden",
-      "submitButton": "Verzenden"
+      "submitButton": "Verzenden",
+      "submitting": "Verzenden...",
+      "successMessage": "Bedankt! Uw bericht is succesvol verzonden. We nemen binnenkort contact met u op.",
+      "errorMessage": "Bericht verzenden mislukt"
     },
     "info": {
       "title": "Contactinformatie",
@@ -621,8 +626,12 @@
       "namePlaceholder": "Voer uw naam in",
       "emailLabel": "E-mailadres",
       "emailPlaceholder": "Voer uw e-mailadres in",
+      "websiteLabel": "Website-URL",
+      "websitePlaceholder": "https://uwwebsite.nl",
       "submitButton": "Download gratis e-book",
-      "successMessage": "Controleer uw e-mail!",
+      "submitting": "Verwerken...",
+      "successMessage": "Controleer uw e-mail voor de downloadlink!",
+      "errorMessage": "Verzoek verwerken mislukt",
       "privacyNote": "We respecteren uw privacy. Uw informatie wordt nooit gedeeld."
     }
   },
@@ -869,5 +878,41 @@
       "button": "Begin voor 1 €",
       "demoButton": "Boek een demo"
     }
+  },
+  "ContactEmail": {
+    "userSubject": "Bedankt voor uw contact met Boostifai",
+    "userGreeting": "Hallo {name},",
+    "userThankYou": "Bedankt dat u contact met ons heeft opgenomen. We hebben uw bericht ontvangen en ons team zal zo snel mogelijk contact met u opnemen.",
+    "userMessageTitle": "Uw bericht:",
+    "userClosing": "In de tussentijd kunt u gerust onze <a href=\"https://boostifai.com\" style=\"color: #4F46E5; text-decoration: none;\">website</a> verkennen om meer te leren over onze AI-aangedreven SEO-oplossingen.",
+    "userSignature": "Met vriendelijke groet,",
+    "userTeam": "Het Boostifai Team",
+    "userCopyright": "© {year} Boostifai. Alle rechten voorbehouden.",
+    "adminSubject": "Nieuw contactformulier van {name}",
+    "adminTitle": "Nieuw contactformulier",
+    "adminName": "Naam:",
+    "adminEmail": "E-mail:",
+    "adminMessageTitle": "Bericht:",
+    "adminFooter": "Deze e-mail is verzonden via het Boostifai contactformulier.",
+    "adminTimestamp": "Verzonden op: {timestamp}"
+  },
+  "Footer": {
+    "tagline": "Focus op uw passie, laat websiteranking aan ons over.",
+    "company": "Bedrijf",
+    "aboutUs": "Over ons",
+    "newsletter": "Nieuwsbrief",
+    "affiliates": "Affiliates",
+    "bookMeeting": "Afspraak boeken",
+    "support": "Ondersteuning",
+    "dashboardTour": "Dashboard Tour",
+    "contactUs": "Contact",
+    "tutorials": "Tutorials",
+    "freeEbook": "Gratis Ebook",
+    "legal": "Juridisch",
+    "faq": "FAQ",
+    "termsConditions": "Algemene voorwaarden",
+    "privacyPolicy": "Privacybeleid",
+    "refundPolicy": "Retourbeleid",
+    "copyright": "Copyright ©Boostifai – slimme oplossingen voor modern bedrijfsleven"
   }
 }

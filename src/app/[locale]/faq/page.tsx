@@ -1,4 +1,4 @@
-import Contact from '@/components/faq/Contact';
+import Contact from '@/components/support/Contact';
 import FaqTab from '@/components/faq/FaqTab';
 import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterThree from '@/components/shared/footer/FooterThree';
@@ -7,10 +7,16 @@ import PageHero from '@/components/shared/PageHero';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 import CTA2 from '@/components/homepage-14/CTA';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'FAQ | Boostifai',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'FAQ | Boostifai',
+    alternates: generateAlternates(locale, '/faq'),
+  };
+}
 
 const FAQ = () => {
   return (

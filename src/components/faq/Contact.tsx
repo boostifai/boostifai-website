@@ -1,11 +1,58 @@
 'use client';
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { useState } from 'react';
 import RevealAnimation from '../animation/RevealAnimation';
 
 const Contact = () => {
   const t = useTranslations('FAQPage.contact');
+  const locale = useLocale();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('fullname') as string,
+      email: formData.get('email') as string,
+      message: formData.get('message') as string,
+      locale: locale,
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        (e.target as HTMLFormElement).reset();
+        setTimeout(() => setSubmitStatus('idle'), 5000);
+      } else {
+        setSubmitStatus('error');
+        setErrorMessage(result.error || 'Failed to send message');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setErrorMessage('An unexpected error occurred. Please try again.');
+      console.error('Contact form error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   
   return (
     <section className="pt-[100px] pb-[200px]">
@@ -30,7 +77,30 @@ const Contact = () => {
           {/* form */}
           <RevealAnimation delay={0.5}>
             <div className="contact-form max-w-[850px] md:w-full mx-auto bg-white dark:bg-background-6 rounded-[20px] p-5 sm:p-[42px]">
-              <form action="/" method="POST">
+              {/* Success Message */}
+              {submitStatus === 'success' && (
+                <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
+                  <p className="text-green-800 dark:text-green-200 text-center">
+                    {locale === 'nl'
+                      ? 'Bedankt voor uw bericht! We nemen zo snel mogelijk contact met u op.'
+                      : 'Thank you for your message! We will get back to you as soon as possible.'}
+                  </p>
+                </div>
+              )}
+
+              {/* Error Message */}
+              {submitStatus === 'error' && (
+                <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                  <p className="text-red-800 dark:text-red-200 text-center">
+                    {errorMessage ||
+                      (locale === 'nl'
+                        ? 'Er is iets misgegaan. Probeer het opnieuw.'
+                        : 'Something went wrong. Please try again.')}
+                  </p>
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit}>
                 {/* full name */}
                 <div className="space-y-2 mb-8">
                   <label
@@ -96,8 +166,13 @@ const Contact = () => {
                 {/* submit button */}
                 <button
                   type="submit"
-                  className="btn btn-md btn-secondary dark:btn-accent w-full before:content-none first-letter:uppercase hover:btn-primary">
-                  {t('form.submit')}
+                  disabled={isSubmitting}
+                  className="btn btn-md btn-secondary dark:btn-accent w-full before:content-none first-letter:uppercase hover:btn-primary disabled:opacity-50 disabled:cursor-not-allowed">
+                  {isSubmitting
+                    ? locale === 'nl'
+                      ? 'Verzenden...'
+                      : 'Submitting...'
+                    : t('form.submit')}
                 </button>
               </form>
             </div>

@@ -6,15 +6,21 @@ import TermsConditionContentNL from '@/components/terms-conditions/TermsConditio
 import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-
-export const metadata: Metadata = {
-  title: 'Terms & Conditions | Boostifai',
-};
+import { generateAlternates } from '@/utils/generateAlternates';
 
 interface TermsConditionsProps {
   params: Promise<{
     locale: 'en' | 'nl';
   }>;
+}
+
+export async function generateMetadata({ params }: TermsConditionsProps): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Terms & Conditions | Boostifai',
+    alternates: generateAlternates(locale, '/terms-conditions'),
+  };
 }
 
 const TermsConditions = async ({ params }: TermsConditionsProps) => {

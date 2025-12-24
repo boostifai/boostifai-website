@@ -6,10 +6,16 @@ import ContactMap from '@/components/contact-page/ContactMap';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 import CTA2 from '@/components/homepage-14/CTA';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Contact Us | Boostifai',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Contact Us | Boostifai',
+    alternates: generateAlternates(locale, '/contact-us'),
+  };
+}
 
 const Support = () => {
   return (

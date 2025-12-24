@@ -60,12 +60,13 @@ async function transformWPPost(post: WPPost): Promise<IBlogPost> {
     thumbnail = extractFirstImage(post.content.rendered) || '/images/blog/default-thumbnail.jpg';
   }
   
-  // Find category URL from blogCategories.json
+  // Find category URL from blogCategories.ts
   let categoryUrl = '';
   try {
-    const blogCategoriesModule = await import('@/data/blogCategories.json');
-    const blogCategories = blogCategoriesModule.default;
-    const categoryConfig = blogCategories.find((cat: { label: string; url: string; wpCategory: string }) => 
+    const { getBlogCategories } = await import('@/data/blogCategories');
+    // Try both languages to find the category
+    const allCategories = [...getBlogCategories('en'), ...getBlogCategories('nl')];
+    const categoryConfig = allCategories.find((cat) => 
       cat.wpCategory.toLowerCase() === primaryCategory.toLowerCase()
     );
     categoryUrl = categoryConfig?.url || '';

@@ -8,16 +8,22 @@ import { ICaseStudy } from '@/interface';
 import getMarkDownDataByLocale from '@/utils/getMarkDownDataByLocale';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Case Study | Boostifai',
-  description: 'Case Study for boostifai',
-};
+import { generateAlternates } from '@/utils/generateAlternates';
 
 interface CaseStudyPageProps {
   params: Promise<{
     locale: 'en' | 'nl';
   }>;
+}
+
+export async function generateMetadata({ params }: CaseStudyPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Case Study | Boostifai',
+    description: 'Case Study for boostifai',
+    alternates: generateAlternates(locale, '/case-study'),
+  };
 }
 
 const CaseStudyPage = async ({ params }: CaseStudyPageProps) => {

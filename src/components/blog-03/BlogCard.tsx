@@ -1,7 +1,7 @@
 'use client';
 
 import { IBlogPost } from '@/interface';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,6 +11,8 @@ interface BlogCardProps {
 
 const BlogCard = ({ blog }: BlogCardProps) => {
   const t = useTranslations('BlogPage.blogCard');
+  const locale = useLocale();
+  
   return (
     <article className="group">
       <div className="bg-background-2 dark:bg-background-6 rounded-[20px] relative overflow-hidden scale-100 hover:scale-[102%] transition-transform duration-500 hover:transition-transform hover:duration-500">
@@ -30,7 +32,7 @@ const BlogCard = ({ blog }: BlogCardProps) => {
             {blog.tag && (
               <div className="flex items-center gap-2 mb-8">
                 {blog.categoryUrl ? (
-                  <Link href={blog.categoryUrl} className="inline-block">
+                  <Link href={`/${locale}${blog.categoryUrl}`} className="inline-block">
                     <span className="badge badge-white font-medium dark:!bg-accent/10 dark:!text-accent/60 dark:backdrop-blur-[17px]">
                       {blog.tag}
                     </span>
@@ -86,14 +88,14 @@ const BlogCard = ({ blog }: BlogCardProps) => {
             </div>
 
             <h3 className="font-normal sm:text-heading-5 text-tagline-1 line-clamp-2 mb-4">
-              <Link href={`/blog/${blog.slug}`} aria-label={`Read full article about ${blog.title}`}>
+              <Link href={`/${locale}/blog/${blog.slug}`} aria-label={`Read full article about ${blog.title}`}>
                 {blog.title}
               </Link>
             </h3>
 
             <div>
               <Link
-                href={`/blog/${blog.slug}`}
+                href={`/${locale}/blog/${blog.slug}`}
                 className="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block"
                 aria-label={`Read full article about ${blog.title}`}>
                 <span>{t('readMore')}</span>

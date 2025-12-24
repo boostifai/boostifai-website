@@ -6,11 +6,17 @@ import FooterThree from '@/components/shared/footer/FooterThree';
 import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Dashboard Tour - Boostifai',
-  description: 'Explore Boostifai\'s intuitive dashboard with our interactive tour.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Dashboard Tour - Boostifai',
+    description: 'Explore Boostifai\'s intuitive dashboard with our interactive tour.',
+    alternates: generateAlternates(locale, '/tour'),
+  };
+}
 
 const TourPage = () => {
   return (

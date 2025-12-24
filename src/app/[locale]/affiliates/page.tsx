@@ -6,10 +6,16 @@ import PageHero from '@/components/shared/PageHero';
 import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Affiliates | Boostifai',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Affiliates | Boostifai',
+    alternates: generateAlternates(locale, '/affiliates'),
+  };
+}
 
 const AffiliatePolicy = () => {
   return (

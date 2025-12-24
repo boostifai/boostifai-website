@@ -1,11 +1,12 @@
+'use client';
+
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import { cn } from '@/utils/cn';
-// import DarkLogo from '@public/images/shared/dark-logo.svg';
 import LightLogo from '@public/images/home-page-24/boostifai-logo-light.png';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { FC } from 'react';
-import ThemeToggle from '../ThemeToggle';
 import FooterDivider from './FooterDivider';
 
 interface FooterThreeProps {
@@ -15,6 +16,8 @@ interface FooterThreeProps {
 }
 
 const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientClassName }) => {
+  const t = useTranslations('Footer');
+  
   return (
     <footer className={cn('dark:bg-background-8 relative overflow-hidden bg-white', className)}>
       <div className="main-container">
@@ -32,10 +35,9 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
               <div className="xl:max-w-[306px]">
                 <figure>
                   <Image src={LightLogo} className="" alt="NextSass" />
-                  {/* <Image src={DarkLogo} className="hidden dark:block" alt="NextSass" /> */}
                 </figure>
                 <p className="text-secondary dark:text-accent mt-4 mb-7">
-                  Focus on your passion, leave website ranking to us.
+                  {t('tagline')}
                 </p>
                 <div className="flex items-center gap-3">
                   <Link target="_blank" href="https://www.facebook.com" className="footer-social-link">
@@ -133,27 +135,27 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
               <RevealAnimation delay={0.4}>
                 <div className="space-y-8">
                   <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                    Company
+                    {t('company')}
                   </p>
                   <ul className="space-y-5">
                     <li>
                       <Link href="/about" className="footer-link-v2">
-                        About Us
+                        {t('aboutUs')}
                       </Link>
                     </li>
                     <li>
                       <Link href="/newsletter" className="footer-link-v2">
-                        Newsletter
+                        {t('newsletter')}
                       </Link>
                     </li>
                     <li>
                       <Link href="/affiliates" className="footer-link-v2">
-                        Affiliates
+                        {t('affiliates')}
                       </Link>
                     </li>
                     <li>
                       <Link href="/book-meeting" className="footer-link-v2">
-                        Book Meeting
+                        {t('bookMeeting')}
                       </Link>
                     </li>
                   </ul>
@@ -164,27 +166,27 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
               <RevealAnimation delay={0.5}>
                 <div className="space-y-8">
                   <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                    Support
+                    {t('support')}
                   </p>
                   <ul className="space-y-5">
                     <li>
                       <Link href="/tour" className="footer-link-v2">
-                        Dashboard Tour
+                        {t('dashboardTour')}
                       </Link>
                     </li>
                     <li>
-                      <Link href="/faq" className="footer-link-v2">
-                        FAQ
+                      <Link href="/contact-us" className="footer-link-v2">
+                        {t('contactUs')}
                       </Link>
                     </li>
                     <li>
                       <Link href="/tutorials" className="footer-link-v2">
-                        Tutorials
+                        {t('tutorials')}
                       </Link>
                     </li>
                     <li>
                       <Link href="/ebooks/ultimate-seo-guide" className="footer-link-v2">
-                        Free Ebook
+                        {t('freeEbook')}
                       </Link>
                     </li>
                   </ul>
@@ -195,27 +197,27 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
               <RevealAnimation delay={0.6}>
                 <div className="space-y-8">
                   <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                    Legal Policies
+                    {t('legal')}
                   </p>
                   <ul className="space-y-5">
-                   <li>
-                      <Link href="/contact-us" className="footer-link-v2">
-                        Contact Us
+                    <li>
+                      <Link href="/faq" className="footer-link-v2">
+                        {t('faq')}
                       </Link>
                     </li>
                     <li>
                       <Link href="/terms-conditions" className="footer-link-v2">
-                        Terms & Conditions
+                        {t('termsConditions')}
                       </Link>
                     </li>
                     <li>
                       <Link href="/privacy" className="footer-link-v2">
-                        Privacy Policy
+                        {t('privacyPolicy')}
                       </Link>
                     </li>
                     <li>
                       <Link href="/refund-policy" className="footer-link-v2">
-                        Refund Policy
+                        {t('refundPolicy')}
                       </Link>
                     </li>
                   </ul>
@@ -228,12 +230,11 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
           <FooterDivider className="bg-stroke-2 dark:bg-accent/5" />
           <RevealAnimation delay={0.7} offset={10} start="top 105%">
             <p className="text-secondary dark:text-accent/60">
-              Copyright &copy;Boostifai – smart solutions for modern business
+              {t('copyright')}
             </p>
           </RevealAnimation>
         </div>
       </div>
-      {/* <ThemeToggle /> */}
     </footer>
   );
 };

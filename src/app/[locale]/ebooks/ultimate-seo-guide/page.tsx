@@ -4,13 +4,20 @@ import EbookHero from '@/components/ebook/EbookHero';
 import EbookTestimonial from '@/components/ebook/EbookTestimonial';
 import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
+import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Free E-book: Ultimate SEO Guide | Boostifai',
-  description: 'Download our free Ultimate SEO Guide e-book. Learn hands-on tips and practices to improve your website visibility in Google and rank higher.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Free E-book: Ultimate SEO Guide | Boostifai',
+    description: 'Download our free Ultimate SEO Guide e-book. Learn hands-on tips and practices to improve your website visibility in Google and rank higher.',
+    alternates: generateAlternates(locale, '/ebooks/ultimate-seo-guide'),
+  };
+}
 
 const UltimateSeoGuideEbook = () => {
   return (
@@ -24,6 +31,7 @@ const UltimateSeoGuideEbook = () => {
         <EbookBenefits />
         <EbookTestimonial />
         <EbookDownload />
+        <CTA2 />
       </main>
       <FooterThree className="relative border-t border-stroke-1 dark:border-0" />
     </Fragment>

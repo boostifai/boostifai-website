@@ -6,19 +6,28 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { ReactNode, Suspense } from 'react';
 import { locales } from '@/i18n/request';
+import { Metadata } from 'next';
+import { generateAlternates } from '@/utils/generateAlternates';
 import '../globals.css';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: ReactNode;
+type Props = {
   params: Promise<{ locale: string }>;
-}) {
+  children: ReactNode;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  return {
+    alternates: generateAlternates(locale),
+  };
+}
+
+export default async function LocaleLayout({ children, params }: Props) {
   // Await params in Next.js 15
   const { locale } = await params;
 

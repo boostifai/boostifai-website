@@ -7,14 +7,20 @@ import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 import { getTranslations } from 'next-intl/server';
-
-export const metadata: Metadata = {
-  title: 'Our Process | Boostifai',
-};
+import { generateAlternates } from '@/utils/generateAlternates';
 
 type ProcessPageProps = {
   params: Promise<{ locale: 'en' | 'nl' }>;
 };
+
+export async function generateMetadata({ params }: ProcessPageProps): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Our Process | Boostifai',
+    alternates: generateAlternates(locale, '/our-process'),
+  };
+}
 
 const Process02 = async ({ params }: ProcessPageProps) => {
   const { locale } = await params;
