@@ -7,7 +7,7 @@ import { notFound } from 'next/navigation';
 import { ReactNode, Suspense } from 'react';
 import { locales } from '@/i18n/request';
 import { Metadata } from 'next';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -22,11 +22,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
-  return {
+  return generatePageMetadata({
+    locale,
     title: 'Boostifai - AI-Powered SEO Automation',
     description: 'Automate your website growth with AI-powered SEO. Boostifai helps businesses boost rankings, create optimized content, and save time without technical hassle.',
-    alternates: generateAlternates(locale),
-  };
+  });
 }
 
 export default async function LocaleLayout({ children, params }: Props) {

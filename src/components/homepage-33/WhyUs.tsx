@@ -6,7 +6,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import us from '@public/images/home-page-24/uss.png'
 import CostSavingCalculator from '@/components/homepage-24/CostSavingCalculator';
-
+import gradient10 from '@public/images/gradient/gradient-6.png';
 
 interface FeatureItem {
   id: number;
@@ -70,7 +70,12 @@ const WhyUs = () => {
     <RevealAnimation delay={0.1}>
       <section className="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]">
         <div className="main-container">
-          <div className="py-[42px] bg-secondary rounded-4xl px-6 sm:px-14 relative z-10 overflow-hidden">
+          <div className="py-[42px] bg-[#151515] rounded-4xl px-6 sm:px-14 relative z-10 overflow-hidden">
+                                {/* <RevealAnimation delay={0.2}>
+            <figure className="absolute left-[-161px] top-[-165px] size-[280px] md:size-[300px] lg:size-[400px] rotate-90 select-none pointer-events-none">
+              <Image src={gradient10} alt="Decorative gradient background" className="size-full object-cover" />
+            </figure>
+          </RevealAnimation> */}
             <RevealAnimation delay={0.1} direction="right" offset={100}>
               <figure className="-z-10 absolute -right-[120%] -top-[44%] sm:-right-[100%] sm:-top-[35%] md:-right-[104%] md:-top-[78%] lg:-right-[74%] lg:-top-[78%] xl:-right-[54%] xl:-top-[58%] -rotate-[290deg] sm:-rotate-[260deg] size-[1060px] pointer-events-none select-none">
                 <Image src="/images/gradient/gradient-30.png" alt="gradient" width={1060} height={1060} />

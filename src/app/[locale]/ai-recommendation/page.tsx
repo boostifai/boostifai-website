@@ -5,16 +5,17 @@ import AiRecommendationHero from '@/components/ai-recommendation/AiRecommendatio
 import AiRecommendationFeatures from '@/components/ai-recommendation/AiRecommendationFeatures';
 import AiRecommendationBenefits from '@/components/ai-recommendation/AiRecommendationBenefits';
 import AiRecommendationCTA from '@/components/ai-recommendation/AiRecommendationCTA';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
+  return generatePageMetadata({
+    locale,
+    path: '/ai-recommendation',
     title: 'AI Recommendations - Automated On-Page SEO Optimization | Boostifai',
     description: 'Get AI-powered SEO recommendations for your website. Automatically fix meta descriptions, alt tags, headings, and more to improve your search rankings.',
-    alternates: generateAlternates(locale, '/ai-recommendation'),
-  };
+  });
 }
 
 const AiRecommendationPage = async ({ params }: { params: Promise<{ locale: 'en' | 'nl' }> }) => {

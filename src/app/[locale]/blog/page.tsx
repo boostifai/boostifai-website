@@ -3,16 +3,17 @@ import FooterThree from '@/components/shared/footer/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
+  return generatePageMetadata({
+    locale,
+    path: '/blog',
     title: 'Blog | Boostifai',
     description: 'Read the latest SEO tips, insights, and industry trends. Learn how to improve your website\'s search rankings and drive organic traffic.',
-    alternates: generateAlternates(locale, '/blog'),
-  };
+  });
 }
 
 // Enable dynamic rendering for blog list page

@@ -36,7 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${locale}${route}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
-      priority: route === '' ? 1.0 : 0.8,
       alternates: {
         languages: {
           'x-default': `${baseUrl}/en${route}`,
@@ -57,7 +56,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${locale}/blog/${blog.slug}`,
       lastModified: blog.date ? new Date(blog.date) : new Date(),
       changeFrequency: 'weekly' as const,
-      priority: 0.6,
       alternates: {
         languages: {
           'x-default': `${baseUrl}/en/blog/${blog.slug}`,
@@ -78,7 +76,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${locale}/case-studies/${caseStudy.slug}`,
       lastModified: caseStudy.date ? new Date(caseStudy.date) : new Date(),
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
       alternates: {
         languages: {
           'x-default': `${baseUrl}/en/case-studies/${caseStudy.slug}`,

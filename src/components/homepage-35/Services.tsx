@@ -59,7 +59,7 @@ const Services = () => {
         {/* Header Section */}
         <div className="text-center space-y-3 mb-[70px]">
           <RevealAnimation delay={0.1}>
-            <h2 className="md:max-w-[828px] sm:max-w-[600px] max-[375px]:max-w-[270px] mx-auto">
+            <h2 className="md:max-w-[828px] sm:max-w-[600px] max-[375px]:max-w-[270px] mx-auto font-medium">
               {t('title')}
             </h2>
           </RevealAnimation>
@@ -75,7 +75,7 @@ const Services = () => {
           {servicesData.map((service, index) => (
             <div key={service.id} className="col-span-12 md:col-span-6 lg:col-span-4 flex">
               <RevealAnimation delay={0.3 + index * 0.1} className="flex w-full">
-                <div className="bg-white dark:bg-background-6 rounded-[20px] sm:p-8 p-6 sm:space-y-6 space-y-4 flex flex-col w-full">
+                <div className="bg-white dark:bg-background-6 rounded-[20px] sm:p-8 p-6 sm:space-y-6 space-y-4 flex flex-col w-full border border-[#f0f0f0]">
                   {/* Service Icon */}
                   <div>
                     <Image

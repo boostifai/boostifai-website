@@ -7,16 +7,17 @@ import NavbarOne from '@/components/shared/header/NavbarOne';
 import LinkButton from '@/components/ui/button/LinkButton';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
+  return generatePageMetadata({
+    locale,
+    path: '/book-meeting',
     title: 'Book a Meeting | Boostifai',
     description: 'Schedule a free strategy call with our SEO experts to discuss how Boostifai can help grow your business.',
-    alternates: generateAlternates(locale, '/book-meeting'),
-  };
+  });
 }
 
 const BookMeeting = () => {

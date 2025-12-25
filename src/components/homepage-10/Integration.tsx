@@ -14,6 +14,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import RevealAnimation from '../animation/RevealAnimation';
+import gradient10 from '@public/images/gradient/gradient-1.png';
 
 const integrations = [
   { id: 1, src: wordpress, alt: 'Wordpress', category: 'Blogging tool' },
@@ -29,6 +30,11 @@ const Integration = () => {
     <section className="py-14 md:py-16 lg:py-[88px] xl:py-[100px]">
       <div className="main-container">
         <div className="relative overflow-hidden z-10 rounded-[25px] border border-stroke-1 dark:border-stroke-5 dark:bg-background-5 bg-background-2 sm:py-[100px] py-[50px]">
+                    {/* <RevealAnimation delay={0.2}>
+            <figure className="absolute left-[-141px] top-[-155px] size-[280px] md:size-[300px] lg:size-[400px] rotate-90 select-none pointer-events-none">
+              <Image src={gradient10} alt="Decorative gradient background" className="size-full object-cover" />
+            </figure>
+          </RevealAnimation> */}
           <div className="space-y-5 text-center sm:mb-[70px] mb-[50px]">
             <RevealAnimation delay={0.1}>
               <span className="badge badge-primary">{t('badge')}</span>

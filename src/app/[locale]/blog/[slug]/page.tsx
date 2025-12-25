@@ -7,7 +7,7 @@ import CTA2 from '@/components/homepage-14/CTA';
 import { getBlogCategories } from '@/data/blogCategories';
 import { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 interface BlogDetailPageProps {
   params: Promise<{ slug: string; locale: 'en' | 'nl' }>;
@@ -23,11 +23,14 @@ export async function generateMetadata({ params }: BlogDetailPageProps): Promise
     };
   }
 
-  return {
-    title: `${post.title} - Boostifai Blog`,
-    description: post.description,
-    alternates: generateAlternates(locale, `/blog/${slug}`),
-  };
+  return generatePageMetadata({
+    locale,
+    path: `/blog/${slug}`,
+    title: `${post.title} | Boostifai Blog`,
+    description: post.description || post.title,
+    image: post.thumbnail,
+    type: 'article',
+  });
 }
 
 // Enable dynamic rendering for blog posts

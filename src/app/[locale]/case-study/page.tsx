@@ -8,7 +8,7 @@ import { ICaseStudy } from '@/interface';
 import getMarkDownDataByLocale from '@/utils/getMarkDownDataByLocale';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 interface CaseStudyPageProps {
   params: Promise<{
@@ -19,11 +19,12 @@ interface CaseStudyPageProps {
 export async function generateMetadata({ params }: CaseStudyPageProps): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
-    title: 'Case Study | Boostifai',
+  return generatePageMetadata({
+    locale,
+    path: '/case-study',
+    title: 'Case Studies | Boostifai',
     description: 'Read real success stories from businesses using Boostifai. See how our AI-powered SEO automation drives measurable results and growth.',
-    alternates: generateAlternates(locale, '/case-study'),
-  };
+  });
 }
 
 const CaseStudyPage = async ({ params }: CaseStudyPageProps) => {

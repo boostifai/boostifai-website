@@ -6,16 +6,17 @@ import PageHero from '@/components/shared/PageHero';
 import CTA2 from '@/components/homepage-14/CTA';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
+  return generatePageMetadata({
+    locale,
+    path: '/affiliates',
     title: 'Affiliates | Boostifai',
     description: 'Join the Boostifai Affiliate Program. Earn generous commissions promoting our AI-powered SEO automation tool with high conversion rates.',
-    alternates: generateAlternates(locale, '/affiliates'),
-  };
+  });
 }
 
 const AffiliatePolicy = () => {

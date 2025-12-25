@@ -5,11 +5,17 @@ import RankAnalyzerHero from '@/components/rank-analyzer/RankAnalyzerHero';
 import RankAnalyzerFeatures from '@/components/rank-analyzer/RankAnalyzerFeatures';
 import RankAnalyzerBenefits from '@/components/rank-analyzer/RankAnalyzerBenefits';
 import RankAnalyzerCTA from '@/components/rank-analyzer/RankAnalyzerCTA';
+import { generateAlternates } from '@/utils/generateAlternates';
 
-export const metadata: Metadata = {
-  title: 'Rank Analyzer - Track Your SEO Rankings | Boostifai',
-  description: 'Monitor your website rankings in real-time. Track keywords, analyze performance, and discover growth opportunities with our powerful rank analyzer.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return {
+    title: 'Rank Analyzer - Track Your SEO Rankings | Boostifai',
+    description: 'Monitor your website rankings in real-time. Track keywords, analyze performance, and discover growth opportunities with our powerful rank analyzer.',
+    alternates: generateAlternates(locale, '/rank-analyzer'),
+  };
+}
 
 const RankAnalyzerPage = async ({ params }: { params: Promise<{ locale: 'en' | 'nl' }> }) => {
   await params;

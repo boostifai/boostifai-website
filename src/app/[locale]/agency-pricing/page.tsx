@@ -7,16 +7,17 @@ import CTA2 from '@/components/homepage-14/CTA';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
+  return generatePageMetadata({
+    locale,
+    path: '/agency-pricing',
     title: 'Agency Pricing | Boostifai',
     description: 'Scale your agency with flexible SEO automation pricing. Manage multiple client websites with white-label reports and priority support.',
-    alternates: generateAlternates(locale, '/agency-pricing'),
-  };
+  });
 }
 
 const Pricing03 = async () => {

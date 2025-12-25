@@ -6,16 +6,17 @@ import ContactMap from '@/components/contact-page/ContactMap';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 import CTA2 from '@/components/homepage-14/CTA';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
+  return generatePageMetadata({
+    locale,
+    path: '/contact-us',
     title: 'Contact Us | Boostifai',
     description: 'Get in touch with Boostifai. Contact our SEO experts for questions, support, or to discuss how we can help grow your business.',
-    alternates: generateAlternates(locale, '/contact-us'),
-  };
+  });
 }
 
 const Support = () => {

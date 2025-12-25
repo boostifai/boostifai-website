@@ -7,16 +7,17 @@ import CTA2 from '@/components/homepage-14/CTA';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
+  return generatePageMetadata({
+    locale,
+    path: '/business-pricing',
     title: 'Business Pricing | Boostifai',
     description: 'Choose the perfect SEO automation plan for your business. From starter to enterprise, get AI-powered SEO, automated blogs, and performance reports.',
-    alternates: generateAlternates(locale, '/business-pricing'),
-  };
+  });
 }
 
 const Pricing03 = async () => {

@@ -33,17 +33,17 @@ import { Fragment } from 'react';
 import HowItWork from '@/components/homepage-24/HowItWorks';
 import Services from '@/components/homepage-35/Services';
 import Features from '@/components/homepage-35/Features';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 // import Clients from '@/components/pricing-02/Client';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
+  return generatePageMetadata({
+    locale,
     title: 'Boostifai - AI-Powered SEO Automation',
     description: 'Automate your website growth with AI-powered SEO. Boostifai helps businesses boost rankings, create optimized content, and save time without technical hassle.',
-    alternates: generateAlternates(locale),
-  };
+  });
 }
 
 const Homepage24 = async ({ params }: { params: Promise<{ locale: 'en' | 'nl' }> }) => {

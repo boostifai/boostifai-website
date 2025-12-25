@@ -13,16 +13,17 @@ import CTA2 from '@/components/homepage-14/CTA';
 import FooterThree from '@/components/shared/footer/FooterThree';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-import { generateAlternates } from '@/utils/generateAlternates';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  return {
-    title: 'Ebooks | Boostifai',
+  return generatePageMetadata({
+    locale,
+    path: '/ebooks',
+    title: 'Free SEO Ebooks & Guides | Boostifai',
     description: 'Download free SEO ebooks and guides. Learn proven strategies to improve your website\'s search rankings and drive organic traffic.',
-    alternates: generateAlternates(locale, '/ebooks'),
-  };
+  });
 }
 
 const Tutorial = () => {

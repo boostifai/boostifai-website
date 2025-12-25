@@ -21,7 +21,7 @@ const Hero = () => {
         fill
         priority
         fetchPriority="high"
-        className="object-cover object-top -z-10"
+        className="object-cover object-top z-0"
         quality={90}
       />
       {/* hero line  */}

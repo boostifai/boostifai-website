@@ -6,11 +6,18 @@ import AiArticlesForm from '@/components/ai-articles/AiArticlesForm';
 import AiArticlesFeatures from '@/components/ai-articles/AiArticlesFeatures';
 import AiArticlesBenefits from '@/components/ai-articles/AiArticlesBenefits';
 import AiArticlesCTA from '@/components/ai-articles/AiArticlesCTA';
+import { generatePageMetadata } from '@/utils/generateMetadata';
 
-export const metadata: Metadata = {
-  title: 'AI Articles - Free Blog Post Generator | Boostifai',
-  description: 'Get 5 free AI-powered blog posts per month. Boost your website traffic and SEO with automated content creation.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  
+  return generatePageMetadata({
+    locale,
+    path: '/ai-articles',
+    title: 'AI Articles - Automated Blog Post Generator | Boostifai',
+    description: 'Generate SEO-optimized blog posts automatically with AI. Create high-quality content that ranks, saves time, and drives organic traffic to your website.',
+  });
+}
 
 const AiArticlesPage = async ({ params }: { params: Promise<{ locale: 'en' | 'nl' }> }) => {
   await params;
