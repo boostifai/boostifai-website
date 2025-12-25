@@ -74,10 +74,10 @@ const Homepage24 = async ({ params }: { params: Promise<{ locale: 'en' | 'nl' }>
           {/* <Features /> */}
                 {/* <Integration2 /> */}
         {/* <WhyUs /> */}
-                <Services />
+  
      <WhyUs2 />
 
-
+              <Services />
 
     
         <Integration />
