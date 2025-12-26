@@ -133,6 +133,7 @@
     "aiInsight": "AI Inzicht",
     "onPageSeo": "On-Page SEO",
     "rankAnalyzer": "Rank Analyzer",
+    "internalLinks": "Interne Links",
     "backlinkMarketplace": "Backlink Marktplaats",
     "freeSeoTools": "Gratis SEO Tools",
     "seoAudit": "SEO Audit",
@@ -822,6 +823,131 @@
       "title": "Klaar om uw rankings te volgen?",
       "description": "Begin vandaag nog met het monitoren van uw SEO-prestaties en ontdek kansen om uw organisch verkeer te laten groeien.",
       "button": "Begin voor 1 €",
+      "demoButton": "Boek een demo"
+    }
+  },
+  "EmailReportsPage": {
+    "hero": {
+      "title": "Geautomatiseerde e-mailrapporten maandelijks geleverd",
+      "description": "Blijf op de hoogte van uw SEO-voortgang met uitgebreide maandelijkse rapporten rechtstreeks in uw inbox. Volg rankings, verkeer en prestatiemetrieken moeiteloos.",
+      "ctaButton": "Aan de slag",
+      "demoButton": "Boek een demo",
+      "sampleTitle": "Bekijk ons maandelijks rapport",
+      "sampleDescription": "Zie welke inzichten u elke maand ontvangt",
+      "downloadButton": "Voorbeeldrapport"
+    },
+    "features": {
+      "badge": "Wat is inbegrepen",
+      "title": "Uitgebreide SEO-inzichten in elk rapport",
+      "feature1Title": "Ranking voortgang",
+      "feature1Description": "Volg uw zoekwoordrankings in de tijd met gedetailleerde positieveranderingen en trendgegevens voor al uw doelzoekwoorden.",
+      "feature2Title": "Verkeersanalyse",
+      "feature2Description": "Monitor organische verkeersgroei, paginaweergaven en gebruikersbetrokkenheidsmetrieken om de prestaties van uw website te begrijpen.",
+      "feature3Title": "Prestatiesamenvatting",
+      "feature3Description": "Krijg een duidelijk overzicht van uw SEO-successen, gemaakte verbeteringen en aanbevelingen voor de komende maand.",
+      "feature4Title": "Geautomatiseerde levering",
+      "feature4Description": "Ontvang rapporten automatisch in uw inbox elke maand. Geen inloggen of handmatig rapporten genereren nodig.",
+      "feature5Title": "Aangepaste planning",
+      "feature5Description": "Kies wanneer u uw rapporten wilt ontvangen. Wekelijks, tweewekelijks of maandelijks - u heeft de controle.",
+      "feature6Title": "Visuele grafieken en diagrammen",
+      "feature6Description": "Gemakkelijk te begrijpen visualisaties maken het eenvoudig om trends te herkennen en voortgang te delen met uw team of klanten."
+    },
+    "cta": {
+      "title": "Klaar om geautomatiseerde rapporten te ontvangen?",
+      "description": "Begin met het volgen van uw SEO-voortgang met uitgebreide maandelijkse rapporten in uw inbox.",
+      "ctaButton": "Aan de slag",
+      "demoButton": "Boek een demo"
+    }
+  },
+  "InternalLinksPage": {
+    "hero": {
+      "title": "AI-aangedreven interne linkbuilding op autopilot",
+      "description": "Versterk uw sitestructuur met intelligente interne linksuggesties. AI analyseert uw content en beveelt contextuele links aan om SEO te verbeteren en gebruikersnavigatie te optimaliseren.",
+      "ctaButton": "Aan de slag",
+      "demoButton": "Boek een demo"
+    },
+    "features": {
+      "feature1Badge": "Slimme suggesties",
+      "feature1Title": "AI-aangedreven linkaanbevelingen",
+      "feature1Description": "Ontvang intelligente interne linksuggesties op basis van contentrelevantie en doelzoekwoorden. Onze AI analyseert uw pagina's en identificeert de beste linkmogelijkheden om uw sitestructuur te versterken.",
+      "feature1Point1": "Contextuele linksuggesties afgestemd op doelzoekwoorden",
+      "feature1Point2": "Automatische analyse van contentrelevantie en onderwerpsclusters",
+      "feature1Point3": "Geprioriteerde aanbevelingen voor maximale SEO-impact",
+      "feature2Badge": "Blokkeerlijst controle",
+      "feature2Title": "Beheer pagina's met blokkeerlijst",
+      "feature2Description": "Neem volledige controle over welke pagina's interne links kunnen ontvangen. Blokkeer specifieke URL's uit uw interne linkstrategie om een schone site-architectuur te behouden.",
+      "feature2Point1": "Sluit pagina's uit van het ontvangen van interne links",
+      "feature2Point2": "Beheer blokkeerlijst met eenvoudige toevoeg-/verwijderacties",
+      "feature2Point3": "Voorkom links naar categoriepagina's, archieven of ongewenste URL's",
+      "feature3Badge": "Eenvoudig beheer",
+      "feature3Title": "Goedkeuren of uitsluiten met één klik",
+      "feature3Description": "Bekijk AI-suggesties en keur links direct goed of sluit ze uit. Wijzigingen worden automatisch toegepast op uw website zonder enige codering of technisch werk.",
+      "feature3Point1": "Goedkeuring met één klik voor aanbevolen interne links",
+      "feature3Point2": "Sluit suggesties uit die niet passen bij uw strategie",
+      "feature3Point3": "Automatische implementatie op uw website"
+    },
+    "benefits": {
+      "badge": "Waarom interne linkbuilding belangrijk is",
+      "title": "Verbeter SEO met slimme interne links",
+      "benefit1Title": "Verbeterde sitestructuur",
+      "benefit1Description": "Creëer een sterke interne linkstructuur die zoekmachines helpt uw contenthiërarchie te begrijpen en al uw belangrijke pagina's te ontdekken.",
+      "benefit2Title": "Betere zoekwoordrankings",
+      "benefit2Description": "Versterk zoekwoordrelevantie over gerelateerde pagina's. Interne links geven autoriteit door en helpen pagina's te ranken voor hun doelzoekwoorden.",
+      "benefit3Title": "Verbeterde gebruikerservaring",
+      "benefit3Description": "Leid bezoekers naar gerelateerde content en houd ze langer betrokken. Slimme interne links verbeteren navigatie en verminderen bouncepercentages.",
+      "benefit4Title": "Geautomatiseerde optimalisatie",
+      "benefit4Description": "Bespaar uren handmatig werk. Onze AI analyseert continu uw content en suggereert nieuwe linkmogelijkheden naarmate uw site groeit."
+    },
+    "cta": {
+      "title": "Klaar om uw interne linkbuilding te automatiseren?",
+      "description": "Begin vandaag nog met het bouwen van een sterkere sitestructuur met AI-aangedreven interne linksuggesties.",
+      "ctaButton": "Aan de slag",
+      "demoButton": "Boek een demo"
+    }
+  },
+  "AiInsightPage": {
+    "hero": {
+      "title": "Volg uw merkzichtbaarheid in AI-modellen",
+      "description": "Monitor hoe toonaangevende AI-modellen zoals ChatGPT, Gemini, Claude en DeepSeek uw merk waarnemen. Krijg gedetailleerde inzichten in merkzichtbaarheid, sentiment en geloofwaardigheid bij top LLM's.",
+      "ctaButton": "Aan de slag",
+      "demoButton": "Boek een demo"
+    },
+    "features": {
+      "feature1Badge": "Merkzichtbaarheid",
+      "feature1Title": "Monitor uw merk bij top AI-modellen",
+      "feature1Description": "Volg hoe zichtbaar uw merk is bij OpenAI, Gemini, Claude en DeepSeek. Zie uw zichtbaarheidsscore van 100 en monitor veranderingen in de tijd om uw AI-aanwezigheid te begrijpen.",
+      "feature1Point1": "Real-time zichtbaarheidsscores bij 4 grote LLM's",
+      "feature1Point2": "Historische tracking om trends en verbeteringen te monitoren",
+      "feature1Point3": "Gedetailleerde rapporten met merkbekendheid, geloofwaardigheid en genoemde producten",
+      "feature2Badge": "Merksentiment",
+      "feature2Title": "Begrijp hoe AI uw merk waarneemt",
+      "feature2Description": "Krijg uitgebreide sentimentanalyse die laat zien hoe elk AI-model uw merk waarneemt. Volg toon, merkloyaliteit, reviewconsistentie en klanttevredenheidsmetrieken.",
+      "feature2Point1": "Sentimentscores van alle grote AI-modellen",
+      "feature2Point2": "Gedetailleerde analyse van toon, loyaliteit en feedbackrespons",
+      "feature2Point3": "Volg sentimentveranderingen en identificeer verbetergebieden",
+      "feature3Badge": "Gedetailleerde rapporten",
+      "feature3Title": "Toegang tot diepgaande merkintelligentie",
+      "feature3Description": "Bekijk uitgebreide rapporten voor elke datum die precies laten zien wat AI-modellen over uw merk weten, inclusief producten, diensten en belangrijke kenmerken.",
+      "feature3Point1": "Volledige zichtbaarheidsrapporten met merkbekendheid",
+      "feature3Point2": "Product- en dienstenlijsten zoals begrepen door AI",
+      "feature3Point3": "Geloofwaardigheidsscores en sentimentredenen voor elk model"
+    },
+    "benefits": {
+      "badge": "Waarom AI Insight belangrijk is",
+      "title": "Blijf voorop in het AI-aangedreven zoektijdperk",
+      "benefit1Title": "AI-first zichtbaarheid",
+      "benefit1Description": "Omdat AI-modellen de nieuwe zoekmachines worden, is het begrijpen van de AI-zichtbaarheid van uw merk cruciaal. Volg hoe ChatGPT, Gemini en andere LLM's uw bedrijf vertegenwoordigen.",
+      "benefit2Title": "Concurrentie-intelligentie",
+      "benefit2Description": "Begrijp uw merkpositionering in AI-antwoorden vergeleken met concurrenten. Identificeer hiaten en kansen om uw AI-aanwezigheid te verbeteren.",
+      "benefit3Title": "Bruikbare inzichten",
+      "benefit3Description": "Zie niet alleen de data—begrijp wat het betekent. Krijg duidelijke inzichten in merkbekendheid, sentimenttrends en geloofwaardigheidsscores om uw strategie te sturen.",
+      "benefit4Title": "Volg voortgang",
+      "benefit4Description": "Monitor hoe uw AI-zichtbaarheid in de tijd verbetert. Zie de impact van uw content- en SEO-inspanningen op hoe AI-modellen uw merk begrijpen en vertegenwoordigen."
+    },
+    "cta": {
+      "title": "Klaar om uw AI-merkzichtbaarheid te volgen?",
+      "description": "Begin met het monitoren van hoe AI-modellen uw merk waarnemen en ontdek kansen om uw aanwezigheid in AI-aangedreven zoeken te verbeteren.",
+      "ctaButton": "Aan de slag",
       "demoButton": "Boek een demo"
     }
   },

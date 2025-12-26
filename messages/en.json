@@ -133,6 +133,7 @@
     "aiInsight": "AI Insight",
     "onPageSeo": "On Page SEO",
     "rankAnalyzer": "Rank Analyzer",
+    "internalLinks": "Internal Links",
     "backlinkMarketplace": "Backlink Marketplace",
     "freeSeoTools": "Free SEO Tools",
     "seoAudit": "SEO Audit",
@@ -822,6 +823,131 @@
       "title": "Ready to Track Your Rankings?",
       "description": "Start monitoring your SEO performance today and discover opportunities to grow your organic traffic.",
       "button": "Get Started for 1 €",
+      "demoButton": "Book a Demo"
+    }
+  },
+  "EmailReportsPage": {
+    "hero": {
+      "title": "Automated Email Reports Delivered Monthly",
+      "description": "Stay informed about your SEO progress with comprehensive monthly reports delivered straight to your inbox. Track rankings, traffic, and performance metrics effortlessly.",
+      "ctaButton": "Get Started",
+      "demoButton": "Book a Demo",
+      "sampleTitle": "Preview Our Monthly Report",
+      "sampleDescription": "See what insights you'll receive every month",
+      "downloadButton": "Sample Report"
+    },
+    "features": {
+      "badge": "What's Included",
+      "title": "Comprehensive SEO Insights in Every Report",
+      "feature1Title": "Ranking Progress",
+      "feature1Description": "Track your keyword rankings over time with detailed position changes and trending data for all your target keywords.",
+      "feature2Title": "Traffic Analytics",
+      "feature2Description": "Monitor organic traffic growth, page views, and user engagement metrics to understand your website's performance.",
+      "feature3Title": "Performance Summary",
+      "feature3Description": "Get a clear overview of your SEO wins, improvements made, and recommendations for the upcoming month.",
+      "feature4Title": "Automated Delivery",
+      "feature4Description": "Receive reports automatically in your inbox every month. No need to log in or manually generate reports.",
+      "feature5Title": "Custom Scheduling",
+      "feature5Description": "Choose when you want to receive your reports. Weekly, bi-weekly, or monthly - you're in control.",
+      "feature6Title": "Visual Charts & Graphs",
+      "feature6Description": "Easy-to-understand visualizations make it simple to spot trends and share progress with your team or clients."
+    },
+    "cta": {
+      "title": "Ready to Receive Automated Reports?",
+      "description": "Start tracking your SEO progress with comprehensive monthly reports delivered to your inbox.",
+      "ctaButton": "Get Started",
+      "demoButton": "Book a Demo"
+    }
+  },
+  "InternalLinksPage": {
+    "hero": {
+      "title": "AI-Powered Internal Linking on Autopilot",
+      "description": "Strengthen your site structure with intelligent internal link suggestions. AI analyzes your content and recommends contextual links to boost SEO and improve user navigation.",
+      "ctaButton": "Get Started",
+      "demoButton": "Book a Demo"
+    },
+    "features": {
+      "feature1Badge": "Smart Suggestions",
+      "feature1Title": "AI-Powered Link Recommendations",
+      "feature1Description": "Get intelligent internal link suggestions based on content relevance and target keywords. Our AI analyzes your pages and identifies the best linking opportunities to strengthen your site structure.",
+      "feature1Point1": "Contextual link suggestions matched to target keywords",
+      "feature1Point2": "Automatic analysis of content relevance and topic clusters",
+      "feature1Point3": "Prioritized recommendations for maximum SEO impact",
+      "feature2Badge": "Blocklist Control",
+      "feature2Title": "Manage Pages with Blocklist",
+      "feature2Description": "Take full control over which pages can receive internal links. Block specific URLs from your internal linking strategy to maintain clean site architecture.",
+      "feature2Point1": "Exclude pages from receiving internal links",
+      "feature2Point2": "Manage blocklist with simple add/remove actions",
+      "feature2Point3": "Prevent links to category pages, archives, or unwanted URLs",
+      "feature3Badge": "Easy Management",
+      "feature3Title": "Approve or Exclude with One Click",
+      "feature3Description": "Review AI suggestions and approve or exclude links instantly. Changes are automatically applied to your website without any coding or technical work required.",
+      "feature3Point1": "One-click approval for recommended internal links",
+      "feature3Point2": "Exclude suggestions that don't fit your strategy",
+      "feature3Point3": "Automatic implementation on your website"
+    },
+    "benefits": {
+      "badge": "Why Internal Linking Matters",
+      "title": "Boost SEO with Smart Internal Links",
+      "benefit1Title": "Improved Site Structure",
+      "benefit1Description": "Create a strong internal linking structure that helps search engines understand your content hierarchy and discover all your important pages.",
+      "benefit2Title": "Better Keyword Rankings",
+      "benefit2Description": "Strengthen keyword relevance across related pages. Internal links pass authority and help pages rank for their target keywords.",
+      "benefit3Title": "Enhanced User Experience",
+      "benefit3Description": "Guide visitors to related content and keep them engaged longer. Smart internal links improve navigation and reduce bounce rates.",
+      "benefit4Title": "Automated Optimization",
+      "benefit4Description": "Save hours of manual work. Our AI continuously analyzes your content and suggests new linking opportunities as your site grows."
+    },
+    "cta": {
+      "title": "Ready to Automate Your Internal Linking?",
+      "description": "Start building a stronger site structure today with AI-powered internal link suggestions.",
+      "ctaButton": "Get Started",
+      "demoButton": "Book a Demo"
+    }
+  },
+  "AiInsightPage": {
+    "hero": {
+      "title": "Track Your Brand Visibility Across AI Models",
+      "description": "Monitor how leading AI models like ChatGPT, Gemini, Claude, and DeepSeek perceive your brand. Get detailed insights into brand visibility, sentiment, and credibility across top LLMs.",
+      "ctaButton": "Get Started",
+      "demoButton": "Book a Demo"
+    },
+    "features": {
+      "feature1Badge": "Brand Visibility",
+      "feature1Title": "Monitor Your Brand Across Top AI Models",
+      "feature1Description": "Track how visible your brand is across OpenAI, Gemini, Claude, and DeepSeek. See your visibility score out of 100 and monitor changes over time to understand your AI presence.",
+      "feature1Point1": "Real-time visibility scores across 4 major LLMs",
+      "feature1Point2": "Historical tracking to monitor trends and improvements",
+      "feature1Point3": "Detailed reports showing brand awareness, credibility, and products mentioned",
+      "feature2Badge": "Brand Sentiment",
+      "feature2Title": "Understand How AI Perceives Your Brand",
+      "feature2Description": "Get comprehensive sentiment analysis showing how each AI model perceives your brand. Track tone, brand loyalty, review consistency, and customer satisfaction metrics.",
+      "feature2Point1": "Sentiment scores from all major AI models",
+      "feature2Point2": "Detailed analysis of tone, loyalty, and feedback response",
+      "feature2Point3": "Track sentiment changes and identify improvement areas",
+      "feature3Badge": "Detailed Reports",
+      "feature3Title": "Access In-Depth Brand Intelligence",
+      "feature3Description": "View comprehensive reports for each date showing exactly what AI models know about your brand, including products, services, and key attributes.",
+      "feature3Point1": "Full visibility reports with brand awareness levels",
+      "feature3Point2": "Product and service listings as understood by AI",
+      "feature3Point3": "Credibility scores and sentiment reasoning for each model"
+    },
+    "benefits": {
+      "badge": "Why AI Insight Matters",
+      "title": "Stay Ahead in the AI-Powered Search Era",
+      "benefit1Title": "AI-First Visibility",
+      "benefit1Description": "As AI models become the new search engines, understanding your brand's AI visibility is crucial. Track how ChatGPT, Gemini, and other LLMs represent your business.",
+      "benefit2Title": "Competitive Intelligence",
+      "benefit2Description": "Understand your brand positioning in AI responses compared to competitors. Identify gaps and opportunities to improve your AI presence.",
+      "benefit3Title": "Actionable Insights",
+      "benefit3Description": "Don't just see the data—understand what it means. Get clear insights into brand awareness, sentiment trends, and credibility scores to guide your strategy.",
+      "benefit4Title": "Track Progress",
+      "benefit4Description": "Monitor how your AI visibility improves over time. See the impact of your content and SEO efforts on how AI models understand and represent your brand."
+    },
+    "cta": {
+      "title": "Ready to Track Your AI Brand Visibility?",
+      "description": "Start monitoring how AI models perceive your brand and discover opportunities to improve your presence in AI-powered search.",
+      "ctaButton": "Get Started",
       "demoButton": "Book a Demo"
     }
   },

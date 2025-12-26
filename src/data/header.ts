@@ -121,15 +121,14 @@ export const homeMegaMenuColumns: MegaMenuColumn[] = [
     id: 'column-1',
     items: [
       { id: 'home-1', label: 'aiArticles', href: '/ai-articles' },
-      // { id: 'home-2', label: 'internalLinking', href: '#' },
-      { id: 'home-3', label: 'emailReports', href: '#' },
+      { id: 'home-3', label: 'emailReports', href: '/email-reports' },
     ],
   },
   {
     id: 'column-2',
     items: [
       { id: 'home-4', label: 'aiRecommendations', href: '/ai-recommendation' },
-      { id: 'home-5', label: 'aiInsight', href: '#' }
+      { id: 'home-5', label: 'aiInsight', href: '/ai-insight' }
       // { id: 'home-6', label: 'onPageSeo', href: '#' },
     ],
   },
@@ -137,7 +136,7 @@ export const homeMegaMenuColumns: MegaMenuColumn[] = [
     id: 'column-3',
     items: [
       { id: 'home-7', label: 'rankAnalyzer', href: '/rank-analyzer' },
-      { id: 'home-8', label: 'backlinkMarketplace', href: '#' }
+      { id: 'home-8', label: 'internalLinks', href: '/internal-links' }
       // { id: 'home-9', label: 'freeSeoTools', href: '#' },
     ],
   },
